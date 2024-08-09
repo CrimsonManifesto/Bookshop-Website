@@ -261,3 +261,4 @@ C:\Users\ADMIN\Desktop\Web\Bookshop-Website\bin\Debug\net8.0\runtimes\win\lib\ne
 C:\Users\ADMIN\Desktop\Web\Bookshop-Website\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\ADMIN\Desktop\Web\Bookshop-Website\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\ADMIN\Desktop\Web\Bookshop-Website\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\ADMIN\Desktop\Web\Bookshop-Website\obj\Debug\net8.0\Bookshop-Website.sourcelink.json

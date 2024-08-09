@@ -1,5 +1,6 @@
 using Bookshop_Website.Data;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using System.Drawing;
 using System.Globalization;
@@ -38,6 +39,15 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+var supportedCultures = new[] { new CultureInfo("vn-VN") };
+var localizationOptions = new RequestLocalizationOptions
+{
+    DefaultRequestCulture = new RequestCulture("vn-VN"),
+    SupportedCultures = supportedCultures,
+    SupportedUICultures = supportedCultures
+};
+
+app.UseRequestLocalization(localizationOptions);
 
 app.MapControllerRoute(
     name: "default",
