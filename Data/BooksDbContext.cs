@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Bookshop_Website.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace Bookshop_Website.Data
 {
-    public class BooksDbContext : IdentityDbContext
+    public class BooksDbContext : IdentityDbContext<IdentityUser>
     {
         public BooksDbContext(DbContextOptions<BooksDbContext> options)
             : base(options)

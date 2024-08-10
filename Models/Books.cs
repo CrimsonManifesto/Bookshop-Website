@@ -23,7 +23,7 @@ namespace Bookshop_Website.Models
 
         public string Language { get; set; }
 
-
+        public string Description { get; set; } 
 
     }
 }

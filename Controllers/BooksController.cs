@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Bookshop_Website.Data;
 using Bookshop_Website.Models;
+using Microsoft.AspNetCore.Authorization;
 
 
 namespace Bookshop_Website.Controllers
@@ -54,6 +55,8 @@ namespace Bookshop_Website.Controllers
             return View("Index", await _context.Books.Where(j => j.Title.Contains(SearchPhrase)).ToListAsync());
         }
         // GET: Books/Create
+        [Authorize]
+
         public IActionResult Create()
         {
             return View();
@@ -64,7 +67,8 @@ namespace Bookshop_Website.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("BookId,Title,Author,Genre,Publisher,Language,Price,ImageUrl")] Books books)
+        [Authorize]
+        public async Task<IActionResult> Create([Bind("BookId,Title,Author,Genre,Publisher,Language,Price,ImageUrl,Description")] Books books)
         {
             if (ModelState.IsValid)
             {
@@ -76,6 +80,7 @@ namespace Bookshop_Website.Controllers
         }
 
         // GET: Books/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -96,7 +101,9 @@ namespace Bookshop_Website.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("BookId,Title,Author,Genre,Publisher,Language,Price,ImageUrl")] Books books)
+        [Authorize]
+
+        public async Task<IActionResult> Edit(int id, [Bind("BookId,Title,Author,Genre,Publisher,Language,Price,ImageUrl,Description")] Books books)
         {
             if (id != books.BookId)
             {
@@ -127,6 +134,7 @@ namespace Bookshop_Website.Controllers
         }
 
         // GET: Books/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -147,6 +155,7 @@ namespace Bookshop_Website.Controllers
         // POST: Books/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var books = await _context.Books.FindAsync(id);
