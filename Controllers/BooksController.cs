@@ -172,6 +172,39 @@ namespace Bookshop_Website.Controllers
         {
             return _context.Books.Any(e => e.BookId == id);
         }
+        //// GET: Books/Genres
+        //public async Task<IActionResult> Genres()
+        //{
+        //    return View();
+        //}
+
+        //// POST: Books/Genres
+        //public async Task<IActionResult> GenresShow (String SearchPhrase)
+        //{
+        //    return View("Index", await _context.Books.Where(j => j.Genre.Contains(SearchPhrase)).ToListAsync());
+        //}
+
+        // GET: Books/Genres
+        public async Task<IActionResult> Genres()
+        {
+            var genres = await _context.Books
+                .Select(b => b.Genre)
+                .Distinct()
+                .ToListAsync();
+
+            return View(genres);
+        }
+        // POST: Books/GenresShow
+        public async Task<IActionResult> GenresShow(string SearchPhrase)
+        {
+            var books = await _context.Books
+                .Where(b => b.Genre.Contains(SearchPhrase))
+                .ToListAsync();
+
+            return View("Index", books);
+        }
+
+
 
     }
 }
