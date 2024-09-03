@@ -1,0 +1,51 @@
+﻿@model List<Bookshop_Website.Models.CartItem>
+
+@{
+    ViewData["Title"] = "Your Cart";
+}
+
+<h2>Your Cart</h2>
+
+@if (Model == null || !Model.Any())
+{
+    <p>Your cart is empty.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Title</td>
+                    <td>@item.Price.ToString("C")</td>
+                    <td>@item.Quantity</td>
+                    <td>@(item.Price * item.Quantity)</td>
+                    <td>
+                        <form asp-action="RemoveFromCart" asp-route-id="@item.BookId" method="post">
+                            <button type="submit" class="btn btn-danger">Remove</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div>
+        <h3>Total: @Model.Sum(item => item.Price * item.Quantity).ToString("C")</h3>
+    </div>
+
+    <div>
+        <a href="@Url.Action("Index", "Books")" class="btn btn-primary">Continue Shopping</a>
+        <a href="@Url.Action("Checkout", "Books")" class="btn btn-success">Proceed to Checkout</a>
+    </div>
+}

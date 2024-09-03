@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Bookshop_Website.Data;
+using Bookshop_Website.Extensions;
 using Bookshop_Website.Models;
 using Microsoft.AspNetCore.Authorization;
 
@@ -55,7 +56,7 @@ namespace Bookshop_Website.Controllers
             return View("Index", await _context.Books.Where(j => j.Title.Contains(SearchPhrase)).ToListAsync());
         }
         // GET: Books/Create
-        [Authorize]
+        [Authorize(Roles = "Admin")]
 
         public IActionResult Create()
         {
@@ -67,7 +68,7 @@ namespace Bookshop_Website.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([Bind("BookId,Title,Author,Genre,Publisher,Language,Price,ImageUrl,Description")] Books books)
         {
             if (ModelState.IsValid)
@@ -80,7 +81,7 @@ namespace Bookshop_Website.Controllers
         }
 
         // GET: Books/Edit/5
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -101,7 +102,7 @@ namespace Bookshop_Website.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize]
+        [Authorize(Roles = "Admin")]
 
         public async Task<IActionResult> Edit(int id, [Bind("BookId,Title,Author,Genre,Publisher,Language,Price,ImageUrl,Description")] Books books)
         {
@@ -134,7 +135,7 @@ namespace Bookshop_Website.Controllers
         }
 
         // GET: Books/Delete/5
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -155,7 +156,7 @@ namespace Bookshop_Website.Controllers
         // POST: Books/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var books = await _context.Books.FindAsync(id);
@@ -172,17 +173,6 @@ namespace Bookshop_Website.Controllers
         {
             return _context.Books.Any(e => e.BookId == id);
         }
-        //// GET: Books/Genres
-        //public async Task<IActionResult> Genres()
-        //{
-        //    return View();
-        //}
-
-        //// POST: Books/Genres
-        //public async Task<IActionResult> GenresShow (String SearchPhrase)
-        //{
-        //    return View("Index", await _context.Books.Where(j => j.Genre.Contains(SearchPhrase)).ToListAsync());
-        //}
 
         // GET: Books/Genres
         public async Task<IActionResult> Genres()
@@ -202,6 +192,58 @@ namespace Bookshop_Website.Controllers
                 .ToListAsync();
 
             return View("Index", books);
+        }
+        public IActionResult AddToCart(int id)
+        {
+            var book = _context.Books.Find(id);
+            if (book == null)
+            {
+                return NotFound();
+            }
+
+            List<CartItem> cart = HttpContext.Session.GetObjectFromJson<List<CartItem>>("Cart") ?? new List<CartItem>();
+
+            var cartItem = cart.FirstOrDefault(c => c.BookId == id);
+            if (cartItem == null)
+            {
+                cart.Add(new CartItem
+                {
+                    BookId = book.BookId,
+                    Title = book.Title,
+                    Price = book.Price,
+                    Quantity = 1
+                });
+            }
+            else
+            {
+                cartItem.Quantity++;
+            }
+
+            HttpContext.Session.SetObjectAsJson("Cart", cart);
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult ViewCart()
+        {
+            var cart = HttpContext.Session.GetObjectFromJson<List<CartItem>>("Cart") ?? new List<CartItem>();
+            return View(cart);
+        }
+
+        public IActionResult RemoveFromCart(int id)
+        {
+            var cart = HttpContext.Session.GetObjectFromJson<List<CartItem>>("Cart");
+            if (cart != null)
+            {
+                var cartItem = cart.FirstOrDefault(c => c.BookId == id);
+                if (cartItem != null)
+                {
+                    cart.Remove(cartItem);
+                    HttpContext.Session.SetObjectAsJson("Cart", cart);
+                }
+            }
+
+            return RedirectToAction(nameof(ViewCart));
         }
 
 

@@ -27,8 +27,18 @@ builder.Services.AddDbContext<BooksDbContext>(options =>
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<BooksDbContext>();
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
 
 var app = builder.Build();
 
@@ -44,11 +54,30 @@ else
     app.UseHsts();
 }
 
+using (var scope = app.Services.CreateScope())
+{
+    var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
+
+    var adminRoleExists = await roleManager.RoleExistsAsync("Admin");
+    if (!adminRoleExists)
+    {
+        await roleManager.CreateAsync(new IdentityRole("Admin"));
+    }
+
+    // Gán vai trò "Admin" cho người dùng cụ thể
+    var adminUser = await userManager.FindByEmailAsync("cuonglinhagprovince@gmail.com");
+    if (adminUser != null && !await userManager.IsInRoleAsync(adminUser, "Admin"))
+    {
+        await userManager.AddToRoleAsync(adminUser, "Admin");
+    }
+}
+
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
+app.UseSession();
 app.UseRouting();
-
 app.UseAuthorization();
 var supportedCultures = new[] { new CultureInfo("vn-VN") };
 var localizationOptions = new RequestLocalizationOptions

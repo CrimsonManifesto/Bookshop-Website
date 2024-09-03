@@ -68,14 +68,16 @@
     <form asp-action="Buy" asp-route-id="@Model?.BookId" method="post" style="display:inline;">
         <input type="submit" value="Buy" class="btn btn-primary" />
     </form>
-    <form asp-action="AddCart" asp-route-id="@Model?.BookId" method="post" style="display:inline;">
+    <form asp-action="AddtoCart" asp-route-id="@Model?.BookId" method="post" style="display:inline;">
         <input type="submit" value="Add to Cart" class="btn btn-success" />
     </form>
 </div>
+@if (User.IsInRole("Admin"))
+{
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.BookId">Edit</a> |
-    <a asp-action="Index">Back to List</a> |
     <a asp-action="Delete" asp-route-id="@Model?.BookId">Delete</a>
-
-
 </div>
+}
+<a asp-action="Index">Back to List</a>
+

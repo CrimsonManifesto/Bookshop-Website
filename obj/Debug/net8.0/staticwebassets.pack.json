@@ -181,12 +181,88 @@
       "PackagePath": "staticwebassets\\Bookshop-Website.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\assets\\favicon.ico",
+      "PackagePath": "staticwebassets\\assets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\assets\\img\\01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\assets\\img\\02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\assets\\img\\03.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\assets\\img\\app-store-badge.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\app-store-badge.svg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\assets\\img\\avataaars.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\avataaars.svg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\assets\\img\\demo-screen.mp4",
+      "PackagePath": "staticwebassets\\assets\\img\\demo-screen.mp4"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\assets\\img\\google-play-badge.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\google-play-badge.svg"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\assets\\img\\portfolio\\cabin.png",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\cabin.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\assets\\img\\portfolio\\cake.png",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\cake.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\assets\\img\\portfolio\\circus.png",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\circus.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\assets\\img\\portfolio\\game.png",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\game.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\assets\\img\\portfolio\\safe.png",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\safe.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\assets\\img\\portfolio\\submarine.png",
+      "PackagePath": "staticwebassets\\assets\\img\\portfolio\\submarine.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\assets\\img\\portrait_black.png",
+      "PackagePath": "staticwebassets\\assets\\img\\portrait_black.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\assets\\img\\tnw-logo.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\tnw-logo.svg"
+    },
+    {
       "Id": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
       "Id": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\js\\scripts.js"
     },
     {
       "Id": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\js\\site.js",
