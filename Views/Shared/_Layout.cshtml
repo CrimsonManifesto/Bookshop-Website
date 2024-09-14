@@ -8,15 +8,43 @@
     <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Bookshop_Website.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.css" asp-append-version="true"/>
+
     <style>
         .dropdown:hover .dropdown-menu {
             display: block;
         }
+
+        html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+        }
+        .content {
+            flex: 1;
+        }
+        .footer {
+            background-color: red;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+
+
     </style>
 </head>
-<body style="background-color:lightgrey">
+<body style="background-color:white">
+    <div class="wrapper">
+        <div class="content">
+
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-red border-bottom box-shadow mb-3" style="background-color: #C92127;">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Books" asp-action="Index">Kabasa</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -25,24 +53,37 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Books" asp-action="Search">Search</a>
-                        </li>
+                        <form asp-controller="Books" asp-action="SearchResults" method="get" class="form-inline d-flex flex-row align-items-center">
+                                <input name="SearchPhrase" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-light my-2 my-sm-0 btn-outline-light" type="submit"><i class="fas fa-search" style="color:black"></i></button>
+                        </form>
 
                         <li class="nav-item">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                <button type="button" class="btn text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #C92127">
+                                    <i class="fa fa-list-alt" aria-hidden="true"></i>
                                     Category
                                 </button>
+
                                 <ul class="dropdown-menu dropdown-menu-start" id="genresDropdown">
                                     <li class="dropdown-header">Genres</li> 
                                     <!-- Genres will be loaded here via AJAX -->
                                 </ul>
                             </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Books" asp-action="ViewCart">Your cart</a>
-                        </li>
+                <li class="nav-item">
+                    <div>
+                        <form asp-area="" asp-controller="Books" asp-action="ViewCart">
+                            <button type="submit" class="btn text-white">
+                                        <i class="fa-solid fa-cart-shopping">
+                                        </i>
+                                        Your cart
+
+                            </button>
+                        </form>
+                    </div>
+                </li>
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>
@@ -54,10 +95,19 @@
             @RenderBody()
         </main>
     </div>
-        <div class="container">
-            &copy; 2024 - Kabasa - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
-        </footer>
+
+    <footer>
+        <div class="footer">
+            <div class="container">
+                &copy; 2024 - Kabasa - <a asp-area="" asp-controller="Home" asp-action="Privacy" style="color:Yellow">Privacy</a><br/>
+                Trong trường hợp nhóm này bị điều tra bởi các cơ quan trực thuộc bộ công an (hoặc các tổ chức chính trị tương tự phục vụ cho nhà nước CHXHCNVN), tôi khẳng định mình không liên quan tới nhóm hoặc những cá nhân khác trong nhóm này. Tôi không rõ tại sao mình lại có mặt ở đây vào thời điểm này, có lẽ tài khoản của tôi đã được thêm bởi một bên thứ ba. Tôi cũng xin khẳng định rằng mình không hề giúp sức cho những hành động chống phá Đảng và nhà nước của các thành viên trong nhóm này.
+
+
+            </div>
+        </div>
+    </footer>
+    </div>
         <script src="~/lib/jquery/dist/jquery.min.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
@@ -68,6 +118,7 @@
             // Fetch genres using an AJAX request
             $.get('@Url.Action("Genres", "Books")', function(data) {
                 $('#genresDropdown').append(data); // Load the partial view content into the dropdown
+
             }).fail(function() {
                 alert('Error loading genres!');
             });
@@ -76,4 +127,3 @@
 
 </body>
 </html>
-
