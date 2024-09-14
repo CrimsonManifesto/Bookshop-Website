@@ -40,15 +40,11 @@
             </td>
             <td>
                 <a asp-action="Details" asp-route-id="@item.BookId">
-                    <img src="@item.ImageUrl" alt="Image for @item.Title" style="width: 100px; height: auto;" />
+                        <img class="rounded float-start" src="@item.ImageUrl" alt="Image for @item.Title" style="width: 100px; height: auto;" />
                 </a>
             </td>
 
-@*           <td>
-                <a asp-action="Edit" asp-route-id="@item.BookId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.BookId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.BookId">Delete</a>
-            </td> *@
+
 
         </tr>
 }

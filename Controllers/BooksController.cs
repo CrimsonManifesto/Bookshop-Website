@@ -182,7 +182,7 @@ namespace Bookshop_Website.Controllers
                 .Distinct()
                 .ToListAsync();
 
-            return View(genres);
+            return PartialView("_GenresPartial", genres); // Pass genres directly to the partial view
         }
         // POST: Books/GenresShow
         public async Task<IActionResult> GenresShow(string SearchPhrase)

@@ -1,0 +1,11 @@
+﻿@model IEnumerable<string>
+
+@foreach (var genre in Model)
+{
+    <li>
+        <form asp-controller="Books" asp-action="GenresShow" method="post">
+            <input type="hidden" name="SearchPhrase" value="@genre" />
+            <button class="dropdown-item" type="submit">@genre</button>
+        </form>
+    </li>
+}
