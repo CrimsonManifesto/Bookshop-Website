@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin asp-append-version="true" />
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet" asp-append-version="true"/>
 
-
     <style>
         .dropdown:hover .dropdown-menu {
             display: block;
@@ -49,18 +48,17 @@
             padding: 15px 22px;
             cursor: pointer;
         }
+        #backToTopBtn:hover {
+                background-color: cornflowerblue;
+        }
 
-            #backToTopBtn:hover {
-                background-color: #808080;
-            }
     </style>
 </head>
-<body style="background-color:white">
+<body style="background-color:#F0F0F0">
     <div class="wrapper">
         <div class="content">
-
+            <!--Back to top button-->
             <button class="btn rounded-circle" id="backToTopBtn" title="Back to top">▲</button>
-
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-red border-bottom box-shadow mb-3" style="background-color: #C92127;">
             <div class="container-fluid">
@@ -71,33 +69,41 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <form asp-controller="Books" asp-action="SearchResults" method="get" class="form-inline d-flex flex-row align-items-center">
-                                <input name="SearchPhrase" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-light my-2 my-sm-0 btn-outline-light" type="submit"><i class="fas fa-search" style="color:black"></i></button>
-                        </form>
+                        <!--Search button-->
 
+                        <form asp-controller="Books" asp-action="SearchResults" method="get" class="form-inline d-flex flex-row align-items-center">
+                                    <div class="input-group">
+                                        <input name="SearchPhrase" class="form-control shadow-none" type="search" placeholder="Search" aria-label="Search">
+                                        <div class="input-group-append">
+
+                                            <button class="btn btn-light shadow-none" type="button" style="border-top-left-radius:0; border-bottom-left-radius:0"><i class="fas fa-search" style="color:black; "></i></button>
+                                        </div>
+                                    </div>
+
+
+                        </form>
+                        <!--Category button-->
                         <li class="nav-item">
                             <div class="btn-group">
 
-                                <button type="button" class="btn text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #C92127">
+                                <button type="button" class="btn text-white dropdown-toggle shadow-none" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #C92127">
                                             <i class="fa-solid fa-bars"></i>
                                             Category
                                 </button>
 
                                 <ul class="dropdown-menu dropdown-menu-start" id="genresDropdown">
                                     <li class="dropdown-header">Genres</li> 
-                                    <!-- Genres will be loaded here via AJAX -->
+                                    <!-- Genres dropdown menu -->
                                 </ul>
                             </div>
                         </li>
+                        <!-- Cart button -->
                 <li class="nav-item">
                     <div>
                         <form asp-area="" asp-controller="Books" asp-action="ViewCart">
-                            <button type="submit" class="btn text-white">
-                                        <i class="fa-solid fa-cart-shopping">
-                                        </i>
-                                        Your cart
-
+                            <button type="submit" class="btn text-white shadow-none">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Your cart
                             </button>
                         </form>
                     </div>
@@ -108,7 +114,11 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+            @if (ViewData["ShowBanner"] != null && (bool)ViewData["ShowBanner"])
+            {
+                <partial name="_BannerPartial" />
+            }            
+            <div class="container" style="background-color:white">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
@@ -119,9 +129,10 @@
         <div class="footer">
             <div class="container">
                 &copy; 2024 - Kabasa - <a asp-area="" asp-controller="Home" asp-action="Privacy" style="color:Yellow">Privacy</a><br/>
-                Trong trường hợp nhóm này bị điều tra bởi các cơ quan trực thuộc bộ công an (hoặc các tổ chức chính trị tương tự phục vụ cho nhà nước CHXHCNVN), tôi khẳng định mình không liên quan tới nhóm hoặc những cá nhân khác trong nhóm này. Tôi không rõ tại sao mình lại có mặt ở đây vào thời điểm này, có lẽ tài khoản của tôi đã được thêm bởi một bên thứ ba. Tôi cũng xin khẳng định rằng mình không hề giúp sức cho những hành động chống phá Đảng và nhà nước của các thành viên trong nhóm này.
-
-
+                    In case of an investigation by any federal entity or similar<br/>
+                    I do not have any involvement with this group or with the people in it<br/>
+                    I do not know how I am here, probably added by a third party<br/>
+                    I do not support any actions by the member of this group.
             </div>
         </div>
     </footer>
