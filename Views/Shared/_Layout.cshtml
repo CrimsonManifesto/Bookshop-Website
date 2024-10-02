@@ -22,7 +22,6 @@
             height: 100%;
             margin: 0;
         }
-
         .wrapper {
             display: flex;
             flex-direction: column;
@@ -30,12 +29,18 @@
         }
         .content {
             flex: 1;
+            flex-direction:column
         }
         .footer {
             background-color: red;
             color: white;
             padding: 20px;
             text-align: center;
+        }
+       /*  ? */ 
+        .btn:focus, .btn:active {
+            outline: none !important;
+            box-shadow: none;
         }
 
         #backToTopBtn {
@@ -51,7 +56,22 @@
         #backToTopBtn:hover {
                 background-color: cornflowerblue;
         }
+        #brandText{
+            color: red;
+            font-weight: 800
+        }
 
+        #categButton {
+            margin-left: 20px;
+            color: #7A7E7F;
+        }
+        #navButton{
+           margin-left: 20px;
+            color: #7A7E7F;
+        }
+        #searchContainer{
+            background-color:red
+        }
     </style>
 </head>
 <body style="background-color:#F0F0F0">
@@ -60,54 +80,52 @@
             <!--Back to top button-->
             <button class="btn rounded-circle" id="backToTopBtn" title="Back to top">▲</button>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-red border-bottom box-shadow mb-3" style="background-color: #C92127;">
+                <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-red border-bottom box-shadow mb-3" style="background-color: white; padding-inline: 100px;">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Books" asp-action="Index">Kabasa</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Books" asp-action="Index" id="brandText">Kabasa</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <div class="navbar-collapse collapse justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
+                                <!--Category button-->
+                                <li class="nav-item">
+                                    <div class="btn-group">
+
+                                        <button type="button" class="btn dropdown-toggle shadow-none" data-bs-toggle="dropdown" id="navButton">
+                                            <i class="fa-solid fa-bars"></i>
+                                        </button>
+
+                                        <ul class="dropdown-menu dropdown-menu-start" id="genresDropdown">
+                                            <li class="dropdown-header">Genres</li>
+                                            <!-- Genres dropdown menu -->
+                                        </ul>
+                                    </div>
+                                </li>
                         <!--Search button-->
 
-                        <form asp-controller="Books" asp-action="SearchResults" method="get" class="form-inline d-flex flex-row align-items-center">
-                                    <div class="input-group">
-                                        <input name="SearchPhrase" class="form-control shadow-none" type="search" placeholder="Search" aria-label="Search">
-                                        <div class="input-group-append">
+                                <form asp-controller="Books" asp-action="SearchResults" method="get" class="w-100">
+                                    <div class="input-group w-100">
+                                        <input name="SearchPhrase" class="form-control shadow-none search-input" type="search" placeholder="Search">
+                                        <div class="input-group-append" style="background-color:red">
 
-                                            <button class="btn btn-light shadow-none" type="button" style="border-top-left-radius:0; border-bottom-left-radius:0"><i class="fas fa-search" style="color:black; "></i></button>
+                                            <button class="btn shadow-none" type="submit" ><i class="fas fa-search" style="color:white; "></i></button>
                                         </div>
                                     </div>
 
 
                         </form>
-                        <!--Category button-->
-                        <li class="nav-item">
-                            <div class="btn-group">
 
-                                <button type="button" class="btn text-white dropdown-toggle shadow-none" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #C92127">
-                                            <i class="fa-solid fa-bars"></i>
-                                            Category
-                                </button>
-
-                                <ul class="dropdown-menu dropdown-menu-start" id="genresDropdown">
-                                    <li class="dropdown-header">Genres</li> 
-                                    <!-- Genres dropdown menu -->
-                                </ul>
-                            </div>
-                        </li>
                         <!-- Cart button -->
+
                 <li class="nav-item">
-                    <div>
-                        <form asp-area="" asp-controller="Books" asp-action="ViewCart">
-                            <button type="submit" class="btn text-white shadow-none">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                                Your cart
-                            </button>
-                        </form>
-                    </div>
+                                        <a class="nav-link" asp-area="" asp-controller="Books" asp-action="ViewCart" class="but shadow-none" id="navButton">
+                                                <i class="fa-solid fa-cart-shopping"></i>Cart
+                        </a>
+
                 </li>
+
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>
