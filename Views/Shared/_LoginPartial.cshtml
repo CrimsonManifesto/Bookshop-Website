@@ -2,40 +2,47 @@
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
 
-<style>
-    #text{
-        color: #7A7E7F;
-      font-weight:bold;
-    }
-</style>
 
-<ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))
 {
 
-    <li class="nav-item">
-            <a class="nav-link" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage" id="text"><i class="fa-solid fa-user"></i></a>
-    </li>
-    <li class="nav-item">
-        <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", new { area = "" })">
-                <button type="submit" class="nav-link btn btn-link" id="text">
+    <a class="nav-link" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage" id="navButton">
+        <div>
+                <i class="fa-solid fa-user"></i>
+        </div>
+        <div>
+            Account
+        </div>
+
+    </a>
+    <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", new { area = "" })">
+        <button type="submit" class="nav-link btn btn-link" id="navButton">
+            <div>
                     <i class="fa fa-sign-out"></i>
+            </div>
+            <div>
                     Logout
+            </div>
                 </button>
-        </form>
-    </li>
+    </form>
 }
 else
 {
-    <li class="nav-item">
-            <a class="nav-link" asp-area="Identity" asp-page="/Account/Register" id="text"><i class="fa-solid fa-user"></i>Register</a>
-    </li>
-    <li class="nav-item">
-            <a class="nav-link" asp-area="Identity" asp-page="/Account/Login" id="text">
+    <a class="nav-link" asp-area="Identity" asp-page="/Account/Register" id="navButton">
+        <div>
+        <i class="fa-solid fa-user"></i>
+        </div>
+        <div>
+            Account
+        </div>
+        </a>
+    <a class="nav-link" asp-area="Identity" asp-page="/Account/Login" id="navButton">
+        <div>
                 <i class="fa fa-sign-in"></i>
+        </div>
+        <div>
                 Login
+        </div>
             </a>
-    </li>
 }
-</ul>
 

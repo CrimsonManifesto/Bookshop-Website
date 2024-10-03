@@ -31,16 +31,12 @@
             flex: 1;
             flex-direction:column
         }
+
         .footer {
             background-color: red;
             color: white;
             padding: 20px;
             text-align: center;
-        }
-       /*  ? */ 
-        .btn:focus, .btn:active {
-            outline: none !important;
-            box-shadow: none;
         }
 
         #backToTopBtn {
@@ -58,19 +54,36 @@
         }
         #brandText{
             color: red;
-            font-weight: 800
+            font-weight: 800;
+            font-size: 25px
         }
 
-        #categButton {
+
+        #navButton {
+            display:flex;
+            align-items: center;
+            flex-direction:column;
+            justify-content: center;
+            color: #7A7E7F;
+            font-size:15px;
+            width: 50px;
+            height: 50px;
+            margin-inline: 20px
+
+        }
+        #navSymbol{
+            font-size: 15px;
+        }
+
+
+
+        #catButton {
             margin-left: 20px;
             color: #7A7E7F;
-        }
-        #navButton{
-           margin-left: 20px;
-            color: #7A7E7F;
+            font-size: 20px
         }
         #searchContainer{
-            background-color:red
+            height: 45px
         }
     </style>
 </head>
@@ -88,12 +101,10 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
                                 <!--Category button-->
-                                <li class="nav-item">
-                                    <div class="btn-group">
+                            <div class="btn-group">
 
-                                        <button type="button" class="btn dropdown-toggle shadow-none" data-bs-toggle="dropdown" id="navButton">
+                                        <button type="button" class="btn dropdown-toggle shadow-none" data-bs-toggle="dropdown" id="catButton">
                                             <i class="fa-solid fa-bars"></i>
                                         </button>
 
@@ -101,16 +112,16 @@
                                             <li class="dropdown-header">Genres</li>
                                             <!-- Genres dropdown menu -->
                                         </ul>
-                                    </div>
-                                </li>
+                            </div>
+
                         <!--Search button-->
 
                                 <form asp-controller="Books" asp-action="SearchResults" method="get" class="w-100">
-                                    <div class="input-group w-100">
+                                    <div class="input-group w-100" id="searchContainer">
                                         <input name="SearchPhrase" class="form-control shadow-none search-input" type="search" placeholder="Search">
-                                        <div class="input-group-append" style="background-color:red">
+                                        <div class="input-group-append" style="background-color:red;display:flex">
 
-                                            <button class="btn shadow-none" type="submit" ><i class="fas fa-search" style="color:white; "></i></button>
+                                        <button class="btn shadow-none" type="submit"><i class="fas fa-search" style="color:white;align-items:center "></i></button>
                                         </div>
                                     </div>
 
@@ -118,16 +129,17 @@
                         </form>
 
                         <!-- Cart button -->
+                                    <a class="nav-link" asp-area="" asp-controller="Books" asp-action="ViewCart" id="navButton">
+                                        <div id="navContainer">
+                                            <i class="fa-solid fa-cart-shopping" id="navSymbol"></i>
+                                        </div>
 
-                <li class="nav-item">
-                                        <a class="nav-link" asp-area="" asp-controller="Books" asp-action="ViewCart" class="but shadow-none" id="navButton">
-                                                <i class="fa-solid fa-cart-shopping"></i>Cart
-                        </a>
-
-                </li>
-
-                    </ul>
+                                    <div id="navContainer">
+                                            Cart
+                                        </div>
+                                    </a>
                     <partial name="_LoginPartial" />
+
                 </div>
             </div>
         </nav>
@@ -164,7 +176,7 @@
         $(document).ready(function() {
             // Fetch genres using an AJAX request
             $.get('@Url.Action("Genres", "Books")', function(data) {
-                $('#genresDropdown').append(data); // Load the partial view content into the dropdown
+                $('#genresDropdown').append(data); 
 
             }).fail(function() {
                 alert('Error loading genres!');
@@ -184,7 +196,6 @@
             }
         }
 
-        // Khi nhấn vào nút, cuộn về đầu trang
         document.getElementById("backToTopBtn").addEventListener("click", function() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
