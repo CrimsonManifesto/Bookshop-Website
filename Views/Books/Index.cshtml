@@ -12,43 +12,61 @@
         <a asp-action="Create">Create New</a>
     </p>
 }
-<table class="table">
+<div class="container" id="bookHeader">All Books</div>
 
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Title)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Author)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Price)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
+<div class="container" style="background-color:white">
+
+<div class="container" id="cardContainer">
 @foreach (var item in Model) {
-        <tr>
-            <td>
-                    @Html.ActionLink(item.Title, "Details", new { id = item.BookId })
-                </td>
-            <td>
+        <div class="card" id="bookCard">
+        <a asp-action="Details" asp-route-id="@item.BookId">
+            <img class="rounded float-start" src="@item.ImageUrl" alt="Image for @item.Title" style="width: 150px; height: auto;" />
+        </a>        <div class="card-body">
+            <h5 class="card-title">
+                @Html.ActionLink(item.Title, "Details", new { id = item.BookId })
+
+            </h5>
+            <p class="card-text" id="textAuthor">
                 @Html.DisplayFor(modelItem => item.Author)
-            </td>
-            <td>
-                    @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                <a asp-action="Details" asp-route-id="@item.BookId">
-                        <img class="rounded float-start" src="@item.ImageUrl" alt="Image for @item.Title" style="width: 100px; height: auto;" />
-                </a>
-            </td>
 
+            </p>
+        </div>
+    </div>
 
-
-        </tr>
 }
-    </tbody>
-</table>
+</div>
+</div>
+
+<style>
+#cardContainer{
+    background-color:white;
+    display:flex;
+    flex-direction:row;
+    padding-inline: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    min-width
+
+    }
+#bookCard{
+    width:9.5rem;
+    margin-top:1rem;
+    margin-inline: 0.94rem;
+        height: 25rem;
+
+}
+#bookHeader{
+    display:flex;
+    flex-direction:row;
+    background-color: #FCDDEF;
+    font-size:2rem;
+    justify-content:center;
+    font-weight:bold;
+    border-top-left-radius:20px;
+    border-top-right-radius: 20px
+    }
+
+    #textAuthor{
+        font-size:0.8rem
+    }
+</style>
