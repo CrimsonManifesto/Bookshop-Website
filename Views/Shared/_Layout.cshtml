@@ -18,13 +18,14 @@
             display: block;
         }
 
-        body {
-            height: 100%;
-
-        }
-        html {
+        body, html {
             height: 100%;
             margin: 0;
+
+        }
+
+        main {
+            flex: 1; /* Đảm bảo rằng thẻ <main> sẽ chiếm không gian còn lại */
         }
         .wrapper {
             display: flex;
@@ -33,7 +34,9 @@
         }
         .content {
             flex: 1;
-            flex-direction:column
+            height:100%;
+            display:flex;
+            flex-direction: column;
         }
 
         .footer {
@@ -41,7 +44,10 @@
             color: white;
             padding: 20px;
             text-align: center;
+            margin:0
+
         }
+
 
         #backToTopBtn {
             position: fixed;
@@ -161,10 +167,7 @@
         <div class="footer">
             <div class="container">
                 &copy; 2024 - Kabasa - <a asp-area="" asp-controller="Home" asp-action="Privacy" style="color:Yellow">Privacy</a><br/>
-                    In case of an investigation by any federal entity or similar<br/>
-                    I do not have any involvement with this group or with the people in it<br/>
-                    I do not know how I am here, probably added by a third party<br/>
-                    I do not support any actions by the member of this group.
+                This is a website
             </div>
         </div>
     </footer>

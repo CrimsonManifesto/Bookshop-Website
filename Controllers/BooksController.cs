@@ -53,7 +53,8 @@ namespace Bookshop_Website.Controllers
         // Post: Books/SearchResults
         public async Task<IActionResult> SearchResults (String SearchPhrase)
         {
-            return View("Index", await _context.Books.Where(j => j.Title.Contains(SearchPhrase)).ToListAsync());
+            ViewData["SearchPhrase"] = SearchPhrase;
+            return View("Search", await _context.Books.Where(j => j.Title.Contains(SearchPhrase)).ToListAsync());
         }
         // GET: Books/Create
         [Authorize(Roles = "Admin")]
@@ -191,7 +192,7 @@ namespace Bookshop_Website.Controllers
                 .Where(b => b.Genre.Contains(SearchPhrase))
                 .ToListAsync();
 
-            return View("Index", books);
+            return View("Search", books);
         }
         public IActionResult AddToCart(int id)
         {

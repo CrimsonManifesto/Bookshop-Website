@@ -20,7 +20,7 @@
 @foreach (var item in Model) {
         <div class="card" id="bookCard">
         <a asp-action="Details" asp-route-id="@item.BookId">
-            <img class="rounded float-start" src="@item.ImageUrl" alt="Image for @item.Title" style="width: 150px; height: auto;" />
+            <img class="rounded float-start" src="@item.ImageUrl" alt="Image for @item.Title" style="width: 150px; height: 220px;" />
         </a>        <div class="card-body">
             <h5 class="card-title">
                 @Html.ActionLink(item.Title, "Details", new { id = item.BookId })
@@ -45,16 +45,16 @@
     padding-inline: 10px;
     flex-wrap: wrap;
     justify-content: flex-start;
-    min-width
+
 
     }
 #bookCard{
     width:9.5rem;
     margin-top:1rem;
     margin-inline: 0.94rem;
-        height: 25rem;
-
-}
+    height: 25rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
 #bookHeader{
     display:flex;
     flex-direction:row;

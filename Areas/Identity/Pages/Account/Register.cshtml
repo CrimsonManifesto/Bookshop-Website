@@ -4,7 +4,11 @@
     ViewData["Title"] = "Register";
 }
 
+<div class="container" id="whiteContainer" style="background-color:white">
+
+
 <h1>@ViewData["Title"]</h1>
+
 
 <div class="row">
     <div class="col-md-4">
@@ -64,7 +68,19 @@
         </section>
     </div>
 </div>
-
+</div>
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
+
+<style>
+
+    #whiteContainer {
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow for visual effect */
+        min-height:38rem;
+
+    }
+
+</style>

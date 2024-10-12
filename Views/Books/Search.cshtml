@@ -1,1 +1,98 @@
-﻿
+﻿@model IEnumerable<Bookshop_Website.Models.Books>
+
+@{
+    ViewData["Title"] = "Index";
+    ViewData["ShowBanner"] = true;
+
+}
+
+@if (User.IsInRole("Admin"))
+{
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+}
+
+<div class="container" id="whiteContainer" style="background-color:white">
+
+
+<div class="container" id="bookHeader">
+
+@if (ViewData["SearchPhrase"] != null)
+{
+    <h3>
+        Search Result:
+        <span id="searchResultText">@ViewData["SearchPhrase"]</span>  
+    </h3>
+}
+</div>
+<div class="container" style="background-color:white">
+
+    <div class="container" id="cardContainer">
+        @foreach (var item in Model)
+        {
+            <div class="card" id="bookCard">
+                <a asp-action="Details" asp-route-id="@item.BookId">
+                    <img class="rounded float-start" src="@item.ImageUrl" alt="Image for @item.Title" style="width: 150px; height: 220px;" />
+                </a>        <div class="card-body">
+                    <h5 class="card-title">
+                        @Html.ActionLink(item.Title, "Details", new { id = item.BookId })
+
+                    </h5>
+                    <p class="card-text" id="textAuthor">
+                        @Html.DisplayFor(modelItem => item.Author)
+
+                    </p>
+                </div>
+            </div>
+
+        }
+    </div>
+</div>
+</div>
+<style>
+    #cardContainer{
+        background-color:white;
+        display:flex;
+        flex-direction:row;
+        padding-inline: 10px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+
+        }
+    #bookCard{
+        width:9.5rem;
+        margin-top:1rem;
+        margin-inline: 0.94rem;
+        height: 25rem;
+
+    }
+    #bookHeader{
+        display:flex;
+        flex-direction:row;
+        background-color: #FCDDEF;
+        font-size:2rem;
+        justify-content:center;
+        font-weight:bold;
+        border-top-left-radius:20px;
+        border-top-right-radius: 20px
+        }
+
+        #textAuthor{
+            font-size:0.8rem
+        }
+
+    #searchResultText {
+        color: #24A0ED
+    }
+
+
+    #whiteContainer {
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow for visual effect */
+        min-height: 20rem;
+    }
+
+</style>
