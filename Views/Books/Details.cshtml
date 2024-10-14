@@ -4,71 +4,147 @@
     ViewData["Title"] = "Details";
 }
 
-<div class="container" style="background-color:white">
+
+<div class="container">
+
+    <div class="row">
+        @* Book image *@
+        <div class="col-4" style="background-color:white">
+            <div class="row" id="imageRow">
+            <img src="@Model.ImageUrl" alt="@Model.Title" id="image"/>
+            </div>
+            <div class="row">
+                <div class="col">
+                   @*  ------------------------> need improve  *@
+                    <form asp-action="AddtoCart" asp-route-id="@Model?.BookId" method="post" style="display:inline;">
+                        <button type="submit" class="btn interactBtn" style="color:white; background-color:red">
+                            Buy
+                        </button>
+                    </form>
+                </div>
+                <div class="col">
+                    <form asp-action="AddtoCart" asp-route-id="@Model?.BookId" method="post" style="display:inline;">
+                        <button type="submit" class="btn interactBtn" style="color:red;border-width:2px;border-color:red">
+                            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                        </button>
+                    </form>
+                </div>
+            </div>
+            @if (User.IsInRole("Admin"))
+            {
+                <div>
+                    <a asp-action="Edit" asp-route-id="@Model?.BookId">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@Model?.BookId">Delete</a>
+                </div>
+            }
+
+        </div>
+        <div class="col overflow-auto" style="height:45rem">
+            @* Book title and price *@
+            <div class="col" style="background-color:white" id="infoCol">
+                <h1 style="font-weight:bold">@Html.DisplayFor(Model => Model.Title)</h1>
+                <h1 style="color:red;font-weight:bold">@Html.DisplayFor(Model => Model.Price)</h1>
+                <h3>@Html.DisplayFor(Model => Model.Author)</h3>
+            </div>
+
+            @* detail info *@
+            <div class="col" style="background-color:white" id="infoCol">
+                <h3 id="sectionHeader">Detail information</h3>
+                <div class="row">
+                    <div class="col">
+                        <p id="infoText">@Html.DisplayNameFor(Model => Model.Author)</p>
+                    </div>
+                    <div class="col">
+                        @Html.DisplayFor(Model => Model.Author)
+
+                    </div>
+                </div>
+                <div class="row"> 
+                    <div class="col">
+                        <p id="infoText">@Html.DisplayNameFor(Model => Model.Publisher)</p>
+                    </div>
+                    <div class="col">
+                        @Html.DisplayFor(Model => Model.Publisher)
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p id="infoText">@Html.DisplayNameFor(Model => Model.Genre)</p>
+                    </div>
+                    <div class="col">
+                        @Html.DisplayFor(Model => Model.Genre)
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p id="infoText">@Html.DisplayNameFor(Model => Model.Language)</p>
+                    </div>
+                    <div class="col">
+                        @Html.DisplayFor(Model => Model.Language)
+
+                    </div>
+                </div>
+            </div>
 
 
-<h2>@Html.DisplayFor(model => model.Title)</h2>
+            @* description *@
+            <div class="col" style="background-color:white" id="infoCol">
+                <h3 id="sectionHeader">Description</h3>
+                <p>@Html.DisplayFor(Model => Model.Description)</p>
+            </div>
 
+        </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@* Comment *@
 <div>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Author)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Author)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Genre)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Genre)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Language)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Language)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-        <dd class="col-sm-10">
-            @String.Format("{0:C}", Model.Price)
-        </dd>
-                <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Publisher)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Publisher)
-        </dd>
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-        <dd class="col-sm-10">
-            <img src="@Model.ImageUrl" alt="Image for @Model.Title" style="width: 400px; height: auto;" />
-        </dd>
-    </dl>
 </div>
-<div>
-    <form asp-action="Buy" asp-route-id="@Model?.BookId" method="post" style="display:inline;">
-        <input type="submit" value="Buy" class="btn btn-primary" />
-    </form>
-    <form asp-action="AddtoCart" asp-route-id="@Model?.BookId" method="post" style="display:inline;">
-        <input type="submit" value="Add to Cart" class="btn btn-success" />
-    </form>
-</div>
-@if (User.IsInRole("Admin"))
-{
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.BookId">Edit</a> |
-    <a asp-action="Delete" asp-route-id="@Model?.BookId">Delete</a>
-</div>
-}
-<a asp-action="Index">Back to List</a>
 
-</div>
+<Style>
+    #image{
+        height: 25rem;
+        width: 18rem;
+        margin-top: 2rem
+   }
+   #imageRow{
+       justify-content:center
+   }
+
+    #infoCol {
+        padding-inline-start: 1.3rem;
+        padding-top: 0.6rem;
+        padding-bottom: 0.8rem;
+        margin-bottom: 0.8rem;
+        padding-inline-end: 0.4rem
+
+    }
+    #infoText{
+        color: #777777;
+        
+    }
+    #sectionHeader{
+        font-weight:bold;
+        margin-bottom: 1rem
+    }
+    .interactBtn{
+        width: 100%;
+        margin-top: 2rem;
+        font-weight:bold
+    }
+
+</Style>

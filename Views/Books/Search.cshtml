@@ -25,6 +25,16 @@
         <span id="searchResultText">@ViewData["SearchPhrase"]</span>  
     </h3>
 }
+        @if (ViewData["Category"] != null)
+        {
+            <h3>
+                <span id="searchResultText">@ViewData["Category"]</span>
+                Books
+            </h3>
+        }
+
+
+
 </div>
 <div class="container" style="background-color:white">
 

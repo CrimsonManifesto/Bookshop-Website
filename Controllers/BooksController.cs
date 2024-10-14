@@ -188,6 +188,7 @@ namespace Bookshop_Website.Controllers
         // POST: Books/GenresShow
         public async Task<IActionResult> GenresShow(string SearchPhrase)
         {
+            ViewData["Category"] = SearchPhrase;
             var books = await _context.Books
                 .Where(b => b.Genre.Contains(SearchPhrase))
                 .ToListAsync();
