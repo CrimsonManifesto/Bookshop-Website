@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4jf05VEYe+g=",
+  "dgSpecHash": "geK4OOiP1A4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\Bookshop-Website.csproj",
+  "projectFilePath": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\Bookshop-Website.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

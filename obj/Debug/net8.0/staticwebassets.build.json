@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "S8yl2pJ0EM2Bci/STpOdveKkwlA36A9VR6ZTWpBthqs=",
+  "Hash": "vVZtznzEnH0QOUvKWU5ZENZk5i9P5DaxHSwf4MymXdQ=",
   "Source": "Bookshop-Website",
   "BasePath": "_content/Bookshop-Website",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "Bookshop-Website\\wwwroot",
       "Source": "Bookshop-Website",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "Pattern": "**"
     }
@@ -20,7 +20,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap.css",
       "AssetKind": "All",
@@ -39,7 +39,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap.css.map",
       "AssetKind": "All",
@@ -58,7 +58,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap.min.css",
       "AssetKind": "All",
@@ -77,7 +77,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -96,7 +96,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -115,7 +115,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -134,7 +134,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -153,7 +153,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -172,7 +172,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -191,7 +191,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -210,7 +210,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -229,7 +229,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -248,7 +248,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -267,7 +267,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -286,7 +286,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -305,7 +305,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -324,7 +324,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -343,7 +343,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -362,7 +362,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -381,7 +381,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -400,7 +400,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -419,7 +419,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -438,7 +438,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -457,7 +457,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -476,7 +476,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -495,7 +495,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -514,7 +514,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -533,7 +533,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -552,7 +552,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -571,7 +571,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -590,7 +590,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -609,7 +609,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -628,7 +628,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -647,7 +647,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -666,7 +666,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -685,7 +685,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -704,7 +704,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -723,7 +723,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -742,7 +742,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -761,7 +761,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -780,7 +780,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "js/bootstrap.js",
       "AssetKind": "All",
@@ -799,7 +799,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "js/bootstrap.js.map",
       "AssetKind": "All",
@@ -818,7 +818,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "js/bootstrap.min.js",
       "AssetKind": "All",
@@ -837,7 +837,7 @@
       "Identity": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1993,10 +1993,10 @@
       "OriginalItemSpec": "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\8.0.7\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Bookshop-Website.styles.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Bookshop-Website.styles.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "Bookshop-Website.styles.css",
       "AssetKind": "All",
@@ -2009,13 +2009,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Bookshop-Website.styles.css"
+      "OriginalItemSpec": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Bookshop-Website.styles.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Bookshop-Website.bundle.scp.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Bookshop-Website.bundle.scp.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "Bookshop-Website.bundle.scp.css",
       "AssetKind": "All",
@@ -2028,13 +2028,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Bookshop-Website.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Bookshop-Website.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\assets\\img\\normal\\image1.png",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\assets\\img\\normal\\image1.png",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "assets/img/normal/image1.png",
       "AssetKind": "All",
@@ -2050,10 +2050,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\normal\\image1.png"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\assets\\img\\normal\\image2.png",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\assets\\img\\normal\\image2.png",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "assets/img/normal/image2.png",
       "AssetKind": "All",
@@ -2069,10 +2069,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\normal\\image2.png"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide1.png",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide1.png",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "assets/img/slide/slide1.png",
       "AssetKind": "All",
@@ -2088,10 +2088,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\slide\\slide1.png"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide2.png",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide2.png",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "assets/img/slide/slide2.png",
       "AssetKind": "All",
@@ -2107,10 +2107,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\slide\\slide2.png"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide3.png",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide3.png",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "assets/img/slide/slide3.png",
       "AssetKind": "All",
@@ -2126,10 +2126,29 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\slide\\slide3.png"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\assets\\svg\\icons8-google.svg",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
+      "BasePath": "_content/Bookshop-Website",
+      "RelativePath": "assets/svg/icons8-google.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\svg\\icons8-google.svg"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\css\\site.css",
+      "SourceId": "Bookshop-Website",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -2145,10 +2164,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\css\\styles.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\css\\styles.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/styles.css",
       "AssetKind": "All",
@@ -2164,10 +2183,10 @@
       "OriginalItemSpec": "wwwroot\\css\\styles.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\favicon.ico",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -2183,10 +2202,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\index.html",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -2202,10 +2221,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\js\\scripts.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\js\\scripts.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "js/scripts.js",
       "AssetKind": "All",
@@ -2221,10 +2240,10 @@
       "OriginalItemSpec": "wwwroot\\js\\scripts.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\js\\site.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -2240,10 +2259,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -2259,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -2278,10 +2297,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -2297,10 +2316,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -2316,10 +2335,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -2335,10 +2354,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -2354,10 +2373,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -2373,10 +2392,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -2392,10 +2411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -2411,10 +2430,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -2430,10 +2449,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -2449,10 +2468,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -2468,10 +2487,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -2487,10 +2506,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -2506,10 +2525,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -2525,10 +2544,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -2544,10 +2563,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -2563,10 +2582,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -2582,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -2601,10 +2620,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -2620,10 +2639,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -2639,10 +2658,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -2658,10 +2677,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -2677,10 +2696,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -2696,10 +2715,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -2715,10 +2734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -2734,10 +2753,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -2753,10 +2772,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -2772,10 +2791,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2791,10 +2810,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -2810,10 +2829,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -2829,10 +2848,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -2848,10 +2867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -2867,10 +2886,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2886,10 +2905,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2905,10 +2924,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2924,10 +2943,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2943,10 +2962,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2962,10 +2981,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2981,10 +3000,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -3000,10 +3019,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -3019,10 +3038,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -3038,10 +3057,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -3057,10 +3076,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -3076,10 +3095,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -3095,10 +3114,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\all.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\all.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/css/all.css",
       "AssetKind": "All",
@@ -3114,10 +3133,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\all.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\all.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\all.min.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/css/all.min.css",
       "AssetKind": "All",
@@ -3133,10 +3152,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\all.min.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\brands.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\brands.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/css/brands.css",
       "AssetKind": "All",
@@ -3152,10 +3171,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\brands.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\brands.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\brands.min.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/css/brands.min.css",
       "AssetKind": "All",
@@ -3171,10 +3190,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\brands.min.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\fontawesome.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\fontawesome.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/css/fontawesome.css",
       "AssetKind": "All",
@@ -3190,10 +3209,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\fontawesome.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\fontawesome.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\fontawesome.min.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/css/fontawesome.min.css",
       "AssetKind": "All",
@@ -3209,10 +3228,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\fontawesome.min.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\regular.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\regular.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/css/regular.css",
       "AssetKind": "All",
@@ -3228,10 +3247,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\regular.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\regular.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\regular.min.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/css/regular.min.css",
       "AssetKind": "All",
@@ -3247,10 +3266,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\regular.min.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\solid.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\solid.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/css/solid.css",
       "AssetKind": "All",
@@ -3266,10 +3285,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\solid.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\solid.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\solid.min.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/css/solid.min.css",
       "AssetKind": "All",
@@ -3285,10 +3304,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\solid.min.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\svg-with-js.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\svg-with-js.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/css/svg-with-js.css",
       "AssetKind": "All",
@@ -3304,10 +3323,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\svg-with-js.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\svg-with-js.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\svg-with-js.min.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/css/svg-with-js.min.css",
       "AssetKind": "All",
@@ -3323,10 +3342,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\svg-with-js.min.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\v4-font-face.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\v4-font-face.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/css/v4-font-face.css",
       "AssetKind": "All",
@@ -3342,10 +3361,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\v4-font-face.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\v4-font-face.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\v4-font-face.min.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/css/v4-font-face.min.css",
       "AssetKind": "All",
@@ -3361,10 +3380,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\v4-font-face.min.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\v4-shims.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\v4-shims.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/css/v4-shims.css",
       "AssetKind": "All",
@@ -3380,10 +3399,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\v4-shims.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\v4-shims.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\v4-shims.min.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/css/v4-shims.min.css",
       "AssetKind": "All",
@@ -3399,10 +3418,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\v4-shims.min.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\v5-font-face.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\v5-font-face.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/css/v5-font-face.css",
       "AssetKind": "All",
@@ -3418,10 +3437,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\v5-font-face.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\v5-font-face.min.css",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\v5-font-face.min.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/css/v5-font-face.min.css",
       "AssetKind": "All",
@@ -3437,10 +3456,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\css\\v5-font-face.min.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\all.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\all.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/js/all.js",
       "AssetKind": "All",
@@ -3456,10 +3475,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\js\\all.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\all.min.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\all.min.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/js/all.min.js",
       "AssetKind": "All",
@@ -3475,10 +3494,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\js\\all.min.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\brands.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\brands.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/js/brands.js",
       "AssetKind": "All",
@@ -3494,10 +3513,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\js\\brands.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\brands.min.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\brands.min.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/js/brands.min.js",
       "AssetKind": "All",
@@ -3513,10 +3532,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\js\\brands.min.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\conflict-detection.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\conflict-detection.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/js/conflict-detection.js",
       "AssetKind": "All",
@@ -3532,10 +3551,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\js\\conflict-detection.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\conflict-detection.min.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\conflict-detection.min.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/js/conflict-detection.min.js",
       "AssetKind": "All",
@@ -3551,10 +3570,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\js\\conflict-detection.min.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\fontawesome.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\fontawesome.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/js/fontawesome.js",
       "AssetKind": "All",
@@ -3570,10 +3589,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\js\\fontawesome.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\fontawesome.min.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\fontawesome.min.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/js/fontawesome.min.js",
       "AssetKind": "All",
@@ -3589,10 +3608,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\js\\fontawesome.min.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\regular.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\regular.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/js/regular.js",
       "AssetKind": "All",
@@ -3608,10 +3627,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\js\\regular.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\regular.min.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\regular.min.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/js/regular.min.js",
       "AssetKind": "All",
@@ -3627,10 +3646,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\js\\regular.min.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\solid.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\solid.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/js/solid.js",
       "AssetKind": "All",
@@ -3646,10 +3665,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\js\\solid.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\solid.min.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\solid.min.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/js/solid.min.js",
       "AssetKind": "All",
@@ -3665,10 +3684,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\js\\solid.min.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\v4-shims.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\v4-shims.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/js/v4-shims.js",
       "AssetKind": "All",
@@ -3684,10 +3703,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\js\\v4-shims.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\v4-shims.min.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\v4-shims.min.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/js/v4-shims.min.js",
       "AssetKind": "All",
@@ -3703,10 +3722,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\js\\v4-shims.min.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\sprites\\brands.svg",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\sprites\\brands.svg",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/sprites/brands.svg",
       "AssetKind": "All",
@@ -3722,10 +3741,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\sprites\\brands.svg"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\sprites\\regular.svg",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\sprites\\regular.svg",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/sprites/regular.svg",
       "AssetKind": "All",
@@ -3741,10 +3760,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\sprites\\regular.svg"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\sprites\\solid.svg",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\sprites\\solid.svg",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/sprites/solid.svg",
       "AssetKind": "All",
@@ -3760,10 +3779,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\sprites\\solid.svg"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.ttf",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.ttf",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/webfonts/fa-brands-400.ttf",
       "AssetKind": "All",
@@ -3779,10 +3798,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.ttf"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.woff2",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.woff2",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/webfonts/fa-brands-400.woff2",
       "AssetKind": "All",
@@ -3798,10 +3817,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.woff2"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.ttf",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.ttf",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/webfonts/fa-regular-400.ttf",
       "AssetKind": "All",
@@ -3817,10 +3836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.ttf"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.woff2",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.woff2",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/webfonts/fa-regular-400.woff2",
       "AssetKind": "All",
@@ -3836,10 +3855,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.woff2"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.ttf",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.ttf",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/webfonts/fa-solid-900.ttf",
       "AssetKind": "All",
@@ -3855,10 +3874,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.ttf"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.woff2",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.woff2",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/webfonts/fa-solid-900.woff2",
       "AssetKind": "All",
@@ -3874,10 +3893,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.woff2"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\webfonts\\fa-v4compatibility.ttf",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\webfonts\\fa-v4compatibility.ttf",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/webfonts/fa-v4compatibility.ttf",
       "AssetKind": "All",
@@ -3893,10 +3912,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-v4compatibility.ttf"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\webfonts\\fa-v4compatibility.woff2",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\webfonts\\fa-v4compatibility.woff2",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/font-awesome/webfonts/fa-v4compatibility.woff2",
       "AssetKind": "All",
@@ -3912,10 +3931,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\font-awesome\\webfonts\\fa-v4compatibility.woff2"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -3931,10 +3950,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -3950,10 +3969,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -3969,10 +3988,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -3988,10 +4007,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -4007,10 +4026,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -4026,10 +4045,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -4045,10 +4064,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -4064,10 +4083,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -4083,10 +4102,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -4102,10 +4121,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -4121,10 +4140,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Web\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
