@@ -183,7 +183,7 @@ namespace Bookshop_Website.Controllers
                 .Distinct()
                 .ToListAsync();
 
-            return PartialView("_GenresPartial", genres); // Pass genres directly to the partial view
+            return PartialView("_GenresPartial"); // Pass genres directly to the partial view
         }
         // POST: Books/GenresShow
         public async Task<IActionResult> GenresShow(string SearchPhrase)
@@ -191,6 +191,26 @@ namespace Bookshop_Website.Controllers
             ViewData["Category"] = SearchPhrase;
             var books = await _context.Books
                 .Where(b => b.Genre.Contains(SearchPhrase))
+                .ToListAsync();
+
+            return View("Search", books);
+        }
+        // GET: Books/Genres
+        public async Task<IActionResult> Languages()
+        {
+            var genres = await _context.Books
+                .Select(b => b.Language)
+                .Distinct()
+                .ToListAsync();
+
+            return PartialView("_GenresPartial"); 
+        }
+        // POST: Books/GenresShow
+        public async Task<IActionResult> LanguagesShow(string SearchPhrase)
+        {
+            ViewData["Category"] = SearchPhrase;
+            var books = await _context.Books
+                .Where(b => b.Language.Contains(SearchPhrase))
                 .ToListAsync();
 
             return View("Search", books);

@@ -1,11 +1,88 @@
-﻿@model IEnumerable<string>
+﻿<div class="row">
+<div class="col-sm-4">
+        <div class="dropdown-header">Genres</div>
 
-@foreach (var genre in Model)
-{
-    <li>
         <form asp-controller="Books" asp-action="GenresShow" method="post">
-            <input type="hidden" name="SearchPhrase" value="@genre" />
-            <button class="dropdown-item" type="submit">@genre</button>
+        <input type="hidden" name="SearchPhrase" value="Education" />
+            <button class="dropdown-item" type="submit">Education</button>
+
         </form>
-    </li>
-}
+                <form asp-controller="Books" asp-action="GenresShow" method="post">
+        <input type="hidden" name="SearchPhrase" value="Political" />
+            <button class="dropdown-item" type="submit">Political</button>
+
+        </form>
+    <form asp-controller="Books" asp-action="GenresShow" method="post">
+        <input type="hidden" name="SearchPhrase" value="Romance" />
+        <button class="dropdown-item" type="submit">Romance</button>
+
+    </form>
+    <form asp-controller="Books" asp-action="GenresShow" method="post">
+            <input type="hidden" name="SearchPhrase" value="Sci-fi" />
+            <button class="dropdown-item" type="submit">Sci-fi</button>
+
+    </form>
+</div>
+
+<div class="col-sm-4">
+        <div class="dropdown-header"></div>
+
+    <form asp-controller="Books" asp-action="GenresShow" method="post">
+        <input type="hidden" name="SearchPhrase" value="History" />
+            <button class="dropdown-item" type="submit">History</button>
+
+    </form>
+    <form asp-controller="Books" asp-action="GenresShow" method="post">
+        <input type="hidden" name="SearchPhrase" value="Fantasy" />
+        <button class="dropdown-item" type="submit">Fantasy</button>
+
+    </form>
+    <form asp-controller="Books" asp-action="GenresShow" method="post">
+        <input type="hidden" name="SearchPhrase" value="Self-Help" />
+        <button class="dropdown-item" type="submit">Self-Help</button>
+
+    </form>
+    <form asp-controller="Books" asp-action="GenresShow" method="post">
+        <input type="hidden" name="SearchPhrase" value="Horror" />
+            <button class="dropdown-item" type="submit">Horror</button>
+
+    </form>
+</div>
+    
+    <div class="col-sm-4">
+        <div class="dropdown-header">Languages</div>
+
+        <form asp-controller="Books" asp-action="LanguagesShow" method="post">
+            <input type="hidden" name="SearchPhrase" value="English" />
+            <button class="dropdown-item" type="submit">English</button>
+
+        </form>
+        <form asp-controller="Books" asp-action="LanguagesShow" method="post">
+            <input type="hidden" name="SearchPhrase" value="French" />
+            <button class="dropdown-item" type="submit">French</button>
+
+        </form>
+        <form asp-controller="Books" asp-action="LanguagesShow" method="post">
+            <input type="hidden" name="SearchPhrase" value="German" />
+            <button class="dropdown-item" type="submit">German</button>
+
+        </form>
+        <form asp-controller="Books" asp-action="LanguagesShow" method="post">
+            <input type="hidden" name="SearchPhrase" value="Chinese" />
+            <button class="dropdown-item" type="submit">Chinese</button>
+
+        </form>
+        <form asp-controller="Books" asp-action="LanguagesShow" method="post">
+            <input type="hidden" name="SearchPhrase" value="Russian" />
+            <button class="dropdown-item" type="submit">Russian</button>
+
+        </form>
+    </div>
+</div>
+
+<style>
+    .dropdown-header{
+        height: 34px;
+    }
+
+</style>

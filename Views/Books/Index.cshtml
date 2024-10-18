@@ -12,10 +12,8 @@
         <a asp-action="Create">Create New</a>
     </p>
 }
-<div class="container" id="bookHeader">All Books</div>
-
 <div class="container" style="background-color:white">
-
+    <h2>All Books</h2>
     <div class="container" id="cardContainer">
         @foreach (var item in Model)
         {
@@ -23,7 +21,7 @@
                 <a asp-action="Details" asp-route-id="@item.BookId">
                     <img class="rounded float-start" src="@item.ImageUrl" alt="Image for @item.Title" style="width: 150px; height: 220px;" />
                 </a>
-                <div class="card-body w-100">
+                <div class="card-body w-100" id="cardTitle">
                     @Html.ActionLink(item.Title, "Details", new { id = item.BookId }, new { @class = "custom-card-title px-3", title = item.Title })
                 </div>
                 <div class="row w-100 px-3 d-flex justify-content-center align-items-center m-0">
@@ -37,9 +35,13 @@
                     }
 
                 </div>
-                <div class="row w-100 px-3">
 
-                    <h5 class="col original-price m-0">@item.OriginalPrice.ToString("C")</h5>
+                <div class="row w-100 px-3">
+                    @if (item.DiscountPercentage > 0)
+                    {
+                        <h5 class="col original-price m-0">@item.OriginalPrice.ToString("C")</h5>
+
+                    }
 
                 </div>
 
@@ -96,7 +98,7 @@
         text-overflow: ellipsis;
         width: 100%;
         font-size: 15px;
-        height: 40px
+        height: 45px
 
     }
 
@@ -104,13 +106,12 @@
         .custom-card-title:hover {
             color: black;
             text-decoration: none;
-            height: 40px
+            height: 45px
         }
 
 
 
     .card-body {
-        height: 500px;
         padding-bottom: 0;
         padding-top: 10px;
     }
@@ -139,6 +140,9 @@
     .percentage-container{
         margin-right:30px;
 
+    }
+    #cardTitle{
+        height: 58px;
     }
 
 </style>
