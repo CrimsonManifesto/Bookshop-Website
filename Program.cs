@@ -79,10 +79,10 @@ app.UseStaticFiles();
 app.UseSession();
 app.UseRouting();
 app.UseAuthorization();
-var supportedCultures = new[] { new CultureInfo("vn-VN") };
+var supportedCultures = new[] { new CultureInfo("en-US") };
 var localizationOptions = new RequestLocalizationOptions
 {
-    DefaultRequestCulture = new RequestCulture("vn-VN"),
+    DefaultRequestCulture = new RequestCulture("en-US"),
     SupportedCultures = supportedCultures,
     SupportedUICultures = supportedCultures
 };

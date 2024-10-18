@@ -70,7 +70,7 @@ namespace Bookshop_Website.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Create([Bind("BookId,Title,Author,Genre,Publisher,Language,Price,ImageUrl,Description")] Books books)
+        public async Task<IActionResult> Create([Bind("BookId,Title,Author,Genre,Publisher,Language,DiscountPercentage,OriginalPrice,ImageUrl,Description")] Books books)
         {
             if (ModelState.IsValid)
             {
@@ -105,7 +105,7 @@ namespace Bookshop_Website.Controllers
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
 
-        public async Task<IActionResult> Edit(int id, [Bind("BookId,Title,Author,Genre,Publisher,Language,Price,ImageUrl,Description")] Books books)
+        public async Task<IActionResult> Edit(int id, [Bind("BookId,Title,Author,Genre,Publisher,Language,DiscountPercentage,OriginalPrice,ImageUrl,Description")] Books books)
         {
             if (id != books.BookId)
             {

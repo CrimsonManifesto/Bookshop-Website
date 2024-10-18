@@ -22,14 +22,27 @@
             <div class="card border-0 pt-3" id="bookCard">
                 <a asp-action="Details" asp-route-id="@item.BookId">
                     <img class="rounded float-start" src="@item.ImageUrl" alt="Image for @item.Title" style="width: 150px; height: 220px;" />
-                </a>        
+                </a>
                 <div class="card-body w-100">
-                    @Html.ActionLink(item.Title, "Details", new { id = item.BookId }, new { @class = "custom-card-title", title=item.Title})
+                    @Html.ActionLink(item.Title, "Details", new { id = item.BookId }, new { @class = "custom-card-title px-3", title = item.Title })
                 </div>
-                <div class="w-100 px-3">
+                <div class="row w-100 px-3 d-flex justify-content-center align-items-center m-0">
 
-                    <h5 class="price">@item.Price.ToString("C")</h5>
+                    <h5 class="col price m-0">@item.Price.ToString("C")</h5>
+                    @if (item.DiscountPercentage > 0)
+                    {
+                        <div class="col align-items-center percentage-container text-center">
+                            <h5 class="col discount-percentage m-0 ">@item.DiscountPercentage.ToString("0")%</h5>
+                        </div>
+                    }
+
                 </div>
+                <div class="row w-100 px-3">
+
+                    <h5 class="col original-price m-0">@item.OriginalPrice.ToString("C")</h5>
+
+                </div>
+
             </div>
 
         }
@@ -77,30 +90,55 @@
         color: black;
         text-decoration: none;
         display: -webkit-box;
-        -webkit-box-orient: vertical; 
-        -webkit-line-clamp: 2; 
-        overflow: hidden; 
-        text-overflow: ellipsis; 
-        width: 100%; 
-        font-size:15px
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+        font-size: 15px;
+        height: 40px
+
     }
 
 
         .custom-card-title:hover {
             color: black;
             text-decoration: none;
+            height: 40px
         }
 
-    .price {
-        color: red;
-        font-weight:bold;
 
-    }
 
     .card-body {
         height: 500px;
         padding-bottom: 0;
+        padding-top: 10px;
     }
 
+    .price {
+        color: red;
+        font-weight: bold;
+        font-size: 19px;
+
+    }
+
+    .original-price {
+        color: grey;
+        text-decoration: line-through;
+        font-size: 16px;
+    }
+
+    .discount-percentage {
+        color: white;
+        background-color: red;
+        font-size: 14px;
+        border-radius: 7px;
+        width: 35px;
+
+    }
+    .percentage-container{
+        margin-right:30px;
+
+    }
 
 </style>

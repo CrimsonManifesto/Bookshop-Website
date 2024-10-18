@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 using System.Globalization;
 
 namespace Bookshop_Website.Models
@@ -15,7 +16,13 @@ namespace Bookshop_Website.Models
         public string Author { get; set; }
         [DisplayFormat(DataFormatString = "{0:C}")]
 
-        public decimal Price { get; set; }
+        [Precision(18, 3)]
+        public decimal OriginalPrice { get; set; }
+
+        [Precision(18, 3)]
+        public decimal DiscountPercentage { get; set; }
+
+        public decimal Price => OriginalPrice * (1 - DiscountPercentage / 100);
 
         public string Publisher { get; set; }
 
