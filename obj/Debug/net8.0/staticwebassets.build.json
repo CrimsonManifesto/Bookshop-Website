@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vVZtznzEnH0QOUvKWU5ZENZk5i9P5DaxHSwf4MymXdQ=",
+  "Hash": "FwZ1SbxKbS7bmyKadye6Hb/lO4Vqf0XFu2Tzco+jdYk=",
   "Source": "Bookshop-Website",
   "BasePath": "_content/Bookshop-Website",
   "Mode": "Default",
@@ -2031,12 +2031,12 @@
       "OriginalItemSpec": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Bookshop-Website.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\assets\\img\\normal\\image1.png",
+      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide.png",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
-      "RelativePath": "assets/img/normal/image1.png",
+      "RelativePath": "assets/img/slide/slide.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2047,26 +2047,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\normal\\image1.png"
-    },
-    {
-      "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\assets\\img\\normal\\image2.png",
-      "SourceId": "Bookshop-Website",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\",
-      "BasePath": "_content/Bookshop-Website",
-      "RelativePath": "assets/img/normal/image2.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\normal\\image2.png"
+      "OriginalItemSpec": "wwwroot\\assets\\img\\slide\\slide.png"
     },
     {
       "Identity": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide1.png",

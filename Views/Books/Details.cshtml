@@ -32,9 +32,21 @@
             </div>
             @if (User.IsInRole("Admin"))
             {
-                <div>
-                    <a asp-action="Edit" asp-route-id="@Model?.BookId">Edit</a> |
-                    <a asp-action="Delete" asp-route-id="@Model?.BookId">Delete</a>
+                <div class="row">
+                    <div class="col">
+                        <form style="display:inline;">
+                            <button asp-action="Edit" asp-route-id="@Model?.BookId" type="submit" class="btn btn-outline-info interactBtn">
+                                Edit
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col">
+                        <form  method="post" style="display:inline;">
+                            <button asp-action="Delete" asp-route-id="@Model?.BookId" type="submit" class="btn btn-outline-warning interactBtn">
+                                Delete
+                            </button>
+                        </form>
+                    </div>
                 </div>
             }
 
@@ -43,7 +55,7 @@
             @* Book title and price *@
             <div class="col" style="background-color:white" id="infoCol">
                 <h1 style="font-weight:bold">@Html.DisplayFor(Model => Model.Title)</h1>
-                <h1 style="color:red;font-weight:bold">@Html.DisplayFor(Model => Model.Price)</h1>
+                <h1 style="color:red;font-weight:bold">@Model.Price.ToString("C")</h1>
                 <h3>@Html.DisplayFor(Model => Model.Author)</h3>
             </div>
 

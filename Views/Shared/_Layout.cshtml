@@ -13,93 +13,6 @@
     <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin asp-append-version="true" />
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet" asp-append-version="true"/>
 
-    <style>
-        .dropdown:hover .dropdown-menu {
-            display: block;
-        }
-
-        body, html {
-            height: 100%;
-            margin: 0;
-
-        }
-
-        main {
-            flex: 1; 
-        }
-        .wrapper {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; 
-        }
-        .content {
-            flex: 1;
-            height:100%;
-            display:flex;
-            flex-direction: column;
-        }
-
-        .footer {
-            background-color: red;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            margin:0
-
-        }
-
-
-        #backToTopBtn {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            z-index: 100;
-            display: none;
-            font-size: larger;
-            padding: 15px 22px;
-            cursor: pointer;
-        }
-        #backToTopBtn:hover {
-                background-color: cornflowerblue;
-        }
-        #brandText{
-            color: red;
-            font-weight: 800;
-            font-size: 25px
-        }
-
-
-        #navButton {
-            display:flex;
-            align-items: center;
-            flex-direction:column;
-            justify-content: center;
-            color: #7A7E7F;
-            font-size:15px;
-            width: 50px;
-            height: 50px;
-            margin-inline: 20px
-
-        }
-        #navSymbol{
-            font-size: 15px;
-        }
-
-
-
-        #catButton {
-            margin-left: 20px;
-            color: #7A7E7F;
-            font-size: 20px
-        }
-        #searchContainer{
-            height: 45px
-        }
-
-        .dropdown-menu.columns-3 {
-            min-width: 600px;
-        }
-    </style>
 </head>
 <body style="background-color:#F0F0F0">
     <div class="wrapper">
@@ -107,7 +20,7 @@
             <!--Back to top button-->
             <button class="btn rounded-circle" id="backToTopBtn" title="Back to top">▲</button>
     <header>
-                <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-red border-bottom box-shadow mb-3" style="background-color: white; padding-inline: 100px;">
+                <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-red border-bottom box-shadow" style="background-color: white; padding-inline: 100px;">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Books" asp-action="Index" id="brandText">Kabasa</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -214,3 +127,98 @@
 
 </body>
 </html>
+
+
+<style>
+    header{
+        margin:0;
+    }
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
+
+    main {
+        flex: 1;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .content {
+        flex: 1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer {
+        background-color: red;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        margin: 0
+    }
+
+
+    #backToTopBtn {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 100;
+        display: none;
+        font-size: larger;
+        padding: 15px 22px;
+        cursor: pointer;
+    }
+
+        #backToTopBtn:hover {
+            background-color: cornflowerblue;
+        }
+
+    #brandText {
+        color: red;
+        font-weight: 800;
+        font-size: 25px
+    }
+
+
+    #navButton {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        color: #7A7E7F;
+        font-size: 15px;
+        width: 50px;
+        height: 50px;
+        margin-inline: 20px
+    }
+
+    #navSymbol {
+        font-size: 15px;
+    }
+
+
+
+    #catButton {
+        margin-left: 20px;
+        color: #7A7E7F;
+        font-size: 20px
+    }
+
+    #searchContainer {
+        height: 45px
+    }
+
+    .dropdown-menu.columns-3 {
+        min-width: 600px;
+    }
+</style>

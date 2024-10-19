@@ -181,12 +181,8 @@
       "PackagePath": "staticwebassets\\Bookshop-Website.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\assets\\img\\normal\\image1.png",
-      "PackagePath": "staticwebassets\\assets\\img\\normal\\image1.png"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\assets\\img\\normal\\image2.png",
-      "PackagePath": "staticwebassets\\assets\\img\\normal\\image2.png"
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide.png",
+      "PackagePath": "staticwebassets\\assets\\img\\slide\\slide.png"
     },
     {
       "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide1.png",

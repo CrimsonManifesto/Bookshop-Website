@@ -65,11 +65,15 @@ using (var scope = app.Services.CreateScope())
         await roleManager.CreateAsync(new IdentityRole("Admin"));
     }
 
-    // Gán vai trò "Admin" cho người dùng cụ thể
-    var adminUser = await userManager.FindByEmailAsync("cuonglinhagprovince@gmail.com");
-    if (adminUser != null && !await userManager.IsInRoleAsync(adminUser, "Admin"))
+    var adminEmails = new List<string> { "cuonglinhagprovince@gmail.com", "admin@gmail.com" };
+    // Admin configuration
+    foreach (var email in adminEmails)
     {
-        await userManager.AddToRoleAsync(adminUser, "Admin");
+        var adminUser = await userManager.FindByEmailAsync(email);
+        if (adminUser != null && !await userManager.IsInRoleAsync(adminUser, "Admin"))
+        {
+            await userManager.AddToRoleAsync(adminUser, "Admin");
+        }
     }
 }
 

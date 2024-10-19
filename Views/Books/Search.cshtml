@@ -2,16 +2,10 @@
 
 @{
     ViewData["Title"] = "Index";
-    ViewData["ShowBanner"] = true;
+    ViewData["ShowBanner"] = false;
 
 }
 
-@if (User.IsInRole("Admin"))
-{
-    <p>
-        <a asp-action="Create">Create New</a>
-    </p>
-}
 
 <div class="container" id="bookHeader">
 
