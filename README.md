@@ -1,73 +1,84 @@
-# ASP .NET Core Project Template
-ASP .NET Core Project Template for GSA FM IT team.  Every one should be able to use this templae to build a ASP .NET Core web app with PostgreSQL database and beautifully looking U.S. Web Deisgn Standard UI. 
+# Bookshop Website with ASP.NET Core [UNDER WORKING]
 
-### Key Functions 
-1. Landing page design with [U.S. Web Deisgn System 2](https://designsystem.digital.gov).
-2. Cross-platform.
-3. Sing-in pgae exmaple.
+This project is a web application for a bookshop built using ASP.NET Core, designed to provide users with an intuitive and efficient way to browse, search, and purchase books online. The application leverages LocalDB for database management and is developed using Visual Studio.
 
-
+## Key Functions
+- **User Authentication**: Secure user registration and login system using Auth0.
+- **Book Management**: Admin interface for adding, updating, and removing books from the inventory.
+- **Shopping Cart**: Functionality to add and remove books from the shopping cart.
+- **Search and Filter**: Users can search for books by title, author, or genre.
+## Technologies Used
+- ASP.NET Core
+- Entity Framework Core
+- Bootstrap 5
+- Auth0
+- LocalDB
 ## Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+Follow these instructions to set up and run the project locally.
 
 ### Prerequisites
-- Visual Studio 2022 or higher 
-- .NET 6.x SDK  
-- Npgsql.EntityFrameworkCore.PostgreSQL 2.1.1.1 (https://www.nuget.org/packages/Npgsql.EntityFrameworkCore.PostgreSQL/)
+- [.NET Core SDK](https://dotnet.microsoft.com/download) (version 6.0 or higher)
+- [Visual Studio](https://visualstudio.microsoft.com/) (version 2022 or higher) with ASP.NET and web development workload
+- LocalDB installed (comes with Visual Studio)
 
 ### Installing
-1. Download and copy to \My Documents\Visual Studio 2017\Templates\ProjectTemplates folder.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/bookshop-website.git
+2. Navigate to the project directory:
+   ```bash
+   cd bookshop-website
+4. Restore the dependencies:
+   ```bash
+   dotnet restore
+6. Update the LocalDB connection string in appsettings.json as needed:
+   ```bash
+   "ConnectionStrings": {
+    "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=BookshopDb;Trusted_Connection=True;MultipleActiveResultSets=true"}
+8. Run the migrations to set up the database:
+    ```bash
+   dotnet ef database update
+10. Start the application:
+    ```bash
+    dotnet run
+## Usage
+### User Feature
+#### Sign in
 
-### Using the Template for a New Project
-1. Launch Visual Studio 2019 and create a new project. Use the "ASP.NET Core Web Application" template (C#). Use a unique name for the new project.
-2. In the "Create a new ASP.NET Core web application" window, select ".NET Core" and "ASP.NET Core 3.1" in the dropdown menus. Choose the "Empty" project type and Check the "Configure for HTTPS" box. Click "Create".
-3. Once the project has been created, close Visual Studio.
-4. Clone this repository to a new folder.
-5. Remove *all* of the files and folders from within your project's web root. This includes the following:
-    - *bin/*
-    - *obj/*
-    - *Properties/*
-    - *appsettings.Development.json*
-    - *appsettings.json*
-    - *Program.cs*
-    - *Startup.cs*
-6. Copy *all* files and folders from this repository's **2nd** *ASP Core MVC Template* subdirectory and paste them into the same location within your own project. You're replacing all of the files you removed in the previous step.
-7. Rename the *ASP Core MVC Template.csproj* file to your own project's name. Edit it with an app like *Notepad* and make the following changes:
-    - Replace the *\<RootNamespace\>* value with your project's namespace.
-8. Rename the *ASP Core MVC Template.csproj.user* file to your own project's name.
-9. Rename the *ASP_CORE_MVC_Template_appsettings_Example.json* file to *\<YOURPROJECT\>_appsettings.json*.
-10. Copy *\<YOURPROJECT\>_appsettings.json* to the folder you assigned to the *APPSETTINGS_DIRECTORY* environment variable (as described earlier in this readme).
-11. Edit *AssemblyInfo.cs* as follows:
-    - Replace the *RootNamespace* value with your project's namespace.
-12. Edit *Program.cs* as follows:
-    - Change *namespace ASP_Core_MVC_Template* to *namespace \<YOURPROJECTNAMESPACE\>*
-    - Change *config.AddJsonFile("ASP_Core_MVC_Template_appsettings.json")* to *config.AddJsonFile("\<YOURPROJECT\>_appsettings.json")*
-13. Edit *Startup.cs* as follows:
-    - Change *namespace ASP_Core_MVC_Template* to *namespace \<YOURPROJECTNAMESPACE\>*
-    - Change *options.Cookie.Name = ".Core-Web-Template.Session";* to *options.Cookie.Name = ".\<YOURPROJECT\>.Session";*
-    - Change *loggerFactory.AddFile(logDirectory + "/Core-Web-Template-{Date}.log");* to *loggerFactory.AddFile(logDirectory + "/\<YOURPROJECT\>-{Date}.log");*
-    - Change *app.UsePathBase("/core-web");* to *app.UsePathBase("/\<yourproject\>");* (make sure you **preserve all lowercase** for this change!)
-14. Remove all *bin\\Debug\\netcoreapp3.1\\ASP Core MVC Template.\** files.
-15. Edit *Controllers\\HomeControler.cs* as follows:
-    - Change *using ASP_Core_MVC_Template.Models;* to *using \<YOURPROJECT\>.Models;*
-    - Change *namespace ASP_Core_MVC_Template.Controllers* to *namespace \<YOURPROJECTNAMESPACE\>.Controllers*
-    - If using *AppStatus* functionality from *CAAM*, change *_configService.GetAppClosed("CORE_TEMPLATE");* to *_configService.GetAppClosed("\<YOURPROJECT\>");*
-    - If using *AppStatus* functionality from *CAAM*, change *_configService.GetAppWarning("CORE_TEMPLATE");* to *_configService.GetAppWarning("\<YOURPROJECT\>");*
-    - If using roles from *CAAM*, edit the *\[Authorize(Roles = "COREADMIN,COREUSER")\]* line to use roles that are applicable to your project.
-16. Edit *Controllers\\LoginControler.cs* as follows:
-    - Change *namespace ASP_Core_MVC_Template.Controllers* to *namespace \<YOURPROJECTNAMESPACE\>.Controllers*
-    - If using roles from *CAAM*, edit *_dataAPIService.GetCAAMRoles("Core Template"* to *_dataAPIService.GetCAAMRoles("\<YOURPROJECT\>"*
-17. Edit *Models\\ErrorViewModel.cs* as follows:
-    - Change *namespace ASP_Core_MVC_Template.Models* to *namespace \<YOURPROJECTNAMESPACE\>.Models*
-18. If using roles from *CAAM*, edit *Views\\Home\\LoggedIn.cshtml* as follows:
-    - Change *Context.User.IsInRole("COREADMIN")* to use a role applicable to your project.
-19. Edit *Views\\Home\\Warning.cshtml* as follows:
-    - Change *\<title\>Warning - CAAM Web Template\</title\>* to *\<title\>Warning - \<YOURPROJECT\>\</title\>*
-20. Edit *Views\\Shared\\\_Layout.cshtml* as follows:
-    - Change *@ViewData\["Title"\] - Core Web Template* to *@ViewData["Title"] - \<YOURPROJECT\>*
-    - Change *aria-label="Home"\>Core Web Template* to *aria-label="Home"\>\<YOURPROJECT\>*
-21. Edit *Views\\\_ViewImports.cshtml* as follows:
-    - Change both instances of *@using ASP_Core_MVC_Template* to *@using \<YOURPROJECT\>*
-### Limitations
-- No responsive for mobile devices
-- 
+#### Login
+
+#### External authorization
+You can use google authorization to login the website
+
+#### Search a book
+You can search book by title 
+
+#### Category
+You can find books with a specific genre or language
+
+#### Add book to cart
+You can press this button a book to your cart
+
+### Admin Features
+#### How to add a user as admin
+
+#### Add a book
+
+#### Update a book
+
+#### Delete a book
+
+
+## Sceenshots
+
+
+## Limitations
+- *Lack of features:* The application currently supports basic book management and does not include advanced features such as payment processing.
+- *Limited database:* The database is limited to LocalDB; production deployment requires a more robust database solution.
+- *Unresposive:* Some features may not be fully optimized for all screen sizes or browsers.
+- *No wishlist:*
+- *No comment section:*
+- *No book rating:*
+  
+## Future Improvements
