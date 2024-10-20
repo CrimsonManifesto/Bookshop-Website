@@ -20,7 +20,7 @@
         {
             <div class="card border-0 pt-3" id="bookCard">
                 <a asp-action="Details" asp-route-id="@item.BookId">
-                    <img class="rounded float-start" src="@item.ImageUrl" alt="Image for @item.Title" style="width: 150px; height: 220px;" />
+                    <img class="rounded float-start" src="@item.ImageUrl" alt="Image for @item.Title" style="width: 150px; height: 220px;" loading="lazy"/>
                 </a>
                 <div class="card-body w-100" id="cardTitle">
                     @Html.ActionLink(item.Title, "Details", new { id = item.BookId }, new { @class = "custom-card-title px-3", title = item.Title })

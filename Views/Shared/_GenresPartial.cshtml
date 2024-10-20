@@ -1,54 +1,55 @@
-﻿<div class="row">
-<div class="col-sm-4">
+﻿@* Configuration your category options *@
+ <div class="row">
+    <div class="col-sm-4">
         <div class="dropdown-header">Genres</div>
 
         <form asp-controller="Books" asp-action="GenresShow" method="post">
-        <input type="hidden" name="SearchPhrase" value="Education" />
+            <input type="hidden" name="SearchPhrase" value="Education" />
             <button class="dropdown-item" type="submit">Education</button>
 
         </form>
-                <form asp-controller="Books" asp-action="GenresShow" method="post">
-        <input type="hidden" name="SearchPhrase" value="Political" />
+        <form asp-controller="Books" asp-action="GenresShow" method="post">
+            <input type="hidden" name="SearchPhrase" value="Political" />
             <button class="dropdown-item" type="submit">Political</button>
 
         </form>
-    <form asp-controller="Books" asp-action="GenresShow" method="post">
-        <input type="hidden" name="SearchPhrase" value="Romance" />
-        <button class="dropdown-item" type="submit">Romance</button>
+        <form asp-controller="Books" asp-action="GenresShow" method="post">
+            <input type="hidden" name="SearchPhrase" value="Romance" />
+            <button class="dropdown-item" type="submit">Romance</button>
 
-    </form>
-    <form asp-controller="Books" asp-action="GenresShow" method="post">
+        </form>
+        <form asp-controller="Books" asp-action="GenresShow" method="post">
             <input type="hidden" name="SearchPhrase" value="Sci-fi" />
             <button class="dropdown-item" type="submit">Sci-fi</button>
 
-    </form>
-</div>
+        </form>
+    </div>
 
-<div class="col-sm-4">
+    <div class="col-sm-4">
         <div class="dropdown-header"></div>
 
-    <form asp-controller="Books" asp-action="GenresShow" method="post">
-        <input type="hidden" name="SearchPhrase" value="History" />
+        <form asp-controller="Books" asp-action="GenresShow" method="post">
+            <input type="hidden" name="SearchPhrase" value="History" />
             <button class="dropdown-item" type="submit">History</button>
 
-    </form>
-    <form asp-controller="Books" asp-action="GenresShow" method="post">
-        <input type="hidden" name="SearchPhrase" value="Fantasy" />
-        <button class="dropdown-item" type="submit">Fantasy</button>
+        </form>
+        <form asp-controller="Books" asp-action="GenresShow" method="post">
+            <input type="hidden" name="SearchPhrase" value="Fantasy" />
+            <button class="dropdown-item" type="submit">Fantasy</button>
 
-    </form>
-    <form asp-controller="Books" asp-action="GenresShow" method="post">
-        <input type="hidden" name="SearchPhrase" value="Self-Help" />
-        <button class="dropdown-item" type="submit">Self-Help</button>
+        </form>
+        <form asp-controller="Books" asp-action="GenresShow" method="post">
+            <input type="hidden" name="SearchPhrase" value="Self-Help" />
+            <button class="dropdown-item" type="submit">Self-Help</button>
 
-    </form>
-    <form asp-controller="Books" asp-action="GenresShow" method="post">
-        <input type="hidden" name="SearchPhrase" value="Horror" />
+        </form>
+        <form asp-controller="Books" asp-action="GenresShow" method="post">
+            <input type="hidden" name="SearchPhrase" value="Horror" />
             <button class="dropdown-item" type="submit">Horror</button>
 
-    </form>
-</div>
-    
+        </form>
+    </div>
+
     <div class="col-sm-4">
         <div class="dropdown-header">Languages</div>
 
@@ -63,8 +64,8 @@
 
         </form>
         <form asp-controller="Books" asp-action="LanguagesShow" method="post">
-            <input type="hidden" name="SearchPhrase" value="German" />
-            <button class="dropdown-item" type="submit">German</button>
+            <input type="hidden" name="SearchPhrase" value="Spanish" />
+            <button class="dropdown-item" type="submit">Spanish</button>
 
         </form>
         <form asp-controller="Books" asp-action="LanguagesShow" method="post">
@@ -81,7 +82,7 @@
 </div>
 
 <style>
-    .dropdown-header{
+    .dropdown-header {
         height: 34px;
     }
 

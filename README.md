@@ -7,11 +7,12 @@ This project is a web application for a bookshop built using ASP.NET Core, desig
 - **Book Management**: Admin interface for adding, updating, and removing books from the inventory.
 - **Shopping Cart**: Functionality to add and remove books from the shopping cart.
 - **Search and Filter**: Users can search for books by title, author, or genre.
+- **Export bill as PDF**: Admin can export user's order bill as PDF file.
 ## Technologies Used
-- ASP.NET Core
-- Entity Framework Core
-- Bootstrap 5
-- Auth0
+- [ASP.NET Core](https://dotnet.microsoft.com/en-us/apps/aspnet)
+- [Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/)
+- [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+- [Auth0](https://auth0.com/)
 - LocalDB
 ## Getting Started
 
@@ -25,7 +26,7 @@ Follow these instructions to set up and run the project locally.
 ### Installing
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/bookshop-website.git
+   git clone https://github.com/NCuongLinh/Bookshop-Website.git
 2. Navigate to the project directory:
    ```bash
    cd bookshop-website
@@ -70,15 +71,17 @@ You can press this button a book to your cart
 #### Delete a book
 
 
-## Sceenshots
+## Screenshots
 
 
 ## Limitations
 - *Lack of features:* The application currently supports basic book management and does not include advanced features such as payment processing.
 - *Limited database:* The database is limited to LocalDB; production deployment requires a more robust database solution.
-- *Unresposive:* Some features may not be fully optimized for all screen sizes or browsers.
-- *No wishlist:*
+- *Unresponsive:* Some features may not be fully optimized for all screen sizes or browsers.
+- *No Wishlist:*
+- *Lack of book properties:*
 - *No comment section:*
 - *No book rating:*
+- No notification feature:
   
 ## Future Improvements
