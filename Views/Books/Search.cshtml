@@ -1,24 +1,30 @@
 ﻿@model IEnumerable<Bookshop_Website.Models.Books>
 
-@{
-    ViewData["Title"] = "Index";
-    ViewData["ShowBanner"] = false;
-
-}
 
 
-<div class="container" id="bookHeader">
+<div class="container" style="background-color:white">
+
+    @{
+        ViewData["Title"] = "Index";
+        ViewData["ShowBanner"] = false;
+
+    }
+
+
+
 
     @if (ViewData["SearchPhrase"] != null)
     {
-        <h3>
-            Search Result:
-            <span id="searchResultText">@ViewData["SearchPhrase"]</span>
-        </h3>
+        int count = 0;
+        foreach (var item in Model)
+        {
+            count++;
+        }
+        <h2 class="pt-3 px-2"><i class="fa-solid fa-magnifying-glass"></i> @count results</h2>
     }
     @if (ViewData["Category"] != null)
     {
-        <h3>
+        <h3 class="pt-3 px-2">
             <span id="searchResultText">@ViewData["Category"]</span>
             Books
         </h3>
@@ -26,9 +32,11 @@
 
 
 
-</div>
 
-<div class="container" style="background-color:white">
+
+
+
+
 
     <div class="container" id="cardContainer">
         @foreach (var item in Model)
@@ -58,6 +66,7 @@
         padding-inline: 10px;
         flex-wrap: wrap;
         justify-content: flex-start;
+        min-height:31rem;
     }
 
     #bookCard {
@@ -72,16 +81,6 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.3);
         }
 
-    #bookHeader {
-        display: flex;
-        flex-direction: row;
-        background-color: #FCDDEF;
-        font-size: 2rem;
-        justify-content: center;
-        font-weight: bold;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px
-    }
 
     #textAuthor {
         font-size: 0.8rem
