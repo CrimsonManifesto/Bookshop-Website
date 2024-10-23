@@ -9,8 +9,8 @@
     }
 }
 
-<div class="container" style="background-color:white">
-
+<div class="container" >
+    <div class="p-3" id="whiteBg">
 
 <h1>Manage your account</h1>
 
@@ -27,7 +27,14 @@
     </div>
 </div>
 </div>
-
+</div>
 @section Scripts {
     @RenderSection("Scripts", required: false)
 }
+<style>
+
+    #whiteBg{
+        min-height: 35rem;
+        background-color: white;
+    }
+</style>
