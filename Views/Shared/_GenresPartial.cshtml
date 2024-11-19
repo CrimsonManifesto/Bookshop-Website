@@ -83,7 +83,51 @@
 
 <style>
     .dropdown-header {
-        height: 34px;
+        cursor: pointer;
+        padding: 10px;
+        background-color: #f8f9fa;
+        border: 1px solid #ddd;
+        user-select: none;
     }
 
+    .dropdown-content {
+        display: none; /* Ẩn nội dung ban đầu */
+        opacity: 0; /* Không hiển thị */
+        transition: opacity 0.5s ease; /* Hiệu ứng mờ dần */
+    }
+
+        .dropdown-content.open {
+            display: block; /* Hiển thị khi mở */
+            opacity: 1; /* Hiển thị đầy đủ */
+        }
+
+    .dropdown-item {
+        display: block;
+        padding: 8px 16px;
+        border: none;
+        background: none;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+    }
+
+        .dropdown-item:hover {
+            background-color: #e9ecef;
+        }
+
 </style>
+
+<script>
+    function toggleDropdown(header) {
+        const content = header.nextElementSibling; // Lấy phần nội dung dropdown
+        const isOpen = content.classList.contains('open');
+        if (isOpen) {
+            content.classList.remove('open'); // Đóng dropdown
+            setTimeout(() => (content.style.display = 'none'), 500); // Đợi animation kết thúc rồi ẩn
+        } else {
+            content.style.display = 'block'; // Hiển thị ngay lập tức
+            setTimeout(() => content.classList.add('open'), 10); // Kích hoạt hiệu ứng fade-in
+        }
+    }
+
+</script>

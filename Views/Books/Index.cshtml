@@ -7,7 +7,7 @@
 }
 
 
-<div class="container" style="background-color:white">
+<div class="container bg-white">
     <h2 class="px-3">All Books</h2>
     @if (User.IsInRole("Admin"))
     {
@@ -15,23 +15,23 @@
             <a class="btn btn-outline-primary" asp-action="Create">Create New</a>
         </div>
     }
-    <div class="container" id="cardContainer">
+    <div class="container d-flex bg-white flex-row flex-wrap justify-content-start px-2">
         @foreach (var item in Model)
         {
-            <div class="card border-0 pt-3" id="bookCard">
+            <div class="card border-0 pt-3 mt-3 mb-3 align-items-center" id="bookCard">
                 <a asp-action="Details" asp-route-id="@item.BookId">
-                    <img class="rounded float-start" src="@item.ImageUrl" alt="Image for @item.Title" style="width: 150px; height: 220px;" loading="lazy"/>
+                    <img class="rounded float-start" src="@item.ImageUrl" alt="Image for @item.Title" style="width: 150px; height: 220px;" loading="lazy" />
                 </a>
                 <div class="card-body w-100" id="cardTitle">
-                    @Html.ActionLink(item.Title, "Details", new { id = item.BookId }, new { @class = "custom-card-title px-3", title = item.Title })
+                    @Html.ActionLink(item.Title, "Details", new { id = item.BookId }, new { @class = "custom-card-title px-3 text-decoration-none text-black", title = item.Title })
                 </div>
                 <div class="row w-100 px-3 d-flex justify-content-center align-items-center m-0">
 
-                    <h5 class="col price m-0">@item.Price.ToString("C")</h5>
+                    <h5 class="col price m-0 fw-bold">@item.Price.ToString("C")</h5>
                     @if (item.DiscountPercentage > 0)
                     {
                         <div class="col align-items-center percentage-container text-center">
-                            <h5 class="col discount-percentage m-0 ">@item.DiscountPercentage.ToString("0")%</h5>
+                            <h5 class="col discount-percentage m-0 text-white">@item.DiscountPercentage.ToString("0")%</h5>
                         </div>
                     }
 
@@ -53,45 +53,24 @@
 </div>
 
 <style>
-    #cardContainer {
-        background-color: white;
-        display: flex;
-        flex-direction: row;
-        padding-inline: 10px;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
+
 
     #bookCard {
         width: 14rem;
         height: 21rem;
-        margin-top: 1rem;
         margin-inline: 0.94rem;
-        align-items: center;
     }
 
         #bookCard:hover {
             box-shadow: 0 0 10px rgba(0,0,0,0.3);
         }
 
-    #bookHeader {
-        display: flex;
-        flex-direction: row;
-        background-color: #FCDDEF;
-        font-size: 2rem;
-        justify-content: center;
-        font-weight: bold;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px
-    }
 
     #textAuthor {
         font-size: 0.8rem
     }
 
     .custom-card-title {
-        color: black;
-        text-decoration: none;
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
@@ -100,7 +79,6 @@
         width: 100%;
         font-size: 15px;
         height: 45px
-
     }
 
 
@@ -112,16 +90,9 @@
 
 
 
-    .card-body {
-        padding-bottom: 0;
-        padding-top: 10px;
-    }
-
     .price {
         color: red;
-        font-weight: bold;
         font-size: 19px;
-
     }
 
     .original-price {
@@ -131,18 +102,13 @@
     }
 
     .discount-percentage {
-        color: white;
         background-color: red;
         font-size: 14px;
         border-radius: 7px;
         width: 35px;
-
     }
-    .percentage-container{
-        margin-right:30px;
 
-    }
-    #cardTitle{
+    #cardTitle {
         height: 58px;
     }
 

@@ -3,7 +3,6 @@
 This project is a web application for a bookshop built using ASP.NET Core, designed to provide users with an intuitive and efficient way to browse, search, and purchase books online. The application leverages LocalDB for database management and is developed using Visual Studio.
 
 ## Key Functions
-- **User Authentication**: Secure user registration and login system using Auth0.
 - **Book Management**: Admin interface for adding, updating, and removing books from the inventory.
 - **Shopping Cart**: Functionality to add and remove books from the shopping cart.
 - **Search and Filter**: Users can search for books by title, author, or genre.
@@ -12,7 +11,6 @@ This project is a web application for a bookshop built using ASP.NET Core, desig
 - [ASP.NET Core](https://dotnet.microsoft.com/en-us/apps/aspnet)
 - [Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/)
 - [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
-- [Auth0](https://auth0.com/)
 - LocalDB
 ## Getting Started
 
@@ -45,9 +43,11 @@ Follow these instructions to set up and run the project locally.
     dotnet run
 ## Usage
 ### User Feature
-#### Sign in
-
 #### Login
+<img src="wwwroot/assets/screenshot/login.png" style="width: 400px;height:auto">
+
+#### Signup
+<img src="wwwroot/assets/screenshot/signin.png" style="width: 400px;height:auto">
 
 #### External authorization
 You can use google authorization to login the website
@@ -65,13 +65,16 @@ You can press this button a book to your cart
 #### How to add a user as admin
 
 #### Add a book
+<img src="wwwroot/assets/screenshot/create.png" style="width: 400px;height:auto">
 
 #### Update a book
+<img src="wwwroot/assets/screenshot/edit.png" style="width: 400px;height:auto">
 
 #### Delete a book
 
 
 ## Screenshots
+<img src="wwwroot/assets/screenshot/main.png" style="width: 600px;height:auto">
 
 
 ## Limitations

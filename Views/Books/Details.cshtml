@@ -10,21 +10,21 @@
     <div class="row">
         @* Book image *@
         <div class="col-4" style="background-color:white">
-            <div class="row" id="imageRow">
+            <div class="row justify-content-center">
             <img src="@Model.ImageUrl" alt="@Model.Title" id="image"/>
             </div>
             <div class="row">
                 <div class="col">
                    @*  ------------------------> need improve  *@
                     <form asp-action="AddtoCart" asp-route-id="@Model?.BookId" method="post" style="display:inline;">
-                        <button type="submit" class="btn interactBtn" style="color:white; background-color:red">
+                        <button type="submit" class="btn interactBtn w-100 fw-bold" style="color:white; background-color:red">
                             Buy
                         </button>
                     </form>
                 </div>
                 <div class="col">
                     <form asp-action="AddtoCart" asp-route-id="@Model?.BookId" method="post" style="display:inline;">
-                        <button type="submit" class="btn interactBtn" style="color:red;border-width:2px;border-color:red">
+                        <button type="submit" class="btn interactBtn w-100 fw-bold" style="color:red;border-width:2px;border-color:red">
                             <i class="fa-solid fa-cart-shopping"></i> Add to Cart
                         </button>
                     </form>
@@ -33,16 +33,16 @@
             @if (User.IsInRole("Admin"))
             {
                 <div class="row">
-                    <div class="col">
+                    <div class="col w-100">
                         <form style="display:inline;">
-                            <button asp-action="Edit" asp-route-id="@Model?.BookId" type="submit" class="btn btn-outline-info interactBtn">
+                            <button class="btn btn-outline-info interactBtn w-100 fw-bold" asp-action="Edit" asp-route-id="@Model?.BookId" type="submit">
                                 Edit
                             </button>
                         </form>
                     </div>
                     <div class="col">
                         <form  method="post" style="display:inline;">
-                            <button asp-action="Delete" asp-route-id="@Model?.BookId" type="submit" class="btn btn-outline-warning interactBtn">
+                            <button class="btn btn-outline-warning interactBtn w-100 fw-bold" asp-action="Delete" asp-route-id="@Model?.BookId" type="submit">
                                 Delete
                             </button>
                         </form>
@@ -61,7 +61,7 @@
 
             @* detail info *@
             <div class="col" style="background-color:white" id="infoCol">
-                <h3 id="sectionHeader">Detail information</h3>
+                <h3 class="fw-bold" id="sectionHeader">Detail information</h3>
                 <div class="row">
                     <div class="col">
                         <p id="infoText">@Html.DisplayNameFor(Model => Model.Author)</p>
@@ -133,9 +133,6 @@
         width: 18rem;
         margin-top: 2rem
    }
-   #imageRow{
-       justify-content:center
-   }
 
     #infoCol {
         padding-inline-start: 1.3rem;
@@ -150,13 +147,10 @@
         
     }
     #sectionHeader{
-        font-weight:bold;
         margin-bottom: 1rem
     }
     .interactBtn{
-        width: 100%;
         margin-top: 2rem;
-        font-weight:bold
     }
 
 </Style>

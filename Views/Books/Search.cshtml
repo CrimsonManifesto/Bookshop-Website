@@ -30,19 +30,19 @@
         </h3>
     }
 
-    <div class="container" id="cardContainer">
+    <div class="container d-flex bg-white flex-row justify-content-start" id="cardContainer">
         @foreach (var item in Model)
         {
             <div class="card border-0 pt-3" id="bookCard">
                 <a asp-action="Details" asp-route-id="@item.BookId">
                     <img class="rounded float-start" src="@item.ImageUrl" alt="Image for @item.Title" style="width: 150px; height: 220px;" />
                 </a>
-                <div class="card-body w-100">
-                    @Html.ActionLink(item.Title, "Details", new { id = item.BookId }, new { @class = "custom-card-title", title = item.Title })
+                <div class="card-body w-100 pb-0">
+                    @Html.ActionLink(item.Title, "Details", new { id = item.BookId }, new { @class = "custom-card-title px-3 text-decoration-none text-black", title = item.Title })
                 </div>
                 <div class="w-100 px-3">
 
-                    <h5 class="price">@item.Price.ToString("C")</h5>
+                    <h5 class="price fw-bold">@item.Price.ToString("C")</h5>
                 </div>
             </div>
 
@@ -52,12 +52,8 @@
 
 <style>
     #cardContainer {
-        background-color: white;
-        display: flex;
-        flex-direction: row;
         padding-inline: 10px;
         flex-wrap: wrap;
-        justify-content: flex-start;
         min-height:31rem;
     }
 
@@ -79,8 +75,6 @@
     }
 
     .custom-card-title {
-        color: black;
-        text-decoration: none;
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
@@ -98,12 +92,10 @@
 
     .price {
         color: red;
-        font-weight: bold;
     }
 
     .card-body {
         height: 500px;
-        padding-bottom: 0;
     }
 
 </style>
