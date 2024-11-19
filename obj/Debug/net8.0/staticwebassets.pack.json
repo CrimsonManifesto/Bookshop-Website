@@ -121,70 +121,6 @@
       "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\all.min.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\brands.css",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\brands.css"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\brands.min.css",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\brands.min.css"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\fontawesome.css",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\fontawesome.css"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\fontawesome.min.css",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\fontawesome.min.css"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\regular.css",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\regular.css"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\regular.min.css",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\regular.min.css"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\solid.css",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\solid.css"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\solid.min.css",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\solid.min.css"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\svg-with-js.css",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\svg-with-js.css"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\svg-with-js.min.css",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\svg-with-js.min.css"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\v4-font-face.css",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v4-font-face.css"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\v4-font-face.min.css",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v4-font-face.min.css"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\v4-shims.css",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v4-shims.css"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\v4-shims.min.css",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v4-shims.min.css"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\v5-font-face.css",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v5-font-face.css"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\v5-font-face.min.css",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\v5-font-face.min.css"
-    },
-    {
       "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\all.js",
       "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\all.js"
     },
@@ -285,18 +221,6 @@
       "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-v4compatibility.woff2"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
-    },
-    {
       "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
@@ -315,10 +239,6 @@
     {
       "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\jquery\\LICENSE.txt",
-      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Bookshop-Website.Microsoft.AspNetCore.StaticWebAssets.props",

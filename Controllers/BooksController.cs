@@ -231,6 +231,7 @@ namespace Bookshop_Website.Controllers
                 cart.Add(new CartItem
                 {
                     BookId = book.BookId,
+                    ImageUrl = book.ImageUrl,
                     Title = book.Title,
                     Price = book.Price,
                     Quantity = 1
