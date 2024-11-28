@@ -9,6 +9,7 @@ using Bookshop_Website.Data;
 using Bookshop_Website.Extensions;
 using Bookshop_Website.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 
 
 namespace Bookshop_Website.Controllers
@@ -16,16 +17,22 @@ namespace Bookshop_Website.Controllers
     public class BooksController : Controller
     {
         private readonly BooksDbContext _context;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public BooksController(BooksDbContext context)
+        public BooksController(BooksDbContext context, UserManager<ApplicationUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         // GET: Books
         public async Task<IActionResult> Index()
         {
+            var user = await _userManager.GetUserAsync(User);
+            ViewBag.ProfilePictureUrl = user?.ProfilePictureUrl;
+
             return View(await _context.Books.ToListAsync());
+
         }
 
         // GET: Books/Details/

@@ -1,17 +1,19 @@
 ﻿@using Microsoft.AspNetCore.Identity
-@inject SignInManager<IdentityUser> SignInManager
-@inject UserManager<IdentityUser> UserManager
-
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@{
+    var profilePictureUrl = @Context.Items["ProfilePictureUrl"] as string;
+}
 
 @if (SignInManager.IsSignedIn(User))
 {
 
     <a class="nav-link" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage" id="navButton">
         <div>
-                <i class="fa-solid fa-user"></i>
+                <img src="@profilePictureUrl" alt="Profile Picture" class="profile-image" width="30" height="30" />
         </div>
         <div>
-            Account
+            Me
         </div>
 
     </a>
@@ -46,3 +48,10 @@ else
             </a>
 }
 
+<style>
+
+    .profile-image {
+        border-radius:15px
+    }
+
+</style>

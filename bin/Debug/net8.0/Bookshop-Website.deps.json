@@ -12,10 +12,16 @@
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "8.0.5",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.7",
           "Microsoft.AspNetCore.Identity.UI": "8.0.7",
+          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.7",
           "Microsoft.EntityFrameworkCore.Sqlite": "8.0.7",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.7",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "9.0.0",
+          "Microsoft.VisualStudio.Web.CodeGeneration": "9.0.0",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Core": "9.0.0",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.7",
+          "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore": "9.0.0",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Utils": "9.0.0",
+          "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": "9.0.0",
           "Newtonsoft.Json": "13.0.3",
           "bootstrap": "5.3.3"
         },
@@ -660,6 +666,31 @@
           }
         }
       },
+      "Microsoft.AspNetCore.JsonPatch/6.0.0": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.JsonPatch.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52608"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.NewtonsoftJson/6.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.JsonPatch": "6.0.0",
+          "Newtonsoft.Json": "13.0.3",
+          "Newtonsoft.Json.Bson": "1.0.2"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52608"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Razor.Language/6.0.24": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.dll": {
@@ -1122,7 +1153,7 @@
           }
         }
       },
-      "Microsoft.CSharp/4.5.0": {},
+      "Microsoft.CSharp/4.7.0": {},
       "Microsoft.Data.SqlClient/5.1.5": {
         "dependencies": {
           "Azure.Identity": "1.10.3",
@@ -1513,7 +1544,7 @@
       },
       "Microsoft.IdentityModel.Tokens/6.35.0": {
         "dependencies": {
-          "Microsoft.CSharp": "4.5.0",
+          "Microsoft.CSharp": "4.7.0",
           "Microsoft.IdentityModel.Logging": "6.35.0",
           "System.Security.Cryptography.Cng": "5.0.0"
         },
@@ -1600,33 +1631,15 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design/9.0.0": {
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design/8.0.7": {
         "dependencies": {
-          "Humanizer": "2.14.1",
-          "Microsoft.AspNetCore.Razor.Language": "6.0.24",
-          "Microsoft.Build": "17.10.4",
-          "Microsoft.CodeAnalysis.CSharp": "4.8.0",
-          "Microsoft.CodeAnalysis.CSharp.Features": "4.8.0",
-          "Microsoft.CodeAnalysis.CSharp.Workspaces": "4.8.0",
-          "Microsoft.CodeAnalysis.Common": "4.8.0",
-          "Microsoft.CodeAnalysis.Features": "4.8.0",
-          "Microsoft.CodeAnalysis.Razor": "6.0.24",
-          "Microsoft.CodeAnalysis.Workspaces.Common": "4.8.0",
           "Microsoft.DotNet.Scaffolding.Shared": "9.0.0",
-          "Microsoft.Extensions.DependencyInjection": "9.0.0-rc.2.24473.5",
-          "Microsoft.Extensions.DependencyModel": "9.0.0-rc.2.24473.5",
-          "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": "9.0.0",
-          "Mono.TextTemplating": "3.0.0",
-          "Newtonsoft.Json": "13.0.3",
-          "NuGet.Packaging": "6.11.0",
-          "NuGet.ProjectModel": "6.11.0",
-          "System.Formats.Asn1": "9.0.0-rc.2.24473.5",
-          "System.Security.Cryptography.ProtectedData": "8.0.0"
+          "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": "9.0.0"
         },
         "runtime": {
           "lib/net8.0/dotnet-aspnet-codegenerator-design.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.55703"
+            "assemblyVersion": "8.0.7.0",
+            "fileVersion": "8.0.724.53004"
           }
         }
       },
@@ -1760,6 +1773,17 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "assemblyVersion": "13.0.0.0",
             "fileVersion": "13.0.3.27908"
+          }
+        }
+      },
+      "Newtonsoft.Json.Bson/1.0.2": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.2.22727"
           }
         }
       },
@@ -2669,6 +2693,20 @@
       "path": "microsoft.aspnetcore.identity.ui/8.0.7",
       "hashPath": "microsoft.aspnetcore.identity.ui.8.0.7.nupkg.sha512"
     },
+    "Microsoft.AspNetCore.JsonPatch/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SUiwg0XQ5NtmnELHXSdX4mAwawFnAOwSx2Zz6NIhQnEN1tZDoAWEHc8dS/S7y8cE52+9bHj+XbYZuLGF7OrQPA==",
+      "path": "microsoft.aspnetcore.jsonpatch/6.0.0",
+      "hashPath": "microsoft.aspnetcore.jsonpatch.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Mvc.NewtonsoftJson/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YMwSWgBuwkVn9k4/2wWxfwEbx8T5Utj13UH/zmUm5lbkKcY+tJyt9w9P4rY5pO1XtCitoh1+L+Feqz9qxG/CvA==",
+      "path": "microsoft.aspnetcore.mvc.newtonsoftjson/6.0.0",
+      "hashPath": "microsoft.aspnetcore.mvc.newtonsoftjson.6.0.0.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Razor.Language/6.0.24": {
       "type": "package",
       "serviceable": true,
@@ -2774,12 +2812,12 @@
       "path": "microsoft.codeanalysis.workspaces.common/4.8.0",
       "hashPath": "microsoft.codeanalysis.workspaces.common.4.8.0.nupkg.sha512"
     },
-    "Microsoft.CSharp/4.5.0": {
+    "Microsoft.CSharp/4.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
-      "path": "microsoft.csharp/4.5.0",
-      "hashPath": "microsoft.csharp.4.5.0.nupkg.sha512"
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
     },
     "Microsoft.Data.SqlClient/5.1.5": {
       "type": "package",
@@ -3075,12 +3113,12 @@
       "path": "microsoft.visualstudio.web.codegeneration.core/9.0.0",
       "hashPath": "microsoft.visualstudio.web.codegeneration.core.9.0.0.nupkg.sha512"
     },
-    "Microsoft.VisualStudio.Web.CodeGeneration.Design/9.0.0": {
+    "Microsoft.VisualStudio.Web.CodeGeneration.Design/8.0.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-nO5MUL3iC0WjtAVea5d4v6kVcoL9ae/PnkC6NeEJhWazHKdKj7xfv6D2QvBx8uCIj8FUu9QpvvdN6m/xMp//EQ==",
-      "path": "microsoft.visualstudio.web.codegeneration.design/9.0.0",
-      "hashPath": "microsoft.visualstudio.web.codegeneration.design.9.0.0.nupkg.sha512"
+      "sha512": "sha512-qURp+VCwreGNQBofL6z3uUnLmrG3PCap/jN/B8jGqsiMLjhR+FOO7r9R1vcNeXYd5cFORpQvsuZi6GWXxr2dCA==",
+      "path": "microsoft.visualstudio.web.codegeneration.design/8.0.7",
+      "hashPath": "microsoft.visualstudio.web.codegeneration.design.8.0.7.nupkg.sha512"
     },
     "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/9.0.0": {
       "type": "package",
@@ -3123,6 +3161,13 @@
       "sha512": "sha512-HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
       "path": "newtonsoft.json/13.0.3",
       "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
+    },
+    "Newtonsoft.Json.Bson/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QYFyxhaABwmq3p/21VrZNYvCg3DaEoN/wUuw5nmfAf0X3HLjgupwhkEWdgfb9nvGAUIv3osmZoD3kKl4jxEmYQ==",
+      "path": "newtonsoft.json.bson/1.0.2",
+      "hashPath": "newtonsoft.json.bson.1.0.2.nupkg.sha512"
     },
     "NuGet.Common/6.11.0": {
       "type": "package",

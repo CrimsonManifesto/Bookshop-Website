@@ -7,7 +7,7 @@
 
 
 <div class="container d-flex justify-content-center align-items-center">
-    <div class="bg-white p-10 my-3 border rounded shadow align-items-center" id="loginContainer">
+    <div class="bg-white p-10 my-3 border rounded shadow align-items-center create-container">
         <div class="d-flex justify-content-center py-4">
             <div class="col px-5">
                 <div class="row pb-4">
@@ -121,18 +121,17 @@
                             </div>
                         </div>
                         <div class="col-6 form-group">
-                            <label asp-for="InStock" class="control-label"></label>
-                            <input asp-for="InStock" type="checkbox" class="form-control" />
+                            <label asp-for="StockQuantity" class="control-label"></label>
+                            <input asp-for="StockQuantity" class="form-control" />
                             <div class="validationContainer">
-                                <span asp-validation-for="InStock" class="text-danger"></span>
+                                <span asp-validation-for="StockQuantity" class="text-danger"></span>
                             </div>
                         </div>
-
                     </div>
                     <div class="row">
                         <div class="form-group">
                             <label asp-for="Description" class="control-label"></label>
-                            <textarea asp-for="Description" class="form-control"></textarea>
+                            <textarea asp-for="Description" class="form-control description"></textarea>
                             <div class="validationContainer">
                                 <span asp-validation-for="Description" class="text-danger"></span>
                             </div>
@@ -150,13 +149,16 @@
 
 
 <style>
-    #loginContainer {
-        width: 40rem;
-        height: 50rem;
+    .create-container {
+        width: 50rem;
+        height: 60rem;
     }
     .validationContainer{
         height:2rem
     }
-
+    .description{
+        height: 8rem;
+        resize:none
+    }
 </style>
 

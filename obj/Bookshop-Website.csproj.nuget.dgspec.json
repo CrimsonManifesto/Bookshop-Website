@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\Bookshop-Website.csproj": {}
+    "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\Bookshop-Website.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\Bookshop-Website.csproj": {
+    "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\Bookshop-Website.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\Bookshop-Website.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\Bookshop-Website.csproj",
         "projectName": "Bookshop-Website",
-        "projectPath": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\Bookshop-Website.csproj",
+        "projectPath": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\Bookshop-Website.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\obj\\",
+        "outputPath": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -62,6 +62,10 @@
               "target": "Package",
               "version": "[8.0.7, )"
             },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.7, )"
@@ -76,7 +80,27 @@
               "target": "Package",
               "version": "[8.0.7, )"
             },
+            "Microsoft.VisualStudio.Web.CodeGeneration": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Core": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Utils": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": {
               "target": "Package",
               "version": "[9.0.0, )"
             },

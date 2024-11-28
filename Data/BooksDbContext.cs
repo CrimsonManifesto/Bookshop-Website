@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace Bookshop_Website.Data
 {
-    public class BooksDbContext : IdentityDbContext<IdentityUser>
+    public class BooksDbContext : IdentityDbContext<ApplicationUser>
     {
         public BooksDbContext(DbContextOptions<BooksDbContext> options)
             : base(options)

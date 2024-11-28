@@ -1,0 +1,28 @@
+﻿@model Bookshop_Website.Models.ApplicationUser
+
+<h2>Update Profile Picture</h2>
+
+@if (Model.ProfilePictureUrl != null)
+{
+    <div>
+        <img src="@Model.ProfilePictureUrl" alt="Profile Picture" class="img-thumbnail" width="150" />
+    </div>
+}
+
+<form asp-action="UploadProfilePicture" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="profilePicture">Upload New Profile Picture</label>
+        <input type="file" name="profilePicture" id="profilePicture" accept="image/*" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Upload</button>
+</form>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}

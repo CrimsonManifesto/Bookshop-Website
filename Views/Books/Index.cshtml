@@ -1,14 +1,21 @@
 ﻿@model IEnumerable<Bookshop_Website.Models.Books>
 
+
 @{
     ViewData["Title"] = "Index";
     ViewData["ShowBanner"] = true;
+    var profilePictureUrl = ViewBag.ProfilePictureUrl as string;
 
 }
+<a asp-action="EditProfile" asp-controller="Profile" class="btn btn-secondary">Edit Profile Picture</a>
+
+<h2>Update Profile Picture</h2>
+
+<div>
+    <img src="@profilePictureUrl" alt="Profile Picture" class="img-thumbnail" width="150" />
+</div>
 
 
-<div class="container bg-white">
-    <h2 class="px-3">All Books</h2>
     @if (User.IsInRole("Admin"))
     {
         <div class="px-3">
