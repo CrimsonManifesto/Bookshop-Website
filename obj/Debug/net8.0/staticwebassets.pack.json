@@ -1,54 +1,6 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js",
-      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js.map",
-      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js.map"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js",
-      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js.map",
-      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js.map"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js",
-      "PackagePath": "staticwebassets\\js\\bootstrap.esm.js"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js.map",
-      "PackagePath": "staticwebassets\\js\\bootstrap.esm.js.map"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js",
-      "PackagePath": "staticwebassets\\js\\bootstrap.esm.min.js"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js.map",
-      "PackagePath": "staticwebassets\\js\\bootstrap.esm.min.js.map"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js",
-      "PackagePath": "staticwebassets\\js\\bootstrap.js"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js.map",
-      "PackagePath": "staticwebassets\\js\\bootstrap.js.map"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js",
-      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
-    },
-    {
-      "Id": "C:\\Users\\ADMIN\\.nuget\\packages\\bootstrap\\5.3.3\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js.map",
-      "PackagePath": "staticwebassets\\js\\bootstrap.min.js.map"
-    },
-    {
       "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Bookshop-Website.bundle.scp.css",
       "PackagePath": "staticwebassets\\Bookshop-Website.bundle.scp.css"
     },
@@ -97,10 +49,6 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\css\\styles.css",
-      "PackagePath": "staticwebassets\\css\\styles.css"
-    },
-    {
       "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -113,112 +61,180 @@
       "PackagePath": "staticwebassets\\js\\scripts.js"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\all.css",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\all.css"
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\css\\all.min.css",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\all.min.css"
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\all.js",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\all.js"
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\all.min.js",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\all.min.js"
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\brands.js",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\brands.js"
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\brands.min.js",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\brands.min.js"
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\conflict-detection.js",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\conflict-detection.js"
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\conflict-detection.min.js",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\conflict-detection.min.js"
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\fontawesome.js",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\fontawesome.js"
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\fontawesome.min.js",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\fontawesome.min.js"
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\regular.js",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\regular.js"
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\regular.min.js",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\regular.min.js"
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\solid.js",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\solid.js"
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\solid.min.js",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\solid.min.js"
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\v4-shims.js",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\v4-shims.js"
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\js\\v4-shims.min.js",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\js\\v4-shims.min.js"
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\sprites\\brands.svg",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\sprites\\brands.svg"
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\sprites\\regular.svg",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\sprites\\regular.svg"
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\sprites\\solid.svg",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\sprites\\solid.svg"
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.ttf",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-brands-400.ttf"
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\webfonts\\fa-brands-400.woff2",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-brands-400.woff2"
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.ttf",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-regular-400.ttf"
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\webfonts\\fa-regular-400.woff2",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-regular-400.woff2"
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.ttf",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-solid-900.ttf"
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\webfonts\\fa-solid-900.woff2",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-solid-900.woff2"
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\webfonts\\fa-v4compatibility.ttf",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-v4compatibility.ttf"
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\font-awesome\\webfonts\\fa-v4compatibility.woff2",
-      "PackagePath": "staticwebassets\\lib\\font-awesome\\webfonts\\fa-v4compatibility.woff2"
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\bootstrap\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\js\\bootstrap.min.js.map"
     },
     {
       "Id": "C:\\Users\\ADMIN\\Desktop\\Project\\Bookshop-Website\\wwwroot\\lib\\jquery-validation\\LICENSE.md",

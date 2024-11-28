@@ -34,8 +34,10 @@ namespace Bookshop_Website.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<float>("AverageRating")
+                        .HasColumnType("real");
+
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("DiscountPercentage")
@@ -50,17 +52,32 @@ namespace Bookshop_Website.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("InStock")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Language")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("NumberOfPages")
+                        .HasColumnType("int");
+
+                    b.Property<int>("NumberSold")
+                        .HasColumnType("int");
 
                     b.Property<decimal>("OriginalPrice")
                         .HasPrecision(18, 3)
                         .HasColumnType("decimal(18,3)");
 
+                    b.Property<DateTime>("PublicationDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Publisher")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("StockQuantity")
+                        .HasColumnType("int");
 
                     b.Property<string>("Title")
                         .IsRequired()

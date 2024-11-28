@@ -97,6 +97,39 @@
                         </div>
                     </div>
                     <div class="row">
+                        <div class="col-6 form-group">
+                            <label asp-for="PublicationDate" class="control-label"></label>
+                            <input asp-for="PublicationDate" class="form-control" value="0" />
+                            <div class="validationContainer">
+                                <span asp-validation-for="PublicationDate" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-6 form-group">
+                            <label asp-for="ImageUrl" class="control-label"></label>
+                            <input asp-for="ImageUrl" class="form-control" />
+                            <div class="validationContainer">
+                                <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 form-group">
+                            <label asp-for="NumberOfPages" class="control-label"></label>
+                            <input asp-for="NumberOfPages" class="form-control" value="0" />
+                            <div class="validationContainer">
+                                <span asp-validation-for="NumberOfPages" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-6 form-group">
+                            <label asp-for="InStock" class="control-label"></label>
+                            <input asp-for="InStock" type="checkbox" class="form-control" />
+                            <div class="validationContainer">
+                                <span asp-validation-for="InStock" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
                         <div class="form-group">
                             <label asp-for="Description" class="control-label"></label>
                             <textarea asp-for="Description" class="form-control"></textarea>

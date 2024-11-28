@@ -51,7 +51,7 @@ namespace Bookshop_Website.Controllers
             return View();
         }
         // Post: Books/SearchResults
-        public async Task<IActionResult> SearchResults (String SearchPhrase)
+        public async Task<IActionResult> SearchResults(String SearchPhrase)
         {
             ViewData["SearchPhrase"] = SearchPhrase;
             return View("Search", await _context.Books.Where(j => j.Title.Contains(SearchPhrase)).ToListAsync());
@@ -70,7 +70,8 @@ namespace Bookshop_Website.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Create([Bind("BookId,Title,Author,Genre,Publisher,Language,DiscountPercentage,OriginalPrice,ImageUrl,Description")] Books books)
+        public async Task<IActionResult>
+            Create([Bind("BookId,Title,Author,Genre,Publisher,Language,DiscountPercentage,OriginalPrice,ImageUrl,Description, PublicationDate, NumberOfPages, InStock, AverageRating,NumberSold, StockQuantity")]Books books)
         {
             if (ModelState.IsValid)
             {
@@ -105,7 +106,7 @@ namespace Bookshop_Website.Controllers
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
 
-        public async Task<IActionResult> Edit(int id, [Bind("BookId,Title,Author,Genre,Publisher,Language,DiscountPercentage,OriginalPrice,ImageUrl,Description")] Books books)
+        public async Task<IActionResult> Edit(int id, [Bind("BookId,Title,Author,Genre,Publisher,Language,DiscountPercentage,OriginalPrice,ImageUrl,Description, PublicationDate, NumberOfPages, InStock, AverageRating,NumberSold, StockQuantity")] Books books)
         {
             if (id != books.BookId)
             {
@@ -203,7 +204,7 @@ namespace Bookshop_Website.Controllers
                 .Distinct()
                 .ToListAsync();
 
-            return PartialView("_GenresPartial"); 
+            return PartialView("_GenresPartial");
         }
         // POST: Books/GenresShow
         public async Task<IActionResult> LanguagesShow(string SearchPhrase)

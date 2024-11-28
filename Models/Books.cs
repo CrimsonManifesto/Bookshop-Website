@@ -33,7 +33,27 @@ namespace Bookshop_Website.Models
 
         public string Language { get; set; }
 
-        public string? Description { get; set; } 
+        public string? Description { get; set; }
+
+        [DataType(DataType.Date)]
+        [Display(Name = "Publication Date")]
+        public DateTime PublicationDate { get; set; }
+
+        [Display(Name = "Number of Pages")]
+        public int NumberOfPages { get; set; }
+
+        [Display(Name = "In Stock")]
+        public bool InStock { get; set; }
+
+        [Range(0, 5)]
+        [Display(Name = "Average Rating")]
+        public float AverageRating { get; set; }
+
+        [Display(Name = "Number Sold")]
+        public int NumberSold { get; set; }
+
+        [Display(Name = "Stock Quantity")]
+        public int StockQuantity { get; set; }
 
     }
 }

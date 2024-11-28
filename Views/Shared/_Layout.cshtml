@@ -4,100 +4,99 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Kabasa</title>
-    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/lib/font-awesome/css/all.css" asp-append-version="true"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com" asp-append-version="true"/>
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com" asp-append-version="true" />
     <link rel="stylesheet" href="https://fonts.gstatic.com" crossorigin asp-append-version="true" />
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet" asp-append-version="true"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet" asp-append-version="true" />
 
 </head>
-<body style="background-color:#F0F0F0">
+<body style="background-color:#FFFFFF">
     <div class="wrapper">
         <div class="content">
             <!--Back to top button-->
             <button class="btn rounded-circle" id="backToTopBtn" title="Back to top">▲</button>
-    <header>
+            <header>
                 <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-red border-bottom box-shadow" style="background-color: white; padding-inline: 100px;">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Books" asp-action="Index" id="brandText">Kabasa</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse justify-content-between">
-                                <!--Category button-->
+                    <div class="container-fluid">
+                        <a class="navbar-brand" asp-area="" asp-controller="Books" asp-action="Index" id="brandText">Kabasa</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="navbar-collapse collapse justify-content-between">
+                            <!--Category button-->
                             <div class="btn-group">
 
-                                        <button type="button" class="btn dropdown-toggle shadow-none" data-bs-toggle="dropdown" id="catButton">
-                                            <i class="fa-solid fa-bars"></i>
-                                        </button>
+                                <button type="button" class="btn dropdown-toggle shadow-none" data-bs-toggle="dropdown" id="catButton">
+                                    <i class="fa-solid fa-bars"></i>
+                                </button>
 
                                 <ul class="dropdown-menu multi-column columns-3" id="genresDropdown">
-                                            <!-- Genres dropdown menu -->
+                                    <!-- Genres dropdown menu -->
 
 
-                                        </ul>
+                                </ul>
                             </div>
 
-                        <!--Search button-->
+                            <!--Search button-->
 
-                                <form asp-controller="Books" asp-action="SearchResults" method="get" class="w-100">
-                                    <div class="input-group w-100" id="searchContainer">
-                                        <input name="SearchPhrase" class="form-control shadow-none search-input" type="search" placeholder="Search">
-                                        <div class="input-group-append" style="background-color:red;display:flex">
+                            <form asp-controller="Books" asp-action="SearchResults" method="get" class="w-100">
+                                <div class="input-group w-100" id="searchContainer">
+                                    <input name="SearchPhrase" class="form-control shadow-none search-input" type="search" placeholder="Search">
+                                    <div class="input-group-append" style="background-color:red;display:flex">
 
                                         <button class="btn shadow-none" type="submit"><i class="fas fa-search" style="color:white;align-items:center "></i></button>
-                                        </div>
                                     </div>
+                                </div>
 
 
-                        </form>
+                            </form>
 
-                        <!-- Cart button -->
-                                    <a class="nav-link" asp-area="" asp-controller="Books" asp-action="ViewCart" id="navButton">
-                                        <div id="navContainer">
-                                            <i class="fa-solid fa-cart-shopping" id="navSymbol"></i>
-                                        </div>
+                            <!-- Cart button -->
+                            <a class="nav-link" asp-area="" asp-controller="Books" asp-action="ViewCart" id="navButton">
+                                <div id="navContainer">
+                                    <i class="fa-solid fa-cart-shopping" id="navSymbol"></i>
+                                </div>
 
-                                    <div id="navContainer">
-                                            Cart
-                                        </div>
-                                    </a>
-                    <partial name="_LoginPartial" />
+                                <div id="navContainer">
+                                    Cart
+                                </div>
+                            </a>
+                            <partial name="_LoginPartial" />
 
-                </div>
-            </div>
-        </nav>
-    </header>
+                        </div>
+                    </div>
+                </nav>
+            </header>
             @if (ViewData["ShowBanner"] != null && (bool)ViewData["ShowBanner"])
             {
                 <partial name="_BannerPartial" />
-            }            
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+            }
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
         </div>
 
-    <footer>
-        <div class="footer">
-            <div class="container">
-                &copy; 2024 - Kabasa - <a asp-area="" asp-controller="Home" asp-action="Privacy" style="color:Yellow">Privacy</a><br/>
-                This is a website
+        <footer>
+            <div class="footer">
+                <div class="container">
+                    &copy; 2024 - Kabasa - <a asp-area="" asp-controller="Home" asp-action="Privacy" style="color:Yellow">Privacy</a><br />
+                    This is a website
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
     </div>
-        <script src="~/lib/jquery/dist/jquery.min.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-        <script src="~/js/scripts.js" asp-append-version="true"></script>
-        @await RenderSectionAsync("Scripts", required: false)
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/scripts.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
     <script>
         $(document).ready(function() {
             // Fetch genres using an AJAX request
             $.get('@Url.Action("Genres", "Books")', function(data) {
-                $('#genresDropdown').append(data); 
+                $('#genresDropdown').append(data);
 
             }).fail(function() {
                 alert('Error loading genres!');
@@ -118,7 +117,7 @@
         }
 
         document.getElementById("backToTopBtn").addEventListener("click", function() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+           window.scrollTo(0, 0);;
         });
 
     </script>
@@ -128,9 +127,10 @@
 
 
 <style>
-    header{
-        margin:0;
+    header {
+        margin: 0;
     }
+
     .dropdown:hover .dropdown-menu {
         display: block;
     }
@@ -170,7 +170,7 @@
         position: fixed;
         bottom: 30px;
         right: 30px;
-        z-index: 100;
+        z-index: 1000;
         display: none;
         font-size: larger;
         padding: 15px 22px;

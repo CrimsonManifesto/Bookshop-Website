@@ -9,6 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\lib\bootstrap\scss\**" />
+    <Content Remove="wwwroot\lib\bootstrap\scss\**" />
+    <EmbeddedResource Remove="wwwroot\lib\bootstrap\scss\**" />
+    <None Remove="wwwroot\lib\bootstrap\scss\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="C:\Users\ADMIN\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.css" />
     <Content Remove="C:\Users\ADMIN\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.css.map" />
     <Content Remove="C:\Users\ADMIN\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.min.css" />
@@ -41,6 +48,18 @@
     <Content Remove="C:\Users\ADMIN\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap.rtl.css.map" />
     <Content Remove="C:\Users\ADMIN\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap.rtl.min.css" />
     <Content Remove="C:\Users\ADMIN\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap.rtl.min.css.map" />
+    <Content Remove="C:\Users\ADMIN\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.bundle.js" />
+    <Content Remove="C:\Users\ADMIN\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.bundle.js.map" />
+    <Content Remove="C:\Users\ADMIN\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.bundle.min.js" />
+    <Content Remove="C:\Users\ADMIN\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.bundle.min.js.map" />
+    <Content Remove="C:\Users\ADMIN\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.esm.js" />
+    <Content Remove="C:\Users\ADMIN\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.esm.js.map" />
+    <Content Remove="C:\Users\ADMIN\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.esm.min.js" />
+    <Content Remove="C:\Users\ADMIN\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.esm.min.js.map" />
+    <Content Remove="C:\Users\ADMIN\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.js" />
+    <Content Remove="C:\Users\ADMIN\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.js.map" />
+    <Content Remove="C:\Users\ADMIN\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.min.js" />
+    <Content Remove="C:\Users\ADMIN\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.min.js.map" />
   </ItemGroup>
 
   <ItemGroup>
@@ -55,7 +74,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
