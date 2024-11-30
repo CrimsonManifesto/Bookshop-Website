@@ -7,14 +7,6 @@
     var profilePictureUrl = ViewBag.ProfilePictureUrl as string;
 
 }
-<a asp-action="EditProfile" asp-controller="Profile" class="btn btn-secondary">Edit Profile Picture</a>
-
-<h2>Update Profile Picture</h2>
-
-<div>
-    <img src="@profilePictureUrl" alt="Profile Picture" class="img-thumbnail" width="150" />
-</div>
-
 
     @if (User.IsInRole("Admin"))
     {
@@ -58,6 +50,7 @@
         }
     </div>
 </div>
+
 
 <style>
 

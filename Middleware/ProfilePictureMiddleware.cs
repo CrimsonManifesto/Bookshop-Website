@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 public class ProfilePictureMiddleware
 {
+
     private readonly RequestDelegate _next;
 
     public ProfilePictureMiddleware(RequestDelegate next)

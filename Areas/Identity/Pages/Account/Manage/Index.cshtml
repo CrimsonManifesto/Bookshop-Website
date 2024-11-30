@@ -8,18 +8,51 @@
 <h3>@ViewData["Title"]</h3>
 <partial name="_StatusMessage" for="StatusMessage" />
 <div class="row">
+    @* Profile picture card *@
+    <div class="col-md-6">
+        <div class="card mb-4 mb-xl-0">
+            <div class="card-header">Profile Picture</div>
+            <div class="card-body text-center">
+                <img id="currentProfilePic" src="@Model.ProfilePictureUrl" alt="Profile Picture" class="img-fluid rounded-circle" width="200" />
+                <div class="small font-italic text-muted mb-4 mt-2">Max size: 2MB. Support WebP, PNG, JPEG, and GIF.</div>
+
+                <form id="uploadForm" asp-action="UploadProfilePicture" asp-controller="Profile" method="post" enctype="multipart/form-data">
+                        <input type="file" name="profilePicture" id="profilePicture" accept="image/*" required />
+                </form>
+                <div id="image-crop-container" style="display: none;">
+                    <img id="image-cropper" src="" alt="Crop image" style="max-width: 100%;" />
+                    <button id="cropButton" class="btn btn-success mt-3">Upload</button>
+                </div>
+                @if (TempData["SuccessMessage"] != null)
+                {
+                    <div class="alert alert-success mt-3">
+                        @TempData["SuccessMessage"]
+                    </div>
+                }
+                @if (TempData["ErrorMessage"] != null)
+                {
+                    <div class="alert alert-danger mt-3">
+                        @TempData["ErrorMessage"]
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    @* Profile infomation section *@
     <div class="col-md-6">
         <form id="profile-form" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
             <div class="form-floating mb-3">
-                <input asp-for="Username" class="form-control" placeholder="Please choose your username." disabled />
-                <label asp-for="Username" class="form-label"></label>
+                <input asp-for="Input.Username" class="form-control" placeholder="Please choose your username." />
+                <label asp-for="Input.Username" class="form-label"></label>
             </div>
             <div class="form-floating mb-3">
                 <input asp-for="Input.PhoneNumber" class="form-control" placeholder="Please enter your phone number."/>
                 <label asp-for="Input.PhoneNumber" class="form-label"></label>
                 <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
             </div>
+
             <button id="update-profile-button" type="submit" class="w-100 btn btn-lg btn-primary">Save</button>
         </form>
     </div>
@@ -28,3 +61,37 @@
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
+
+<script>
+    document.getElementById('profilePicture').addEventListener('change', function(e) {
+        var reader = new FileReader();
+        reader.onload = function(event) {
+            var image = document.getElementById('image-cropper');
+            image.src = event.target.result;
+            document.getElementById('image-crop-container').style.display = 'block';
+
+            var cropper = new Cropper(image, {
+                aspectRatio: 1, // 1:1 ratio
+                viewMode: 1,
+                autoCropArea: 0.65
+            });
+            
+            // Handle the crop action
+            document.getElementById('cropButton').addEventListener('click', function() {
+                var croppedCanvas = cropper.getCroppedCanvas();
+                var croppedImageDataUrl = croppedCanvas.toDataURL('image/png');
+
+                // Set the cropped image data to the hidden input field
+                var croppedInput = document.createElement('input');
+                croppedInput.setAttribute('type', 'hidden');
+                croppedInput.setAttribute('name', 'croppedImage');
+                croppedInput.setAttribute('value', croppedImageDataUrl);
+                document.getElementById('uploadForm').appendChild(croppedInput);
+
+                // Submit the form
+                document.getElementById('uploadForm').submit();
+            });
+        };
+        reader.readAsDataURL(e.target.files[0]);
+    });
+</script>

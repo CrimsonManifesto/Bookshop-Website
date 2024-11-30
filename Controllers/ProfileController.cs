@@ -23,30 +23,38 @@ namespace Bookshop_Website.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> UploadProfilePicture(IFormFile profilePicture)
+        public async Task<IActionResult> UploadProfilePicture(string croppedImage)
         {
-            if (profilePicture != null && profilePicture.Length > 0)
+            if (!string.IsNullOrEmpty(croppedImage))
             {
                 var user = await _userManager.GetUserAsync(User);
                 if (user == null)
                 {
-                    return RedirectToAction("Login", "Account"); // Make sure user has been login
+                    return RedirectToAction("Login", "Account");
                 }
 
-                var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif" };
-                var fileExtension = Path.GetExtension(profilePicture.FileName).ToLower();
+                // Limit image size
+                const int maxSizeInBytes = 2 * 1024 * 1024; // 2MB
+                var base64Data = croppedImage.Substring(croppedImage.IndexOf(",") + 1);
+                var bytes = Convert.FromBase64String(base64Data);
 
-                if (!allowedExtensions.Contains(fileExtension))
+                // Check image size
+                if (bytes.Length > maxSizeInBytes)
                 {
-                    TempData["ErrorMessage"] = "Only image files (.jpg, .jpeg, .png, .gif) are allowed.";
-                    return RedirectToAction("Index");
+                    TempData["ErrorMessage"] = "The image file is too large. Maximum size is 2MB.";
+                    return Redirect("/Identity/Account/Manage");
                 }
 
-                if (!profilePicture.ContentType.StartsWith("image/"))
+                // Delete old image if exists
+                if (!string.IsNullOrEmpty(user.ProfilePictureUrl))
                 {
-                    TempData["ErrorMessage"] = "Invalid file type.";
-                    return RedirectToAction("Index");
+                    var oldFilePath = Path.Combine(_env.WebRootPath, user.ProfilePictureUrl.TrimStart('/'));
+                    if (System.IO.File.Exists(oldFilePath))
+                    {
+                        System.IO.File.Delete(oldFilePath);
+                    }
                 }
+
 
                 var uploadsFolder = Path.Combine(_env.WebRootPath, "images", "profiles");
                 if (!Directory.Exists(uploadsFolder))
@@ -54,13 +62,11 @@ namespace Bookshop_Website.Controllers
                     Directory.CreateDirectory(uploadsFolder);
                 }
 
-                var fileName = Guid.NewGuid().ToString() + fileExtension;
+                var fileName = Guid.NewGuid().ToString() + ".png";
                 var filePath = Path.Combine(uploadsFolder, fileName);
 
-                using (var stream = new FileStream(filePath, FileMode.Create))
-                {
-                    await profilePicture.CopyToAsync(stream);
-                }
+                // Save the cropped image to the file system
+                await System.IO.File.WriteAllBytesAsync(filePath, bytes);
 
                 user.ProfilePictureUrl = $"/images/profiles/{fileName}";
                 var result = await _userManager.UpdateAsync(user);
@@ -74,11 +80,11 @@ namespace Bookshop_Website.Controllers
                     TempData["ErrorMessage"] = "An error occurred while updating your profile.";
                 }
 
-                return RedirectToAction("Index");
+                return Redirect("/Identity/Account/Manage");
             }
 
-            TempData["ErrorMessage"] = "No file selected.";
-            return RedirectToAction("Index");
+            TempData["ErrorMessage"] = "No image selected.";
+            return Redirect("/Identity/Account/Manage");
         }
 
     }
