@@ -1,6 +1,6 @@
 ﻿@* Configuration your category options *@
  <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-3">
         <div class="dropdown-header">Genres</div>
 
         <form asp-controller="Books" asp-action="GenresShow" method="post">
@@ -25,7 +25,7 @@
         </form>
     </div>
 
-    <div class="col-sm-4">
+    <div class="col-sm-3">
         <div class="dropdown-header"></div>
 
         <form asp-controller="Books" asp-action="GenresShow" method="post">
@@ -50,7 +50,7 @@
         </form>
     </div>
 
-    <div class="col-sm-4">
+    <div class="col-sm-3">
         <div class="dropdown-header">Languages</div>
 
         <form asp-controller="Books" asp-action="LanguagesShow" method="post">
@@ -79,5 +79,65 @@
 
         </form>
     </div>
+    <div class="col-sm-3">
+        <div class="dropdown-header">Languages</div>
+
+        <form asp-controller="Books" asp-action="LanguagesShow" method="post">
+            <input type="hidden" name="SearchPhrase" value="English" />
+            <button class="dropdown-item" type="submit">Pens and Writing</button>
+
+        </form>
+        <form asp-controller="Books" asp-action="LanguagesShow" method="post">
+            <input type="hidden" name="SearchPhrase" value="Paper Products" />
+            <button class="dropdown-item" type="submit">Paper Products</button>
+
+        </form>
+        <form asp-controller="Books" asp-action="LanguagesShow" method="post">
+            <input type="hidden" name="SearchPhrase" value="Study Tools" />
+            <button class="dropdown-item" type="submit">Study Tools</button>
+
+        </form>
+        <form asp-controller="Books" asp-action="LanguagesShow" method="post">
+            <input type="hidden" name="SearchPhrase" value="Organizational Tools" />
+            <button class="dropdown-item" type="submit">Organizational Tools</button>
+
+        </form>
+        <form asp-controller="Books" asp-action="LanguagesShow" method="post">
+            <input type="hidden" name="SearchPhrase" value="Others" />
+            <button class="dropdown-item" type="submit">Others</button>
+
+        </form>
+    </div>
+
 </div>
+
+<style>
+    .dropdown-item {
+        background-color: white;
+        color: black;
+        border: none; 
+        padding: 10px 20px; 
+        text-align: left;
+        transition: background-color 0.4s, color 0.4s;
+    }
+
+        .dropdown-item:hover {
+            background-color: red; 
+            color: white;
+            cursor: pointer;
+        }
+
+        .dropdown-item:active {
+            background-color: #c1c1c1; 
+            color: black;
+        }
+
+    .dropdown-header {
+        font-size: 1.2rem;
+        color: black;
+        font-weight: 600
+    }
+
+
+</style>
 

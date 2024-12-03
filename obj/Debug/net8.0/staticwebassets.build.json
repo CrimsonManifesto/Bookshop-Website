@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eQ7I70tpV5ilGQpduhjwGXJrza3vel+80PJKRsyNHlY=",
+  "Hash": "+rdDToRWCJc5uF7+ubHyT06O7zRsedGydBCc1wB8k7c=",
   "Source": "Bookshop-Website",
   "BasePath": "_content/Bookshop-Website",
   "Mode": "Default",
@@ -1423,12 +1423,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\images\\profiles\\4f27ec13-5c22-4587-a5d8-266fa2a268d2.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\images\\profiles\\3687e1a7-bc37-4782-92af-f6601ccb0bd9.png",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
-      "RelativePath": "images/profiles/4f27ec13-5c22-4587-a5d8-266fa2a268d2.png",
+      "RelativePath": "images/profiles/3687e1a7-bc37-4782-92af-f6601ccb0bd9.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1439,15 +1439,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\profiles\\4f27ec13-5c22-4587-a5d8-266fa2a268d2.png"
+      "OriginalItemSpec": "wwwroot\\images\\profiles\\3687e1a7-bc37-4782-92af-f6601ccb0bd9.png"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\images\\profiles\\c4972bbf-a20d-4244-9382-92a3fd3dfd81.png",
+      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\images\\profiles\\b579386d-8525-4ddc-9652-d615cef21072.png",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
-      "RelativePath": "images/profiles/c4972bbf-a20d-4244-9382-92a3fd3dfd81.png",
+      "RelativePath": "images/profiles/b579386d-8525-4ddc-9652-d615cef21072.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1458,7 +1458,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\profiles\\c4972bbf-a20d-4244-9382-92a3fd3dfd81.png"
+      "OriginalItemSpec": "wwwroot\\images\\profiles\\b579386d-8525-4ddc-9652-d615cef21072.png"
     },
     {
       "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\images\\profiles\\default-profile.png",

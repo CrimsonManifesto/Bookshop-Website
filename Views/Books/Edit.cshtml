@@ -11,7 +11,7 @@
         <div class="d-flex justify-content-center py-4">
             <div class="col px-5">
                 <div class="row pb-4">
-                    <h1>Edit book</h1>
+                    <h1 class="fw-semibold">Edit book</h1>
                 </div>
                 <form asp-action="Edit">
                     <input type="hidden" asp-for="BookId" />
@@ -84,7 +84,7 @@
                     <div class="row">
                         <div class="col-6 form-group">
                             <label asp-for="DiscountPercentage" class="control-label"></label>
-                            <input asp-for="DiscountPercentage" class="form-control" value="0" />
+                            <input asp-for="DiscountPercentage" class="form-control"/>
                             <div class="validationContainer">
                                 <span asp-validation-for="DiscountPercentage" class="text-danger"></span>
                             </div>
@@ -100,7 +100,7 @@
                     <div class="row">
                         <div class="col-6 form-group">
                             <label asp-for="PublicationDate" class="control-label"></label>
-                            <input asp-for="PublicationDate" class="form-control" value="0" />
+                            <input asp-for="PublicationDate" class="form-control" />
                             <div class="validationContainer">
                                 <span asp-validation-for="PublicationDate" class="text-danger"></span>
                             </div>
@@ -116,7 +116,7 @@
                     <div class="row">
                         <div class="col-6 form-group">
                             <label asp-for="NumberOfPages" class="control-label"></label>
-                            <input asp-for="NumberOfPages" class="form-control" value="0" />
+                            <input asp-for="NumberOfPages" class="form-control" />
                             <div class="validationContainer">
                                 <span asp-validation-for="NumberOfPages" class="text-danger"></span>
                             </div>

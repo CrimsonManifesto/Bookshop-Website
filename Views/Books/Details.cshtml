@@ -15,7 +15,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                   @*  ------------------------> need improve  *@
+                   @*  ------------------------> Need improve  *@
                     <form asp-action="AddtoCart" asp-route-id="@Model?.BookId" method="post" style="display:inline;">
                         <button type="submit" class="btn interactBtn w-100 fw-bold" style="color:white; background-color:red">
                             Buy
@@ -53,15 +53,22 @@
         </div>
         <div class="col overflow-auto" style="height:45rem">
             @* Book title and price *@
-            <div class="col" style="background-color:white" id="infoCol">
+            <div class="col infoCol bg-white">
                 <h1 style="font-weight:bold">@Html.DisplayFor(Model => Model.Title)</h1>
                 <h1 style="color:red;font-weight:bold">@Model.Price.ToString("C")</h1>
                 <h3>@Html.DisplayFor(Model => Model.Author)</h3>
+                <div id="rating-container">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
             </div>
 
-            @* detail info *@
-            <div class="col" style="background-color:white" id="infoCol">
-                <h3 class="fw-bold" id="sectionHeader">Detail information</h3>
+            @* Detail info *@
+            <div class="col infoCol mb-0 bg-white">
+                <h3 class="fw-semibold" id="sectionHeader">Detail information</h3>
                 <div class="row">
                     <div class="col">
                         <p id="infoText">@Html.DisplayNameFor(Model => Model.Author)</p>
@@ -96,36 +103,85 @@
 
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col">
+                        <p id="infoText">@Html.DisplayNameFor(Model => Model.PublicationDate)</p>
+                    </div>
+                    <div class="col">
+                        @Html.DisplayFor(Model => Model.PublicationDate)
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p id="infoText">@Html.DisplayNameFor(Model => Model.NumberOfPages)</p>
+                    </div>
+                    <div class="col">
+                        @Html.DisplayFor(Model => Model.NumberOfPages)
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p id="infoText">@Html.DisplayNameFor(Model => Model.AverageRating)</p>
+                    </div>
+                    <div class="col">
+                        @Html.DisplayFor(Model => Model.AverageRating)
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p id="infoText">@Html.DisplayNameFor(Model => Model.NumberSold)</p>
+                    </div>
+                    <div class="col">
+                        @Html.DisplayFor(Model => Model.NumberSold)
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p id="infoText">@Html.DisplayNameFor(Model => Model.StockQuantity)</p>
+                    </div>
+                    <div class="col">
+                        @Html.DisplayFor(Model => Model.StockQuantity)
+
+                    </div>
+                </div>
             </div>
 
 
             @* description *@
             <div class="col" style="background-color:white" id="infoCol">
-                <h3 id="sectionHeader">Description</h3>
+                <h3 class="fw-semibold" id="sectionHeader">Description</h3>
                 <p>@Html.DisplayFor(Model => Model.Description)</p>
             </div>
 
         </div>
+        @* Comment *@
+        <h1 class="fw-bold">Comment</h1>
 </div>
 </div>
 
+<script>
+    // Rating
+    function displayRating(rating) {
+        const stars = document.querySelectorAll('.star');
 
+        stars.forEach((star, index) => {
+            if (index < rating) {
+                star.classList.add('filled');
+            } else {
+                star.classList.remove('filled');
+            }
+        });
+    }
 
+    // Example average rating
+    const averageRating = 3.5;
+    displayRating(averageRating);
 
-
-
-
-
-
-
-
-
-
-
-
-@* Comment *@
-<div>
-</div>
+</script>
 
 <Style>
     #image{
@@ -134,7 +190,7 @@
         margin-top: 2rem
    }
 
-    #infoCol {
+    .infoCol {
         padding-inline-start: 1.3rem;
         padding-top: 0.6rem;
         padding-bottom: 0.8rem;
@@ -152,5 +208,16 @@
     .interactBtn{
         margin-top: 2rem;
     }
+    
+    .star {
+        font-size: 30px;
+        color: lightgray;
+        cursor: pointer;
+    }
+
+    .filled {
+        color: gold;
+    }
+
 
 </Style>

@@ -89,7 +89,7 @@ namespace Bookshop_Website.Controllers
             return View(books);
         }
 
-        // GET: Books/Edit/5
+        // GET: Books/Edit
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
@@ -106,7 +106,7 @@ namespace Bookshop_Website.Controllers
             return View(books);
         }
 
-        // POST: Books/Edit/5
+        // POST: Books/Edit
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -143,7 +143,7 @@ namespace Bookshop_Website.Controllers
             return View(books);
         }
 
-        // GET: Books/Delete/5
+        // GET: Books/Delete
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
@@ -162,7 +162,7 @@ namespace Bookshop_Website.Controllers
             return View(books);
         }
 
-        // POST: Books/Delete/5
+        // POST: Books/Delete
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]

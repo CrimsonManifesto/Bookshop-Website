@@ -6,11 +6,11 @@
 
 <div class="container" id="whiteContainer" style="background-color:white">
 
-    <h2>Your Cart</h2>
+    <h2 class="fw-semibold">Your Cart</h2>
 
     @if (Model == null || !Model.Any())
     {
-        <p>Your cart is empty.</p>
+        <p class="fw-semibold">Your cart is empty.</p>
     }
     else
     {
@@ -41,7 +41,7 @@
                         </td>
                         <td>@item.Price.ToString("C")</td>
                         <td>x @item.Quantity</td>
-                        <td>@(item.Price * item.Quantity)</td>
+                        <td>@((item.Price * item.Quantity).ToString("C"))</td>
                         <td>
                             <form asp-action="RemoveFromCart" asp-route-id="@item.BookId" method="post">
                                 <button type="submit" class="btn btn-danger">Remove</button>
@@ -53,7 +53,7 @@
         </table>
 
         <div>
-            <h3>Total: @Model.Sum(item => item.Price * item.Quantity).ToString("C")</h3>
+            <h3 class="fw-semibold">Total: @Model.Sum(item => item.Price * item.Quantity).ToString("C")</h3>
         </div>
 
         <div>
