@@ -2,6 +2,23 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "APIMatic.Core/0.4.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.1",
+          "Microsoft.Json.Pointer": "2.3.0",
+          "Newtonsoft.Json": "13.0.2",
+          "Polly": "7.2.3",
+          "System.Collections.Immutable": "7.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/APIMatic.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/APIMatic.Core.dll": {}
+        }
+      },
       "Azure.Core/1.35.0": {
         "type": "package",
         "dependencies": {
@@ -1796,10 +1813,10 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/8.0.0": {
+      "Microsoft.Extensions.Logging.Abstractions/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.1"
         },
         "compile": {
           "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -1983,6 +2000,19 @@
           "lib/net6.0/Microsoft.IdentityModel.Tokens.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Microsoft.Json.Pointer/2.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "System.Collections.Immutable": "1.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Json.Pointer.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Json.Pointer.dll": {}
         }
       },
       "Microsoft.NET.StringTools/17.10.4": {
@@ -2399,6 +2429,36 @@
         },
         "runtime": {
           "lib/netstandard2.0/NuGet.Versioning.dll": {}
+        }
+      },
+      "PayPalServerSDK/0.6.1": {
+        "type": "package",
+        "dependencies": {
+          "APIMatic.Core": "0.4.3",
+          "Microsoft.CSharp": "4.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/PayPalServerSDK.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/PayPalServerSDK.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Polly/7.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "SQLitePCLRaw.bundle_e_sqlite3/2.1.6": {
@@ -3180,6 +3240,21 @@
     }
   },
   "libraries": {
+    "APIMatic.Core/0.4.3": {
+      "sha512": "n941lB8iwYREw8FwaiBBSD37hizstAbK/oxcrgXLs0PIZiAykMY8R0Y1SvcH12wPL9udIFI8I0crjIeoV7VffQ==",
+      "type": "package",
+      "path": "apimatic.core/0.4.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "apimatic.core.0.4.3.nupkg.sha512",
+        "apimatic.core.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/APIMatic.Core.dll"
+      ]
+    },
     "Azure.Core/1.35.0": {
       "sha512": "hENcx03Jyuqv05F4RBEPbxz29UrM3Nbhnr6Wl6NQpoU9BCIbL3XLentrxDCTrH54NLS11Exxi/o8MYgT/cnKFA==",
       "type": "package",
@@ -6004,10 +6079,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Logging.Abstractions/8.0.0": {
-      "sha512": "arDBqTgFCyS0EvRV7O3MZturChstm50OJ0y9bDJvAcmEPJm0FFpFyjU/JLYyStNGGey081DvnQYlncNX5SJJGA==",
+    "Microsoft.Extensions.Logging.Abstractions/8.0.1": {
+      "sha512": "RIFgaqoaINxkM2KTOw72dmilDmTrYA0ns2KW4lDz4gZ2+o6IQ894CzmdL3StM2oh7QQq44nCWiqKqc4qUI9Jmg==",
       "type": "package",
-      "path": "microsoft.extensions.logging.abstractions/8.0.0",
+      "path": "microsoft.extensions.logging.abstractions/8.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6072,7 +6147,7 @@
         "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
-        "microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+        "microsoft.extensions.logging.abstractions.8.0.1.nupkg.sha512",
         "microsoft.extensions.logging.abstractions.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -6339,6 +6414,19 @@
         "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.xml",
         "microsoft.identitymodel.tokens.6.35.0.nupkg.sha512",
         "microsoft.identitymodel.tokens.nuspec"
+      ]
+    },
+    "Microsoft.Json.Pointer/2.3.0": {
+      "sha512": "dP5d8Mo1vcqzWqY8StKoFNJNOdEDLkqg+GGQMAZgM9fNDQqekey9G0edIjEDGboY7yRjAJHGiuhc8/w45O6Ncw==",
+      "type": "package",
+      "path": "microsoft.json.pointer/2.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Microsoft.Json.Pointer.dll",
+        "lib/netstandard2.0/Microsoft.Json.Pointer.dll",
+        "microsoft.json.pointer.2.3.0.nupkg.sha512",
+        "microsoft.json.pointer.nuspec"
       ]
     },
     "Microsoft.NET.StringTools/17.10.4": {
@@ -7124,6 +7212,45 @@
         "lib/netstandard2.0/NuGet.Versioning.dll",
         "nuget.versioning.6.11.0.nupkg.sha512",
         "nuget.versioning.nuspec"
+      ]
+    },
+    "PayPalServerSDK/0.6.1": {
+      "sha512": "0lh2GNN1t0wDBKaKyPJkj4iH5xaOSEluxQsh4pt7aXb0Aa0n7EuRBP2Ium1/ZU52hs0QliQCVRrQemzgau5W1Q==",
+      "type": "package",
+      "path": "paypalserversdk/0.6.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "lib/netstandard2.0/PayPalServerSDK.dll",
+        "lib/netstandard2.0/PayPalServerSDK.xml",
+        "paypalserversdk.0.6.1.nupkg.sha512",
+        "paypalserversdk.nuspec"
+      ]
+    },
+    "Polly/7.2.3": {
+      "sha512": "DeCY0OFbNdNxsjntr1gTXHJ5pKUwYzp04Er2LLeN3g6pWhffsGuKVfMBLe1lw7x76HrPkLxKEFxBlpRxS2nDEQ==",
+      "type": "package",
+      "path": "polly/7.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Polly.png",
+        "lib/net461/Polly.dll",
+        "lib/net461/Polly.pdb",
+        "lib/net461/Polly.xml",
+        "lib/net472/Polly.dll",
+        "lib/net472/Polly.pdb",
+        "lib/net472/Polly.xml",
+        "lib/netstandard1.1/Polly.dll",
+        "lib/netstandard1.1/Polly.pdb",
+        "lib/netstandard1.1/Polly.xml",
+        "lib/netstandard2.0/Polly.dll",
+        "lib/netstandard2.0/Polly.pdb",
+        "lib/netstandard2.0/Polly.xml",
+        "polly.7.2.3.nupkg.sha512",
+        "polly.nuspec"
       ]
     },
     "SQLitePCLRaw.bundle_e_sqlite3/2.1.6": {
@@ -8543,7 +8670,8 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore >= 9.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Utils >= 9.0.0",
       "Microsoft.VisualStudio.Web.CodeGenerators.Mvc >= 9.0.0",
-      "Newtonsoft.Json >= 13.0.3"
+      "Newtonsoft.Json >= 13.0.3",
+      "PayPalServerSDK >= 0.6.1"
     ]
   },
   "packageFolders": {
@@ -8652,6 +8780,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
+          },
+          "PayPalServerSDK": {
+            "target": "Package",
+            "version": "[0.6.1, )"
           }
         },
         "imports": [

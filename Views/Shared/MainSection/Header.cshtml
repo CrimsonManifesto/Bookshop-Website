@@ -1,0 +1,52 @@
+﻿<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-red border-bottom box-shadow" style="background-color: white; padding-inline: 100px;">
+    <div class="container-fluid">
+        <a class="navbar-brand" asp-area="" asp-controller="Books" asp-action="Index" id="brandText">Kabasa</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse justify-content-between">
+
+            <!--Category button-->
+            <div class="btn-group">
+
+                <button type="button" class="btn dropdown-toggle shadow-none" data-bs-toggle="dropdown" id="catButton">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="dropdown-menu multi-column columns-4" id="genresDropdown">
+                    <!-- Genres dropdown menu -->
+
+
+                </div>
+            </div>
+
+            <!--Search button-->
+
+            <form asp-controller="Books" asp-action="SearchResults" method="get" class="w-100">
+                <div class="input-group w-100" id="searchContainer">
+                    <input name="SearchPhrase" class="form-control shadow-none search-input" type="search" placeholder="Search">
+                    <div class="input-group-append" style="background-color:red;display:flex">
+
+                        <button class="btn shadow-none" type="submit"><i class="fas fa-search" style="color:white;align-items:center "></i></button>
+                    </div>
+                </div>
+
+
+            </form>
+
+            <!-- Cart button -->
+            <a class="nav-link" asp-area="" asp-controller="Books" asp-action="ViewCart" id="navButton">
+                <div id="navContainer">
+                    <i class="fa-solid fa-cart-shopping" id="navSymbol"></i>
+                </div>
+
+                <div id="navContainer">
+                    Cart
+                </div>
+            </a>
+            <partial name="~/Views/Shared/TopNavigation/LoginPartial.cshtml" />
+
+        </div>
+    </div>
+</nav>

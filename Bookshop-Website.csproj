@@ -81,6 +81,11 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Utils" Version="9.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGenerators.Mvc" Version="9.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="PayPalServerSDK" Version="0.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Shared\Banners\" />
   </ItemGroup>
 
 </Project>

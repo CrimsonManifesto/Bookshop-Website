@@ -42,6 +42,16 @@
                     </div>
                 </div>
 
+                @if (ModelState.ErrorCount > 0)
+                {
+                    <div class="alert alert-danger">
+                        @foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
+                        {
+                            <p>@error.ErrorMessage</p>
+                        }
+                    </div>
+                }
+
                 <!-- Submit button -->
                 <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-red">Log in</button>
 
@@ -84,7 +94,7 @@
 <style>
     #loginContainer {
         width: 40rem;
-        height: 35rem;
+        height: 40rem;
     }
 
     .fa-google {
@@ -110,6 +120,7 @@
         color: red;
         font-weight: bold;
     }
+
 
 </style>
 

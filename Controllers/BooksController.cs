@@ -191,7 +191,7 @@ namespace Bookshop_Website.Controllers
                 .Distinct()
                 .ToListAsync();
 
-            return PartialView("_GenresPartial"); // Pass genres directly to the partial view
+            return PartialView("~/Views/Shared/TopNavigation/GenresPartial.cshtml");
         }
         // POST: Books/GenresShow
         public async Task<IActionResult> GenresShow(string SearchPhrase)
@@ -211,7 +211,7 @@ namespace Bookshop_Website.Controllers
                 .Distinct()
                 .ToListAsync();
 
-            return PartialView("_GenresPartial");
+            return PartialView("~/Views/Shared/TopNavigation/GenresPartial.cshtml");
         }
         // POST: Books/GenresShow
         public async Task<IActionResult> LanguagesShow(string SearchPhrase)

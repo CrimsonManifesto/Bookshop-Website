@@ -873,3 +873,8 @@ C:\Users\ADMIN\Source\Repos\Bookshop-Website\obj\Debug\net8.0\refint\Bookshop-We
 C:\Users\ADMIN\Source\Repos\Bookshop-Website\obj\Debug\net8.0\Bookshop-Website.pdb
 C:\Users\ADMIN\Source\Repos\Bookshop-Website\obj\Debug\net8.0\Bookshop-Website.genruntimeconfig.cache
 C:\Users\ADMIN\Source\Repos\Bookshop-Website\obj\Debug\net8.0\ref\Bookshop-Website.dll
+C:\Users\ADMIN\Source\Repos\Bookshop-Website\bin\Debug\net8.0\APIMatic.Core.dll
+C:\Users\ADMIN\Source\Repos\Bookshop-Website\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ADMIN\Source\Repos\Bookshop-Website\bin\Debug\net8.0\Microsoft.Json.Pointer.dll
+C:\Users\ADMIN\Source\Repos\Bookshop-Website\bin\Debug\net8.0\PayPalServerSDK.dll
+C:\Users\ADMIN\Source\Repos\Bookshop-Website\bin\Debug\net8.0\Polly.dll
