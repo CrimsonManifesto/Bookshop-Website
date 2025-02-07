@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\Bookshop-Website.csproj": {}
+    "C:\\Users\\ADMIN\\source\\repos\\Bookshop-Website\\Bookshop-Website.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\Bookshop-Website.csproj": {
+    "C:\\Users\\ADMIN\\source\\repos\\Bookshop-Website\\Bookshop-Website.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\Bookshop-Website.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\source\\repos\\Bookshop-Website\\Bookshop-Website.csproj",
         "projectName": "Bookshop-Website",
-        "projectPath": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\Bookshop-Website.csproj",
+        "projectPath": "C:\\Users\\ADMIN\\source\\repos\\Bookshop-Website\\Bookshop-Website.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\obj\\",
         "projectStyle": "PackageReference",

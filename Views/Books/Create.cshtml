@@ -19,7 +19,7 @@
                             <label asp-for="Title" class="control-label"></label>
                             <input asp-for="Title" class="form-control" />
                             <div class="validationContainer">
-                            <span asp-validation-for="Title" class="text-danger"></span>
+                                <span asp-validation-for="Title" class="text-danger"></span>
                             </div>
                         </div>
                         <div class="col-6 form-group">
@@ -36,7 +36,7 @@
                                 <option value="7">Horror</option>
                             </select>
                             <div class="validationContainer">
-                            <span asp-validation-for="Genre" class="text-danger"></span>
+                                <span asp-validation-for="Genre" class="text-danger"></span>
                             </div>
                         </div>
                     </div>
@@ -45,7 +45,7 @@
                             <label asp-for="Publisher" class="control-label"></label>
                             <input asp-for="Publisher" class="form-control" />
                             <div class="validationContainer">
-                            <span asp-validation-for="Publisher" class="text-danger"></span>
+                                <span asp-validation-for="Publisher" class="text-danger"></span>
                             </div>
                         </div>
                         <div class="col-6 form-group">
@@ -60,7 +60,7 @@
 
                             </select>
                             <div class="validationContainer">
-                            <span asp-validation-for="Language" class="text-danger"></span>
+                                <span asp-validation-for="Language" class="text-danger"></span>
                             </div>
                         </div>
                     </div>
@@ -69,30 +69,30 @@
                             <label asp-for="Author" class="control-label"></label>
                             <input asp-for="Author" class="form-control" />
                             <div class="validationContainer">
-                            <span asp-validation-for="Author" class="text-danger"></span>
+                                <span asp-validation-for="Author" class="text-danger"></span>
                             </div>
                         </div>
                         <div class="col-6 form-group">
                             <label asp-for="OriginalPrice" class="control-label"></label>
                             <input asp-for="OriginalPrice" class="form-control" />
                             <div class="validationContainer">
-                            <span asp-validation-for="OriginalPrice" class="text-danger"></span>
+                                <span asp-validation-for="OriginalPrice" class="text-danger"></span>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-6 form-group">
                             <label asp-for="DiscountPercentage" class="control-label"></label>
-                            <input asp-for="DiscountPercentage" class="form-control" value="0"/>
+                            <input asp-for="DiscountPercentage" class="form-control" value="0" />
                             <div class="validationContainer">
-                            <span asp-validation-for="DiscountPercentage" class="text-danger"></span>
+                                <span asp-validation-for="DiscountPercentage" class="text-danger"></span>
                             </div>
                         </div>
                         <div class="col-6 form-group">
                             <label asp-for="ImageUrl" class="control-label"></label>
                             <input asp-for="ImageUrl" class="form-control" />
                             <div class="validationContainer">
-                            <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                                <span asp-validation-for="ImageUrl" class="text-danger"></span>
                             </div>
                         </div>
                     </div>
@@ -104,13 +104,15 @@
                                 <span asp-validation-for="PublicationDate" class="text-danger"></span>
                             </div>
                         </div>
+                        @*
+                        -- For Future Modification --
                         <div class="col-6 form-group">
-                            <label asp-for="ImageUrl" class="control-label"></label>
-                            <input asp-for="ImageUrl" class="form-control" />
-                            <div class="validationContainer">
-                                <span asp-validation-for="ImageUrl" class="text-danger"></span>
-                            </div>
+                        <label asp-for="ImageUrl" class="control-label"></label>
+                        <input asp-for="ImageUrl" class="form-control" />
+                        <div class="validationContainer">
+                        <span asp-validation-for="ImageUrl" class="text-danger"></span>
                         </div>
+                        </div> *@
                     </div>
                     <div class="row">
                         <div class="col-6 form-group">
@@ -153,12 +155,14 @@
         width: 50rem;
         height: 60rem;
     }
-    .validationContainer{
-        height:2rem
+
+    .validationContainer {
+        height: 2rem
     }
-    .description{
+
+    .description {
         height: 8rem;
-        resize:none
+        resize: none
     }
 
 </style>

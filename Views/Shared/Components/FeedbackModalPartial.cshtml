@@ -1,0 +1,171 @@
+﻿<div id="feedback-button">
+    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#feedback-modal">Feedback</a>
+</div>
+
+<div id="feedback-modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content feedback-content ">
+            <div class="modal-header ">
+                <h4 class="modal-title px-1">Send your feedback!</h4>
+                <button type="button" class="btn-close px-1" data-bs-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" id="feedback-form" action="@Url.Action("SubmitFeedback", "Support")">
+                    <div class="row mb-2">
+                        <div class="col-6">
+                            <label class="mb-2"><i class="fas fa-user px-2"></i>Name</label>
+                            <input type="text" class="form-control feedback-form" name="userName" placeholder="Your name">
+                        </div>
+                        <div class="col-6">
+                            <label class="mb-2"><i class="fas fa-phone px-2"></i>Phone Number</label>
+                            <input type="number" class="form-control feedback-form" id="userPhone" name="userPhone" placeholder="Phone number">
+                            <small class="text-danger" id="phone-error"></small>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-6">
+                            <label class="mb-2"><i class="fas fa-envelope px-2"></i>Email Address</label>
+                            <input type="email" class="form-control feedback-form" id="userEmail" name="userEmail" placeholder="Email">
+                            <small class="text-danger" id="email-error"></small>
+                        </div>
+                        <div class="col-6">
+                            <label class="mb-2"><i class="fas fa-list px-2"></i>Type of Feedback</label>
+                            <select class="form-control feedback-form" name="feedbackType">
+                                <option value="UI/UX">UI/UX</option>
+                                <option value="Optimization">Optimization</option>
+                                <option value="Products">Products</option>
+                                <option value="Functions">Functions</option>
+                                <option value="Bug">Bug</option>
+                            </select>
+                            <i class="fas fa-chevron-down position-absolute" style="right: 18px; top: 70%; transform: translateY(-50%); pointer-events: none;"></i>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label class="mb-2"><i class="fas fa-comment-dots px-2"></i>Feedback Content (*)</label>
+                        <textarea class="form-control feedback-form" name="content" rows="10" placeholder="Your feedback..." required></textarea>
+                        <button type="submit" class="btn btn-primary w-100 mt-3" id="submit-feedback">Send</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    input[type='number'] {
+        -moz-appearance: textfield;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+
+    #feedback-button {
+        position: fixed;
+        right: -25px;
+        bottom: 150px;
+        z-index: 1000;
+    }
+
+        #feedback-button .btn {
+            padding: 10px 10px;
+            background-color: #007bff;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+            transform: rotate(-90deg);
+        }
+
+            #feedback-button .btn:hover {
+                background-color: #0056b3;
+                text-decoration: none;
+            }
+
+    .feedback-form {
+        resize: none;
+    }
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+
+        const form = document.getElementById("feedback-form");
+
+        form.addEventListener("submit", function(event) {
+            let isValid = true;
+            const emailInput = document.getElementById("userEmail");
+            const phoneInput = document.getElementById("userPhone");
+            const emailError = document.getElementById("email-error");
+            const phoneError = document.getElementById("phone-error");
+
+            // Reset old warning
+            emailError.textContent = "";
+            phoneError.textContent = "";
+
+            // Check email format
+            if (emailInput.value.trim() !== "") {
+                const emailRegex = /^[^\s@@]+@@[^\s@@]+\.[^\s@@]+$/;
+                if (!emailRegex.test(emailInput.value.trim())) {
+                    emailError.textContent = "Invalid email format.";
+                    isValid = false;
+                }
+            }
+
+            // Check phone number format
+            if (phoneInput.value.trim() !== "") {
+                if (!/^\d+$/.test(phoneInput.value.trim())) {
+                    phoneError.textContent = "Phone number must contain only digits.";
+                    isValid = false;
+                }
+                if (phoneInput.value.trim().length < 7 || phoneInput.value.trim().length > 15) {
+                    phoneError.textContent = "Phone number must be 7-15 digits.";
+                    isValid = false;
+                }
+            }
+
+            if (!isValid) {
+                event.preventDefault();
+            }
+        });
+
+        // Submit logic
+        if (form) {
+            form.addEventListener("submit", function(event) {
+                event.preventDefault();
+                console.log("Form submit intercepted!");
+
+                const formData = new FormData(form);
+
+                fetch('@Url.Action("SubmitFeedback", "Support")', {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                    body: new URLSearchParams(formData)
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            console.log("Feedback submitted successfully!");
+                            $('#feedback-modal').modal('hide');
+                            toastr.success('Thank you for your feedback!');
+                            form.reset();
+                        } else {
+                            toastr.error(data.message || 'There was an issue submitting your feedback.');
+                        }
+                    })
+                    .catch(error => {
+                        toastr.error('An error occurred. Please try again.');
+                        console.error('Error:', error);
+                    });
+            });
+        } else {
+            console.error("Form element not found!");
+        }
+    });
+</script>

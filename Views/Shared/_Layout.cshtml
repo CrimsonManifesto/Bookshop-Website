@@ -1,26 +1,26 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<partial name="~/Views/Shared/MainSection/Head.cshtml" />
+<partial name="~/Views/Shared/Layout/Head.cshtml" />
 <body style="background-color:#FFFFFF">
     <div class="wrapper">
         <div class="content">
-            <partial name="~/Views/Shared/Support/FeedbackModalPartial.cshtml" />
-            <partial name="~/Views/Shared/Support/BackToTopButton.cshtml" />
+            <partial name="~/Views/Shared/Components/FeedbackModalPartial.cshtml" />
+            <partial name="~/Views/Shared/Components/BackToTopButton.cshtml" />
             <header>
-               <partial name="~/Views/Shared/MainSection/Header.cshtml" />
+                <partial name="~/Views/Shared/Layout/Header.cshtml" />
             </header>
             @if (ViewData["ShowBanner"] != null && (bool)ViewData["ShowBanner"])
             {
-                <partial name="~/Views/Shared/Support/BannerPartial.cshtml" />
+                <partial name="~/Views/Shared/Components/BannerPartial.cshtml" />
             }
             <main role="main" class="pb-3">
-                <partial name="~/Views/Shared/Support/Overlay.cshtml" />
+                <partial name="~/Views/Shared/Components/Overlay.cshtml" />
                 @RenderBody()
             </main>
         </div>
 
         <footer>
-            <partial name="~/Views/Shared/MainSection/Footer.cshtml" />
+            <partial name="~/Views/Shared/Layout/Footer.cshtml" />
         </footer>
     </div>
 

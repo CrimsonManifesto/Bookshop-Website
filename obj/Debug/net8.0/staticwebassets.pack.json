@@ -53,6 +53,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\images\\profiles\\430bfde5-8b4e-4f96-818b-069a66956204.png",
+      "PackagePath": "staticwebassets\\images\\profiles\\430bfde5-8b4e-4f96-818b-069a66956204.png"
+    },
+    {
       "Id": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\images\\profiles\\53a04d92-be8e-4847-beaa-e2b403c9c480.png",
       "PackagePath": "staticwebassets\\images\\profiles\\53a04d92-be8e-4847-beaa-e2b403c9c480.png"
     },
@@ -65,12 +69,24 @@
       "PackagePath": "staticwebassets\\images\\profiles\\default-profile.png"
     },
     {
-      "Id": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\images\\profiles\\e40cc627-9da5-4d0c-8685-7e32e9a1aaa0.png",
-      "PackagePath": "staticwebassets\\images\\profiles\\e40cc627-9da5-4d0c-8685-7e32e9a1aaa0.png"
-    },
-    {
       "Id": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\js\\owl.lazyload.js",
+      "PackagePath": "staticwebassets\\js\\owl.lazyload.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\js\\owl.navigation.js",
+      "PackagePath": "staticwebassets\\js\\owl.navigation.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\js\\owl.support.js",
+      "PackagePath": "staticwebassets\\js\\owl.support.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\js\\owl.support.modernizr.js",
+      "PackagePath": "staticwebassets\\js\\owl.support.modernizr.js"
     },
     {
       "Id": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\js\\scripts.js",

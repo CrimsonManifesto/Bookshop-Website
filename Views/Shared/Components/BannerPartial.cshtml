@@ -1,0 +1,80 @@
+﻿ <!-- Carousel -->
+<div class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner w-100">
+        <div class="carousel-item active">
+            <img src="~/assets/img/slide/slide.png" alt="Los Angeles" class="d-block w-100" loading="eager">
+        </div>
+        <div class="carousel-item w-100">
+            <img src="~/assets/img/slide/slide.png" alt="Chicago" class="d-block w-100" loading="eager">
+        </div>
+        <div class="carousel-item w-100">
+            <img src="~/assets/img/slide/slide.png" alt="New York" class="d-block w-100" loading="eager">
+        </div>
+    </div>
+
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+<div class="container d-flex row-cols-4 pt-5 pb-5 bg-white px-5">
+    <div class="col px-3">
+        <h4>
+            <i class="fas fa-truck banner-icon"></i>
+            Free Delivery
+        </h4>
+        <p>We offer free delivery on all orders, with no minimum purchase required and no extra fees.</p>
+    </div>
+
+    <div class="col px-3">
+        <h4>
+            <i class="fas fa-certificate banner-icon"></i>
+            Quality Guarantee
+        </h4>
+        <p>Every product is thoroughly inspected before shipping to ensure the highest quality for every order.</p>
+
+    </div>
+
+    <div class="col px-3">
+        <h4>
+            <i class="fas fa-tags banner-icon"></i>
+            Daily Offers
+        </h4>
+        <p>Enjoy daily updated deals with special discounts on your favorite products.</p>
+
+    </div>
+
+    <div class="col px-3">
+        <h4>
+            <i class="fas fa-lock banner-icon"></i>
+            100% Secure Payment
+        </h4>
+        <p>Experience completely secure payments with our advanced encryption system, protecting your personal information and transaction details.</p>
+
+    </div>
+
+</div>
+
+<style>
+    .carousel-inner{
+        height: 33rem;
+    }
+
+    .banner-icon{
+        color: darkred;
+        font-size:28px;
+    }
+
+</style>

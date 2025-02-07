@@ -32,12 +32,3 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
-$(document).ready(function () {
-    // Fetch genres using an AJAX request
-    $.get('@Url.Action("Genres", "Books")', function (data) {
-        $('#genresDropdown').append(data);
-
-    }).fail(function () {
-        alert('Error loading genres!');
-    });
-});

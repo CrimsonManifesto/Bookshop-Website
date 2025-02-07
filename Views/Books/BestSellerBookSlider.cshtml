@@ -1,0 +1,252 @@
+﻿@model IEnumerable<Bookshop_Website.Models.Books>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="bbb_main_container">
+                <div class="bbb_viewed_title_container">
+                    <h3 class="bbb_viewed_title">Best Selling Books</h3>
+                    <div class="bbb_viewed_nav_container">
+                        <div class="bbb_viewed_nav bbb_viewed_prev"><i class="fas fa-chevron-left"></i></div>
+                        <div class="bbb_viewed_nav bbb_viewed_next"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                </div>
+                <div class="bbb_viewed_slider_container">
+                    <div class="owl-carousel owl-theme bbb_viewed_slider">
+                        @foreach (var book in Model)
+                        {
+                            <div class="owl-item">
+                                <div class="card border-0 pt-3 mt-3 mb-3 align-items-center" id="bookCard">
+                                    <a asp-action="Details" asp-route-id="@book.BookId">
+                                        <img class="rounded float-start" src="@book.ImageUrl" alt="Image for @book.Title" style="width: 150px; height: 220px;" loading="lazy" />
+                                    </a>
+                                    <div class="card-body w-100" id="cardTitle">
+                                        @Html.ActionLink(book.Title, "Details", new { id = book.BookId }, new { @class = "custom-card-title px-3 text-decoration-none text-black", title = book.Title })
+                                    </div>
+                                    <div class="row w-100 px-3 d-flex justify-content-center align-items-center m-0">
+                                        <h5 class="col price m-0 fw-bold">@book.Price.ToString("C")</h5>
+                                        @if (book.DiscountPercentage > 0)
+                                        {
+                                            <div class="col align-items-center percentage-container text-center">
+                                                <h5 class="col discount-percentage m-0 text-white">@book.DiscountPercentage.ToString("0")%</h5>
+                                            </div>
+                                        }
+                                    </div>
+                                    <div class="row w-100 px-3">
+                                        @if (book.DiscountPercentage > 0)
+                                        {
+                                            <h5 class="col original-price m-0">@book.OriginalPrice.ToString("C")</h5>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $(".bbb_viewed_slider").owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 6000,
+            nav: false,
+            dots: false,
+            responsive: {
+                0: { items: 2 },
+                575: { items: 2 },
+                768: { items: 3 },
+                991: { items: 4 },
+                1199: { items: 5 }
+            }
+        });
+
+        $(".bbb_viewed_prev").click(function() {
+            $(".bbb_viewed_slider").trigger('prev.owl.carousel');
+        });
+
+        $(".bbb_viewed_next").click(function() {
+            $(".bbb_viewed_slider").trigger('next.owl.carousel');
+        });
+    });
+</script>
+
+
+    <style>
+     * {
+         margin: 0;
+         padding: 0;
+         -webkit-font-smoothing: antialiased;
+         -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+         text-shadow: rgba(0, 0, 0, .01) 0 0 1px
+     }
+
+
+     div {
+         display: block;
+         position: relative;
+         -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+         box-sizing: border-box
+     }
+
+     .bbb_main_container{
+             background-color: #fff;
+        padding: 11px;
+     }
+
+     .bbb_viewed_title_container {
+         border-bottom: solid 1px #dadada
+     }
+
+     .bbb_viewed_title {
+             margin-bottom: 16px;
+        margin-top: 8px;
+
+     }
+
+     .bbb_viewed_nav_container {
+         position: absolute;
+         right: -5px;
+         bottom: 14px
+     }
+
+     .bbb_viewed_nav {
+         display: inline-block;
+         cursor: pointer
+     }
+
+     .bbb_viewed_nav i {
+         color: #dadada;
+         font-size: 18px;
+         padding: 5px;
+         -webkit-transition: all 200ms ease;
+         -moz-transition: all 200ms ease;
+         -ms-transition: all 200ms ease;
+         -o-transition: all 200ms ease;
+         transition: all 200ms ease
+     }
+
+     .bbb_viewed_nav:hover i {
+         color: #606264
+     }
+
+     .bbb_viewed_prev {
+         margin-right: 15px
+     }
+
+     .bbb_viewed_slider_container {
+         padding-top: 13px;
+     }
+
+     .bbb_viewed_item {
+         width: 100%;
+         background: #FFFFFF;
+         border-radius: 2px;
+         padding-top: 25px;
+         padding-bottom: 25px;
+         padding-left: 30px;
+         padding-right: 30px
+     }
+
+     .bbb_viewed_image {
+             width: 150px;
+        height: 150px;
+     }
+
+     .bbb_viewed_image img {
+         display: block;
+         max-width: 100%
+     }
+
+     .bbb_viewed_content {
+         width: 100%;
+         margin-top: 25px
+     }
+
+     .bbb_viewed_price {
+         font-size: 16px;
+         color: #000000;
+         font-weight: 500
+     }
+
+     .bbb_viewed_item.discount .bbb_viewed_price {
+         color: #df3b3b
+     }
+
+     .bbb_viewed_price span {
+         position: relative;
+         font-size: 12px;
+         font-weight: 400;
+         color: rgba(0, 0, 0, 0.6);
+         margin-left: 8px
+     }
+
+     .bbb_viewed_price span::after {
+         display: block;
+         position: absolute;
+         top: 6px;
+         left: -2px;
+         width: calc(100% + 4px);
+         height: 1px;
+         background: #8d8d8d;
+         content: ''
+     }
+
+     .bbb_viewed_name {
+         margin-top: 3px
+     }
+
+     .bbb_viewed_name a {
+         font-size: 14px;
+         color: #000000;
+         -webkit-transition: all 200ms ease;
+         -moz-transition: all 200ms ease;
+         -ms-transition: all 200ms ease;
+         -o-transition: all 200ms ease;
+         transition: all 200ms ease
+     }
+
+     .bbb_viewed_name a:hover {
+         color: #0e8ce4
+     }
+
+     .item_marks {
+         position: absolute;
+         top: 18px;
+         left: 18px
+     }
+
+     .item_mark {
+         display: none;
+         width: 36px;
+         height: 36px;
+         border-radius: 50%;
+         color: #FFFFFF;
+         font-size: 10px;
+         font-weight: 500;
+         line-height: 36px;
+         text-align: center
+     }
+
+     .item_discount { 
+         background: #df3b3b;
+         margin-right: 5px
+     }
+
+     .item_new {
+         background: #0e8ce4
+     }
+
+     .bbb_viewed_item.discount .item_discount {
+         display: inline-block
+     }
+
+     .bbb_viewed_item.is_new .item_new {
+         display: inline-block
+     }
+    </style>

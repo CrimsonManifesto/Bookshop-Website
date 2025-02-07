@@ -31,6 +31,12 @@ namespace Bookshop_Website.Controllers
             var user = await _userManager.GetUserAsync(User);
             ViewBag.ProfilePictureUrl = user?.ProfilePictureUrl;
 
+            var bestSellingBooks = await _context.Books
+                .OrderByDescending(b => b.NumberSold)
+                .Take(8)
+                .ToListAsync();
+            ViewBag.BestSellingBooks = bestSellingBooks;
+
             return View(await _context.Books.ToListAsync());
 
         }
@@ -78,7 +84,7 @@ namespace Bookshop_Website.Controllers
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult>
-            Create([Bind("BookId,Title,Author,Genre,Publisher,Language,DiscountPercentage,OriginalPrice,ImageUrl,Description, PublicationDate, NumberOfPages, InStock, AverageRating,NumberSold, StockQuantity")]Books books)
+            Create([Bind("BookId,Title,Author,Genre,Publisher,Language,DiscountPercentage,OriginalPrice,ImageUrl,Description, PublicationDate, NumberOfPages, InStock, AverageRating,NumberSold, StockQuantity")] Books books)
         {
             if (ModelState.IsValid)
             {
@@ -203,26 +209,6 @@ namespace Bookshop_Website.Controllers
 
             return View("Search", books);
         }
-        // GET: Books/Genres
-        public async Task<IActionResult> Languages()
-        {
-            var genres = await _context.Books
-                .Select(b => b.Language)
-                .Distinct()
-                .ToListAsync();
-
-            return PartialView("~/Views/Shared/TopNavigation/GenresPartial.cshtml");
-        }
-        // POST: Books/GenresShow
-        public async Task<IActionResult> LanguagesShow(string SearchPhrase)
-        {
-            ViewData["Category"] = SearchPhrase;
-            var books = await _context.Books
-                .Where(b => b.Language.Contains(SearchPhrase))
-                .ToListAsync();
-
-            return View("Search", books);
-        }
         public IActionResult AddToCart(int id)
         {
             var book = _context.Books.Find(id);
@@ -276,8 +262,6 @@ namespace Bookshop_Website.Controllers
 
             return RedirectToAction(nameof(ViewCart));
         }
-
-
 
     }
 }

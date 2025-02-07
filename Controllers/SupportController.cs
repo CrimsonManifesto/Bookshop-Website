@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Bookshop_Website.Models;  // Đảm bảo import đúng namespace chứa model Feedback
+using Bookshop_Website.Models;  
 using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
 using Bookshop_Website.Data;
@@ -16,15 +16,19 @@ namespace Bookshop_Website.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> SubmitFeedback(string content)
+        public async Task<IActionResult> SubmitFeedback(string content, string feedbackType, string userEmail, string userPhone, string userName)
         {
-            if (string.IsNullOrWhiteSpace(content))
+            if (string.IsNullOrWhiteSpace(content) || string.IsNullOrWhiteSpace(feedbackType))
             {
-                return BadRequest("The feedback content cannot be empty.");
+                return BadRequest("The feedback content or type cannot be empty.");
             }
 
             var feedback = new Feedback
             {
+                FeedbackType = feedbackType,
+                UserEmail = userEmail,
+                UserPhone = userPhone,
+                UserName = userName,
                 Content = content,
                 CreatedAt = DateTime.UtcNow
             };
