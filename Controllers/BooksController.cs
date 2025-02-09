@@ -35,7 +35,22 @@ namespace Bookshop_Website.Controllers
                 .OrderByDescending(b => b.NumberSold)
                 .Take(8)
                 .ToListAsync();
+
+            var newBooks = await _context.Books
+                .OrderByDescending(b => b.BookId)
+                .Take(8)
+                .ToListAsync();
+
+            var flashSaleBooks = await _context.Books
+                .OrderByDescending(b => b.DiscountPercentage)
+                .Take(8)
+                .ToListAsync();
+
             ViewBag.BestSellingBooks = bestSellingBooks;
+            ViewBag.NewBooks = newBooks;
+            ViewBag.FlashSaleBooks = flashSaleBooks;
+            ViewBag.AllBooks = await _context.Books.ToListAsync();
+
 
             return View(await _context.Books.ToListAsync());
 
@@ -261,6 +276,14 @@ namespace Bookshop_Website.Controllers
             }
 
             return RedirectToAction(nameof(ViewCart));
+        }
+
+        [HttpGet]
+        public IActionResult GetCartCount()
+        {
+            var cart = HttpContext.Session.GetObjectFromJson<List<CartItem>>("Cart") ?? new List<CartItem>();
+            int cartCount = cart.Sum(item => item.Quantity);
+            return Json(new { count = cartCount });
         }
 
     }

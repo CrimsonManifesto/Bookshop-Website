@@ -24,7 +24,7 @@
                 </div>
                 <div class="col">
                     <form asp-action="AddtoCart" asp-route-id="@Model?.BookId" method="post" style="display:inline;">
-                        <button type="submit" class="btn interactBtn w-100 fw-bold" style="color:red;border-width:2px;border-color:red">
+                        <button type="submit" onclick="addToCart(@Model?.BookId)" class="btn interactBtn w-100 fw-bold" style="color:red;border-width:2px;border-color:red">
                             <i class="fa-solid fa-cart-shopping"></i> Add to Cart
                         </button>
                     </form>
@@ -68,7 +68,7 @@
 
             @* Detail info *@
             <div class="col infoCol mb-0 bg-white">
-                <h3 class="fw-semibold" id="sectionHeader">Detail information</h3>
+                <h3 class="fw-semibold border-bottom pb-2" id="sectionHeader">Detail information</h3>
                 <div class="row">
                     <div class="col">
                         <p id="infoText">@Html.DisplayNameFor(Model => Model.Author)</p>
@@ -153,13 +153,13 @@
 
             @* description *@
             <div class="col" style="background-color:white" id="infoCol">
-                <h3 class="fw-semibold" id="sectionHeader">Description</h3>
+                <h3 class="fw-semibold border-bottom pb-2" id="sectionHeader">Description</h3>
                 <p>@Html.DisplayFor(Model => Model.Description)</p>
             </div>
 
         </div>
         @* Comment *@
-        <h1 class="fw-bold">Comment</h1>
+        <h1 class="fw-bold border-bottom pb-2">Comment</h1>
 </div>
 </div>
 
@@ -180,6 +180,11 @@
     // Example average rating
     const averageRating = 3.5;
     displayRating(averageRating);
+
+    function addToCart(bookId) {
+        fetch('/Books/AddToCart?id=' + bookId, { method: 'POST' })
+            .then(() => updateCartCount()); // Cập nhật số lượng giỏ hàng ngay
+    }
 
 </script>
 

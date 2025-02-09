@@ -1,5 +1,5 @@
 ﻿@* Configuration your category options *@
- <div class="row">
+<div class="row">
     <div class="col-sm-3">
         <div class="dropdown-header">Genres</div>
 
@@ -56,27 +56,26 @@
         <form asp-controller="Books" asp-action="LanguagesShow" method="post">
             <input type="hidden" name="SearchPhrase" value="English" />
             <button class="dropdown-item" type="submit">English</button>
-
         </form>
         <form asp-controller="Books" asp-action="LanguagesShow" method="post">
             <input type="hidden" name="SearchPhrase" value="French" />
             <button class="dropdown-item" type="submit">French</button>
-
         </form>
         <form asp-controller="Books" asp-action="LanguagesShow" method="post">
             <input type="hidden" name="SearchPhrase" value="Spanish" />
             <button class="dropdown-item" type="submit">Spanish</button>
-
         </form>
         <form asp-controller="Books" asp-action="LanguagesShow" method="post">
             <input type="hidden" name="SearchPhrase" value="Chinese" />
             <button class="dropdown-item" type="submit">Chinese</button>
-
+        </form>
+        <form asp-controller="Books" asp-action="LanguagesShow" method="post">
+            <input type="hidden" name="SearchPhrase" value="Japanese" />
+            <button class="dropdown-item" type="submit">Japanese</button>
         </form>
         <form asp-controller="Books" asp-action="LanguagesShow" method="post">
             <input type="hidden" name="SearchPhrase" value="Russian" />
             <button class="dropdown-item" type="submit">Russian</button>
-
         </form>
     </div>
     <div class="col-sm-3">
@@ -116,20 +115,20 @@
     .dropdown-item {
         background-color: white;
         color: black;
-        border: none; 
-        padding: 10px 20px; 
+        border: none;
+        padding: 10px 20px;
         text-align: left;
         transition: background-color 0.4s, color 0.4s;
     }
 
         .dropdown-item:hover {
-            background-color: red; 
+            background-color: red;
             color: white;
             cursor: pointer;
         }
 
         .dropdown-item:active {
-            background-color: #c1c1c1; 
+            background-color: #c1c1c1;
             color: black;
         }
 
@@ -138,7 +137,6 @@
         color: black;
         font-weight: 600
     }
-
 
 </style>
 

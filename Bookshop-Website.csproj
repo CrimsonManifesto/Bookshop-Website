@@ -86,7 +86,6 @@
 
   <ItemGroup>
     <Folder Include="Views\Shared\Banners\" />
-    <Folder Include="Views\Shared\Sliders\" />
   </ItemGroup>
 
 </Project>

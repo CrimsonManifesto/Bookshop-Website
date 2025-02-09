@@ -8680,11 +8680,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\Bookshop-Website.csproj",
+      "projectUniqueName": "D:\\Bookshop-Website\\Bookshop-Website.csproj",
       "projectName": "Bookshop-Website",
-      "projectPath": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\Bookshop-Website.csproj",
+      "projectPath": "D:\\Bookshop-Website\\Bookshop-Website.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\obj\\",
+      "outputPath": "D:\\Bookshop-Website\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,4 +1,4 @@
-﻿<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-red border-bottom box-shadow" style="background-color: white; padding-inline: 100px;">
+﻿<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-red border-bottom box-shadow fixed-top" style="background-color: white; padding-inline: 100px;">
     <div class="container-fluid">
         <a class="navbar-brand" asp-area="" asp-controller="Books" asp-action="Index" id="brandText">Kabasa</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -35,8 +35,9 @@
 
             <!-- Cart button -->
             <a class="nav-link" asp-area="" asp-controller="Books" asp-action="ViewCart" id="navButton">
-                <div id="navContainer">
+                <div id="navContainer position-relative">
                     <i class="fa-solid fa-cart-shopping" id="navSymbol"></i>
+                    @await Component.InvokeAsync("Cart")
                 </div>
 
                 <div id="navContainer">
@@ -48,3 +49,9 @@
         </div>
     </div>
 </nav>
+
+<style>
+    #navContainer {
+        position: relative !important;
+    }
+</style>

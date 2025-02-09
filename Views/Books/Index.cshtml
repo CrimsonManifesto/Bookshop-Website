@@ -2,7 +2,6 @@
 
 
 @{
-    ViewData["Title"] = "Index";
     ViewData["ShowBanner"] = true;
     var profilePictureUrl = ViewBag.ProfilePictureUrl as string;
 
@@ -10,52 +9,45 @@
 }
 @if (User.IsInRole("Admin"))
 {
-    <div class="px-3">
+    <div class="container">
         <a class="btn btn-outline-primary" asp-action="Create">Create New</a>
     </div>
 }
-@await Html.PartialAsync("BestSellerBookSlider", ViewBag.BestSellingBooks as IEnumerable<Bookshop_Website.Models.Books>)
 
+@{
+    ViewData["Title"] = "🏆 Best Selling Books";
+}
 <div class="container">
-    <h3 class="border-bottom pb-2">All Books</h3>
-</div>
-<div class="container d-flex bg-white flex-row flex-wrap justify-content-start px-2">
-
-    @foreach (var item in Model)
-    {
-        <div class="card border-0 pt-3 mt-3 mb-3 align-items-center" id="bookCard">
-            <a asp-action="Details" asp-route-id="@item.BookId">
-                <img class="rounded float-start" src="@item.ImageUrl" alt="Image for @item.Title" style="width: 150px; height: 220px;" loading="lazy" />
-            </a>
-            <div class="card-body w-100" id="cardTitle">
-                @Html.ActionLink(item.Title, "Details", new { id = item.BookId }, new { @class = "custom-card-title px-3 text-decoration-none text-black", title = item.Title })
-            </div>
-            <div class="row w-100 px-3 d-flex justify-content-center align-items-center m-0">
-
-                <h5 class="col price m-0 fw-bold">@item.Price.ToString("C")</h5>
-                @if (item.DiscountPercentage > 0)
-                {
-                    <div class="col align-items-center percentage-container text-center">
-                        <h5 class="col discount-percentage m-0 text-white">@item.DiscountPercentage.ToString("0")%</h5>
-                    </div>
-                }
-
-            </div>
-
-            <div class="row w-100 px-3">
-                @if (item.DiscountPercentage > 0)
-                {
-                    <h5 class="col original-price m-0">@item.OriginalPrice.ToString("C")</h5>
-
-                }
-
-            </div>
-
-        </div>
-
-    }
+    @await Html.PartialAsync("BookSlider", ViewBag.BestSellingBooks as IEnumerable<Bookshop_Website.Models.Books>)
 
 </div>
+
+@{
+    ViewData["Title"] = "🔥 Flash Sales";
+}
+<div class="container">
+    @await Html.PartialAsync("BookSlider", ViewBag.FlashSaleBooks as IEnumerable<Bookshop_Website.Models.Books>)
+</div>
+@{
+    ViewData["Title"] = "New Arrivals";
+}
+<div class="container">
+    @await Html.PartialAsync("BookSlider", ViewBag.NewBooks as IEnumerable<Bookshop_Website.Models.Books>)
+</div>
+
+@{
+    ViewData["Title"] = "All Books";
+}
+<div class="container">
+    @await Html.PartialAsync("BookSlider", ViewBag.AllBooks as IEnumerable<Bookshop_Website.Models.Books>)
+</div>
+
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+
 <style>
 
 
@@ -114,5 +106,6 @@
     #cardTitle {
         height: 58px;
     }
+
 
 </style>

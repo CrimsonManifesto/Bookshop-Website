@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xfidXgt+RQfeHH1BS9PXhUaduSBiXccgSLepZUZEP68=",
+  "Hash": "76yCyJL3pC/B0f1uwbDFzac/NONln/yOIVTHH0mVuNE=",
   "Source": "Bookshop-Website",
   "BasePath": "_content/Bookshop-Website",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "Bookshop-Website\\wwwroot",
       "Source": "Bookshop-Website",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "Pattern": "**"
     }
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\8.0.7\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Bookshop-Website.styles.css",
+      "Identity": "D:\\Bookshop-Website\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Bookshop-Website.styles.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\Bookshop-Website\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "Bookshop-Website.styles.css",
       "AssetKind": "All",
@@ -1173,13 +1173,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Bookshop-Website.styles.css"
+      "OriginalItemSpec": "D:\\Bookshop-Website\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Bookshop-Website.styles.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Bookshop-Website.bundle.scp.css",
+      "Identity": "D:\\Bookshop-Website\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Bookshop-Website.bundle.scp.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\Bookshop-Website\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "Bookshop-Website.bundle.scp.css",
       "AssetKind": "All",
@@ -1192,13 +1192,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Bookshop-Website.bundle.scp.css"
+      "OriginalItemSpec": "D:\\Bookshop-Website\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Bookshop-Website.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide.png",
+      "Identity": "D:\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide.png",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "assets/img/slide/slide.png",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\slide\\slide.png"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide1.png",
+      "Identity": "D:\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide1.png",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "assets/img/slide/slide1.png",
       "AssetKind": "All",
@@ -1233,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\slide\\slide1.png"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide2.png",
+      "Identity": "D:\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide2.png",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "assets/img/slide/slide2.png",
       "AssetKind": "All",
@@ -1252,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\slide\\slide2.png"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide3.png",
+      "Identity": "D:\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide3.png",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "assets/img/slide/slide3.png",
       "AssetKind": "All",
@@ -1271,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\slide\\slide3.png"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\assets\\screenshot\\create.png",
+      "Identity": "D:\\Bookshop-Website\\wwwroot\\assets\\screenshot\\create.png",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "assets/screenshot/create.png",
       "AssetKind": "All",
@@ -1290,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\screenshot\\create.png"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\assets\\screenshot\\edit.png",
+      "Identity": "D:\\Bookshop-Website\\wwwroot\\assets\\screenshot\\edit.png",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "assets/screenshot/edit.png",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\screenshot\\edit.png"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\assets\\screenshot\\login.png",
+      "Identity": "D:\\Bookshop-Website\\wwwroot\\assets\\screenshot\\login.png",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "assets/screenshot/login.png",
       "AssetKind": "All",
@@ -1328,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\screenshot\\login.png"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\assets\\screenshot\\main.png",
+      "Identity": "D:\\Bookshop-Website\\wwwroot\\assets\\screenshot\\main.png",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "assets/screenshot/main.png",
       "AssetKind": "All",
@@ -1347,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\screenshot\\main.png"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\assets\\screenshot\\signin.png",
+      "Identity": "D:\\Bookshop-Website\\wwwroot\\assets\\screenshot\\signin.png",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "assets/screenshot/signin.png",
       "AssetKind": "All",
@@ -1366,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\screenshot\\signin.png"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\assets\\svg\\icons8-google.svg",
+      "Identity": "D:\\Bookshop-Website\\wwwroot\\assets\\svg\\icons8-google.svg",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "assets/svg/icons8-google.svg",
       "AssetKind": "All",
@@ -1385,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\svg\\icons8-google.svg"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\css\\site.css",
+      "Identity": "D:\\Bookshop-Website\\wwwroot\\css\\site.css",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1404,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\favicon.ico",
+      "Identity": "D:\\Bookshop-Website\\wwwroot\\favicon.ico",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1423,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\images\\profiles\\430bfde5-8b4e-4f96-818b-069a66956204.png",
+      "Identity": "D:\\Bookshop-Website\\wwwroot\\images\\profiles\\430bfde5-8b4e-4f96-818b-069a66956204.png",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "images/profiles/430bfde5-8b4e-4f96-818b-069a66956204.png",
       "AssetKind": "All",
@@ -1442,10 +1442,10 @@
       "OriginalItemSpec": "wwwroot\\images\\profiles\\430bfde5-8b4e-4f96-818b-069a66956204.png"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\images\\profiles\\53a04d92-be8e-4847-beaa-e2b403c9c480.png",
+      "Identity": "D:\\Bookshop-Website\\wwwroot\\images\\profiles\\53a04d92-be8e-4847-beaa-e2b403c9c480.png",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "images/profiles/53a04d92-be8e-4847-beaa-e2b403c9c480.png",
       "AssetKind": "All",
@@ -1461,10 +1461,10 @@
       "OriginalItemSpec": "wwwroot\\images\\profiles\\53a04d92-be8e-4847-beaa-e2b403c9c480.png"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\images\\profiles\\da66ee84-ad58-4765-b57d-8cdd04da57d1.png",
+      "Identity": "D:\\Bookshop-Website\\wwwroot\\images\\profiles\\da66ee84-ad58-4765-b57d-8cdd04da57d1.png",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "images/profiles/da66ee84-ad58-4765-b57d-8cdd04da57d1.png",
       "AssetKind": "All",
@@ -1480,10 +1480,10 @@
       "OriginalItemSpec": "wwwroot\\images\\profiles\\da66ee84-ad58-4765-b57d-8cdd04da57d1.png"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\images\\profiles\\default-profile.png",
+      "Identity": "D:\\Bookshop-Website\\wwwroot\\images\\profiles\\default-profile.png",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "images/profiles/default-profile.png",
       "AssetKind": "All",
@@ -1499,10 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\images\\profiles\\default-profile.png"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\index.html",
+      "Identity": "D:\\Bookshop-Website\\wwwroot\\index.html",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -1518,10 +1518,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\js\\owl.lazyload.js",
+      "Identity": "D:\\Bookshop-Website\\wwwroot\\js\\owl.lazyload.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "js/owl.lazyload.js",
       "AssetKind": "All",
@@ -1537,10 +1537,10 @@
       "OriginalItemSpec": "wwwroot\\js\\owl.lazyload.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\js\\owl.navigation.js",
+      "Identity": "D:\\Bookshop-Website\\wwwroot\\js\\owl.navigation.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "js/owl.navigation.js",
       "AssetKind": "All",
@@ -1556,10 +1556,10 @@
       "OriginalItemSpec": "wwwroot\\js\\owl.navigation.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\js\\owl.support.js",
+      "Identity": "D:\\Bookshop-Website\\wwwroot\\js\\owl.support.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "js/owl.support.js",
       "AssetKind": "All",
@@ -1575,10 +1575,10 @@
       "OriginalItemSpec": "wwwroot\\js\\owl.support.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\js\\owl.support.modernizr.js",
+      "Identity": "D:\\Bookshop-Website\\wwwroot\\js\\owl.support.modernizr.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "js/owl.support.modernizr.js",
       "AssetKind": "All",
@@ -1594,10 +1594,10 @@
       "OriginalItemSpec": "wwwroot\\js\\owl.support.modernizr.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\js\\scripts.js",
+      "Identity": "D:\\Bookshop-Website\\wwwroot\\js\\scripts.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "js/scripts.js",
       "AssetKind": "All",
@@ -1613,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\js\\scripts.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "D:\\Bookshop-Website\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "D:\\Bookshop-Website\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1651,10 +1651,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "D:\\Bookshop-Website\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1670,10 +1670,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "D:\\Bookshop-Website\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1689,10 +1689,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "D:\\Bookshop-Website\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ADMIN\\Source\\Repos\\Bookshop-Website\\wwwroot\\",
+      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",

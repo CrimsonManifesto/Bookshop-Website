@@ -13,13 +13,13 @@
             {
                 <partial name="~/Views/Shared/Components/BannerPartial.cshtml" />
             }
-            <main role="main" class="pb-3">
+            <main role="main" class="pb-3 ">
                 <partial name="~/Views/Shared/Components/Overlay.cshtml" />
                 @RenderBody()
             </main>
         </div>
 
-        <footer>
+        <footer>     
             <partial name="~/Views/Shared/Layout/Footer.cshtml" />
         </footer>
     </div>
@@ -39,6 +39,23 @@
                 alert('Error loading genres!');
             });
         });
+
+        function updateCartCount() {
+            fetch('/Books/GetCartCount')
+                .then(response => response.json())
+                .then(data => {
+                    let cartBadge = document.getElementById('cartBadge');
+                    if (cartBadge) {
+                        cartBadge.textContent = data.count;
+                        cartBadge.style.display = data.count > 0 ? 'inline-block' : 'none';
+                    }
+                });
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            updateCartCount(); 
+        });
+
     </script>
 
 </body>
@@ -46,6 +63,9 @@
 
 
 <style>
+    main {
+        padding-top: 70px; 
+    }
     .dropdown-menu.columns-4 {
         position: fixed;
         width: 100%;
