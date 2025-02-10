@@ -1,0 +1,67 @@
+﻿@model List<string>
+
+@{
+    ViewData["Title"] = "All Book Languages";
+
+    // Dictionary ánh xạ ngôn ngữ với cờ tương ứng
+    var flagUrls = new Dictionary<string, string>
+    {
+        {"English", "https://flagcdn.com/w40/gb.png"},
+        {"French", "https://flagcdn.com/w40/fr.png"},
+        {"Spanish", "https://flagcdn.com/w40/es.png"},
+        {"Chinese", "https://flagcdn.com/w40/cn.png"},
+        {"Japanese", "https://flagcdn.com/w40/jp.png"},
+        {"Russian", "https://flagcdn.com/w40/ru.png"},
+        {"Vietnamese", "https://flagcdn.com/w40/vn.png"},
+        {"Korean", "https://flagcdn.com/w40/kr.png"},
+        {"German", "https://flagcdn.com/w40/de.png"},
+        {"Arab", "https://flagcdn.com/w40/sa.png"}
+    };
+}
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">🌍 All Languages</h2>
+
+    <div class="row">
+        @foreach (var language in Model)
+        {
+            <div class="col-md-4 col-lg-3 mb-3">
+                <div class="card language-card shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <img src="@flagUrls.GetValueOrDefault(language, "https://flagcdn.com/w40/un.png")"
+                             alt="@language Flag" class="flag-icon mb-2">
+                        <h5 class="card-title">@language</h5>
+                        <a asp-controller="Books" asp-action="LanguagesShow" asp-route-SearchPhrase="@language" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<style>
+    .language-card {
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+        border-radius: 12px;
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .language-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .language-card h5 {
+            font-weight: bold;
+            color: #333;
+        }
+
+    .flag-icon {
+        width: 50px;
+        height: 35px;
+        border-radius: 5px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+</style>

@@ -1,54 +1,35 @@
 ﻿@model IEnumerable<Bookshop_Website.Models.Books>
 
 
-
 <div class="container" style="background-color:white">
+    @Html.Partial("~/Views/Shared/Components/AdvancedSearch.cshtml", new Bookshop_Website.Models.AdvancedSearchModel { Languages = new List<string> { "English", "Japanese", "French" } })
 
-    @{
-        ViewData["Title"] = "Index";
-        ViewData["ShowBanner"] = false;
-
-    }
-
-
-
-
-    @if (ViewData["SearchPhrase"] != null)
+    @if (Model.Any())
     {
-        int count = 0;
-        foreach (var item in Model)
-        {
-            count++;
-        }
-        <h2 class="pt-3 px-2"><i class="fa-solid fa-magnifying-glass"></i> @count results</h2>
+        <h2 class="pt-3 px-2"><i class="fa-solid fa-magnifying-glass"></i> @Model.Count() Result</h2>
+        <div class="container d-flex bg-white flex-row justify-content-start" id="cardContainer">
+            @foreach (var item in Model)
+            {
+                <div class="card border-0 pt-3" id="bookCard">
+                    <a asp-action="Details" asp-route-id="@item.BookId">
+                        <img class="rounded float-start" src="@item.ImageUrl" alt="Image for @item.Title" style="width: 150px; height: 220px;" />
+                    </a>
+                    <div class="card-body w-100 pb-0">
+                        @Html.ActionLink(item.Title, "Details", new { id = item.BookId }, new { @class = "custom-card-title px-3 text-decoration-none text-black", title = item.Title })
+                    </div>
+                    <div class="w-100 px-3">
+                        <h5 class="price fw-bold">@item.Price.ToString("C")</h5>
+                    </div>
+                </div>
+            }
+        </div>
     }
-    @if (ViewData["Category"] != null)
+    else
     {
-        <h3 class="pt-3 px-2">
-            <span id="searchResultText">@ViewData["Category"]</span>
-            Books
-        </h3>
+        <h4 class="pt-3 px-2">No Result</h4>
     }
-
-    <div class="container d-flex bg-white flex-row justify-content-start" id="cardContainer">
-        @foreach (var item in Model)
-        {
-            <div class="card border-0 pt-3" id="bookCard">
-                <a asp-action="Details" asp-route-id="@item.BookId">
-                    <img class="rounded float-start" src="@item.ImageUrl" alt="Image for @item.Title" style="width: 150px; height: 220px;" />
-                </a>
-                <div class="card-body w-100 pb-0">
-                    @Html.ActionLink(item.Title, "Details", new { id = item.BookId }, new { @class = "custom-card-title px-3 text-decoration-none text-black", title = item.Title })
-                </div>
-                <div class="w-100 px-3">
-
-                    <h5 class="price fw-bold">@item.Price.ToString("C")</h5>
-                </div>
-            </div>
-
-        }
-    </div>
 </div>
+
 
 <style>
     #cardContainer {
@@ -93,6 +74,7 @@
 
     .price {
         color: red;
+        padding-inline: 16px
     }
 
     .card-body {

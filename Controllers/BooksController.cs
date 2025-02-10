@@ -10,6 +10,7 @@ using Bookshop_Website.Extensions;
 using Bookshop_Website.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.IdentityModel.Tokens;
 
 
 namespace Bookshop_Website.Controllers
@@ -214,7 +215,7 @@ namespace Bookshop_Website.Controllers
 
             return PartialView("~/Views/Shared/TopNavigation/GenresPartial.cshtml");
         }
-        // POST: Books/GenresShow
+        // GET: Books/GenresShow
         public async Task<IActionResult> GenresShow(string SearchPhrase)
         {
             ViewData["Category"] = SearchPhrase;
@@ -224,6 +225,18 @@ namespace Bookshop_Website.Controllers
 
             return View("Search", books);
         }
+
+        // GET: Books/LanguagesShow
+        public async Task<IActionResult> LanguagesShow(string SearchPhrase)
+        {
+            ViewData["Category"] = SearchPhrase;
+            var books = await _context.Books
+                .Where(b => b.Language.Contains(SearchPhrase))
+                .ToListAsync();
+
+            return View("Search", books);
+        }
+
         public IActionResult AddToCart(int id)
         {
             var book = _context.Books.Find(id);
@@ -285,6 +298,56 @@ namespace Bookshop_Website.Controllers
             int cartCount = cart.Sum(item => item.Quantity);
             return Json(new { count = cartCount });
         }
+
+        // GET: Books/AllGenres
+        public async Task<IActionResult> AllGenres()
+        {
+            var genres = await _context.Books
+                .Select(b => b.Genre)
+                .Distinct()
+                .ToListAsync();
+
+            return View(genres);
+        }
+
+        // GET: Books/AllLanguages
+        public async Task<IActionResult> AllLanguages()
+        {
+            var languages = await _context.Books
+                .Select(b => b.Language)
+                .Distinct()
+                .ToListAsync();
+
+            return View(languages);
+        }
+
+        // GET: Books/AdvancedSearch
+        public async Task<IActionResult> AdvancedSearchResults(AdvancedSearchModel searchModel)
+        {
+            var booksQuery = _context.Books.AsQueryable();
+
+            if (!string.IsNullOrEmpty(searchModel.Title))
+            {
+                booksQuery = booksQuery.Where(b => b.Title.Contains(searchModel.Title));
+            }
+
+            if (!string.IsNullOrEmpty(searchModel.Language))
+            {
+                booksQuery = booksQuery.Where(b => b.Language == searchModel.Language);
+            }
+
+
+            var booksList = await booksQuery.ToListAsync();
+
+            if (searchModel.MaxPrice.HasValue)
+            {
+                booksList = booksList.Where(b => b.Price <= searchModel.MaxPrice.Value).ToList();
+            }
+
+            return View("Search", booksList);
+        }
+
+
 
     }
 }

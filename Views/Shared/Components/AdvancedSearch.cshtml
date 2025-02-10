@@ -1,0 +1,75 @@
+﻿@model Bookshop_Website.Models.AdvancedSearchModel
+
+<form asp-action="AdvancedSearchResults" asp-controller="Books" method="get">
+    <div class="row">
+        <div class="col-md-3">
+            <label for="Title">Book Title</label>
+            <input type="text" class="form-control" name="Title" id="Title" value="@Model?.Title" />
+        </div>
+        <div class="col-md-3">
+            <label for="Language">Language</label>
+            <select class="form-control" name="Language" id="Language">
+                <option value="">Select Language</option>
+                @foreach (var lang in Model?.Languages ?? new List<string>())
+                {
+                    <option value="@lang">@lang</option>
+                }
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label>Price Range: <span id="priceRangeText">@(Model?.MinPrice ?? 0) - @(Model?.MaxPrice ?? 1000)</span></label>
+            <input type="range" class="form-range" min="0" max="1000" step="10" id="priceRange"
+                   value="@(Model?.MaxPrice ?? 1000)"
+                   oninput="updatePriceRange(this.value)">
+            <input type="hidden" name="MinPrice" id="MinPrice" value="@(Model?.MinPrice ?? 0)" />
+            <input type="hidden" name="MaxPrice" id="MaxPrice" value="@(Model?.MaxPrice ?? 1000)" />
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-md-3">
+            <label>Sort by Discount</label>
+            <select class="form-control" name="Discount">
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label for="SortBy">Sort By</label>
+            <select class="form-control" name="SortBy">
+                <option value="title">Book Title</option>
+                <option value="price">Price</option>
+                <option value="discount">Discount</option>
+                <option value="date">Release Date</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label>Order</label>
+            <select class="form-control" name="SortOrder">
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+            </select>
+        </div>
+        <div class="col-md-3 d-flex align-items-end">
+            <button type="submit" class="btn bg-red w-100 text-white">Search</button>
+        </div>
+    </div>
+</form>
+
+<script>
+    function updatePriceRange(value) {
+        document.getElementById("MaxPrice").value = value;
+        document.getElementById("priceRangeText").innerText = "0 - " + value;
+    }
+</script>
+
+<style>
+    .bg-red {
+        background-color: red;
+    }
+
+    #priceRange {
+        margin-top: px;
+    }
+
+</style>

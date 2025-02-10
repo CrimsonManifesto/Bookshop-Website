@@ -186,6 +186,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Bookshop-Website/Views/Books/AllGenres.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcQWxsR2VucmVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bookshop-Website/Views/Books/AllLanguages.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcQWxsTGFuZ3VhZ2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Bookshop-Website/Views/Books/BookSlider.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcQm9va1NsaWRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -216,6 +224,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Bookshop-Website/Views/Books/ViewCart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcVmlld0NhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bookshop-Website/Views/Shared/Components/AdvancedSearch.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQWR2YW5jZWRTZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Bookshop-Website/Views/Shared/Components/BackToTopButton.cshtml]
