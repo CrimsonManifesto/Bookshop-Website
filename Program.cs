@@ -11,11 +11,11 @@ using System.Text.RegularExpressions;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configure Google authentication
-
 var services = builder.Services;
 var configuration = builder.Configuration;
 
+
+// Configure Google authentication
 services.AddAuthentication().AddGoogle(googleOptions =>
 {
     googleOptions.ClientId = configuration["Authentication:Google:ClientId"];
@@ -55,6 +55,14 @@ builder.Services.Configure<FormOptions>(options =>
 
 var app = builder.Build();
 
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<BooksDbContext>();
+
+    dbContext.Database.Migrate();
+}
+
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -67,19 +75,18 @@ else
     app.UseHsts();
 }
 
-using (var scope = app.Services.CreateScope())
+// Admin authorization
+async Task InitializeRolesAndAdminAsync(IServiceProvider serviceProvider)
 {
-    var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+    var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+    var userManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
 
-    var adminRoleExists = await roleManager.RoleExistsAsync("Admin");
-    if (!adminRoleExists)
+    if (!await roleManager.RoleExistsAsync("Admin"))
     {
         await roleManager.CreateAsync(new IdentityRole("Admin"));
     }
 
     var adminEmails = new List<string> { "cuonglinhagprovince@gmail.com", "admin@gmail.com" };
-    // Admin configuration
     foreach (var email in adminEmails)
     {
         var adminUser = await userManager.FindByEmailAsync(email);
@@ -89,6 +96,13 @@ using (var scope = app.Services.CreateScope())
         }
     }
 }
+
+using (var scope = app.Services.CreateScope())
+{
+    var adminservices = scope.ServiceProvider;
+    await InitializeRolesAndAdminAsync(adminservices);
+}
+
 
 app.UseMiddleware<ProfilePictureMiddleware>();
 app.UseHttpsRedirection();

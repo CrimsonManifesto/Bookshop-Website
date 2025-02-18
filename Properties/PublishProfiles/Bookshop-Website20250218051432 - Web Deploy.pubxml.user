@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAHaEAxU4g8UKcQf4alGQ3jwAAAAACAAAAAAAQZgAAAAEAACAAAAA0+rXaYdN4eGG7juUT0C6B3A8HBlmryxl6fEK5lrdGKQAAAAAOgAAAAAIAACAAAAB+OCD9oxm2MVQEhTB3nzqKx3UQc1JJTaEr/f9oYe3BFYAAAABhcR6dmiV41V+fd2dSQKQ5wl9mITKAMbZTncPhrpAQlSwn7LWTXM+rxle7bV0Rx0czhq/WJBTyjb/0Ttgty05gw337X32wbcOyyUXN5rP5vYYp1OgJc5+M4l8p0+NQjdeyvtE7AjYYaIzcNy/zJXAAyewt3+KYgCVRSy9OrAly50AAAABVKR5wKzE9gdC69rS6Pj5ANaIkqHwZ69Olh/O7D6MPVdQWj5FJUh/34xTmLKVx2tfA+xcAqydZFhPmNw0hBMn5</EncryptedPassword>
+    <History>True|2025-02-17T22:48:22.9483083Z||;True|2025-02-18T05:37:00.3682959+07:00||;True|2025-02-18T05:35:04.5044642+07:00||;False|2025-02-18T05:28:11.7494048+07:00||;False|2025-02-18T05:20:52.7397660+07:00||;True|2025-02-18T05:19:49.0274979+07:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=bookshop-websitedbserver.database.windows.net,1433%3bInitial Catalog=Bookshop-Website_db%3bUser ID=cuonglinh%3bPassword=Culinh889945#</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Bookshop_Website.Data.BooksDbContext">
+      <Value>Data Source=bookshop-websitedbserver.database.windows.net,1433%3bInitial Catalog=Bookshop-Website_db%3bUser ID=cuonglinh%3bPassword=Culinh889945#</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

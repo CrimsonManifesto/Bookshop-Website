@@ -17,8 +17,20 @@
                     <div class="card-body w-100 pb-0">
                         @Html.ActionLink(item.Title, "Details", new { id = item.BookId }, new { @class = "custom-card-title px-3 text-decoration-none text-black", title = item.Title })
                     </div>
-                    <div class="w-100 px-3">
-                        <h5 class="price fw-bold">@item.Price.ToString("C")</h5>
+                    <div class="row w-100 px-3 d-flex justify-content-center align-items-center m-0">
+                        <h5 class="col price m-0 fw-bold">@item.Price.ToString("C")</h5>
+                        @if (item.DiscountPercentage > 0)
+                        {
+                            <div class="col align-items-center percentage-container text-center">
+                                <h5 class="col discount-percentage m-0 text-white">@item.DiscountPercentage.ToString("0")%</h5>
+                            </div>
+                        }
+                    </div>
+                    <div class="row w-100 px-3">
+                        @if (item.DiscountPercentage > 0)
+                        {
+                            <h5 class="col original-price m-0">@item.OriginalPrice.ToString("C")</h5>
+                        }
                     </div>
                 </div>
             }
@@ -37,6 +49,8 @@
         flex-wrap: wrap;
         min-height:31rem;
     }
+
+
 
     #bookCard {
         width: 14rem;
@@ -72,9 +86,23 @@
             text-decoration: none;
         }
 
+
     .price {
         color: red;
-        padding-inline: 16px
+        font-size: 19px;
+    }
+
+    .original-price {
+        color: grey;
+        text-decoration: line-through;
+        font-size: 16px;
+    }
+
+    .discount-percentage {
+        background-color: red;
+        font-size: 14px;
+        border-radius: 7px;
+        width: 35px;
     }
 
     .card-body {
