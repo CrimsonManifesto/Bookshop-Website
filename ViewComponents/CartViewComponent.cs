@@ -10,13 +10,13 @@ namespace Bookshop_Website.ViewComponents
     {
         public IViewComponentResult Invoke()
         {
-            Console.WriteLine("CartViewComponent is being called!"); // Kiểm tra xem có chạy không
+            Console.WriteLine("CartViewComponent is being called!"); 
 
             var cart = HttpContext.Session.GetObjectFromJson<List<CartItem>>("Cart") ?? new List<CartItem>();
             int cartCount = cart.Sum(item => item.Quantity);
 
-            Console.WriteLine($"Cart count: {cartCount}"); // In số lượng sản phẩm
-            ViewData["Test"] = "Hello from ViewComponent"; // Kiểm tra ViewData
+            Console.WriteLine($"Cart count: {cartCount}"); 
+            ViewData["Test"] = "Hello from ViewComponent"; 
 
             return View(cartCount);
         }

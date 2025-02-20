@@ -226,6 +226,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcVmlld0NhcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Bookshop-Website/Views/PayPal/PaymentCancelled.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5UGFsXFBheW1lbnRDYW5jZWxsZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bookshop-Website/Views/PayPal/PaymentSuccess.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5UGFsXFBheW1lbnRTdWNjZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Bookshop-Website/Views/Shared/Components/AdvancedSearch.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQWR2YW5jZWRTZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

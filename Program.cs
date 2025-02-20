@@ -38,6 +38,7 @@ builder.Services.AddControllersWithViews()
         options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
     });
 
+builder.Services.AddSingleton<PayPalService>();
 
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
