@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iB9eZDzuSAn5Ez9jaGda2EMHmnTxVEwmvtzbazR4FTE=",
+  "Hash": "jAKoPhl52OId0HzvCTLy8d1sHNB+vVTzpLk9xX0AeQA=",
   "Source": "Bookshop-Website",
   "BasePath": "_content/Bookshop-Website",
   "Mode": "Default",
@@ -1195,25 +1195,6 @@
       "OriginalItemSpec": "D:\\Bookshop-Website\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Bookshop-Website.bundle.scp.css"
     },
     {
-      "Identity": "D:\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide.png",
-      "SourceId": "Bookshop-Website",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
-      "BasePath": "_content/Bookshop-Website",
-      "RelativePath": "assets/img/slide/slide.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\slide\\slide.png"
-    },
-    {
       "Identity": "D:\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide1.png",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
@@ -1423,12 +1404,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\Bookshop-Website\\wwwroot\\images\\profiles\\53a04d92-be8e-4847-beaa-e2b403c9c480.png",
+      "Identity": "D:\\Bookshop-Website\\wwwroot\\images\\profiles\\52630121-c8b7-4182-94e7-1a5eea7b2003.png",
       "SourceId": "Bookshop-Website",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
       "BasePath": "_content/Bookshop-Website",
-      "RelativePath": "images/profiles/53a04d92-be8e-4847-beaa-e2b403c9c480.png",
+      "RelativePath": "images/profiles/52630121-c8b7-4182-94e7-1a5eea7b2003.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1439,7 +1420,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\profiles\\53a04d92-be8e-4847-beaa-e2b403c9c480.png"
+      "OriginalItemSpec": "wwwroot\\images\\profiles\\52630121-c8b7-4182-94e7-1a5eea7b2003.png"
     },
     {
       "Identity": "D:\\Bookshop-Website\\wwwroot\\images\\profiles\\d36279ab-c523-45a6-85a7-7b3a87c59718.png",
@@ -1687,6 +1668,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Identity": "D:\\Bookshop-Website\\wwwroot\\lib\\jquery-validation\\dist\\newFile.js",
+      "SourceId": "Bookshop-Website",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
+      "BasePath": "_content/Bookshop-Website",
+      "RelativePath": "lib/jquery-validation/dist/newFile.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\newFile.js"
     },
     {
       "Identity": "D:\\Bookshop-Website\\wwwroot\\lib\\jquery-validation\\LICENSE.md",

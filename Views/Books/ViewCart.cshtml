@@ -40,7 +40,12 @@
                             </a>
                         </td>
                         <td>@item.Price.ToString("C")</td>
-                        <td>x @item.Quantity</td>
+                        <td>
+                            <button class="btn btn-light update-quantity" data-id="@item.BookId" data-action="decrease">-</button>
+                            <span class="mx-2 quantity-text" data-id="@item.BookId">@item.Quantity</span>
+                            <button class="btn btn-light update-quantity" data-id="@item.BookId" data-action="increase">+</button>
+                        </td>
+
                         <td>@((item.Price * item.Quantity).ToString("C"))</td>
                         <td>
                             <form asp-action="RemoveFromCart" asp-route-id="@item.BookId" method="post">
@@ -53,7 +58,7 @@
         </table>
 
         <div>
-            <h3 class="fw-semibold">Total: @Model.Sum(item => item.Price * item.Quantity).ToString("C")</h3>
+            <h3 class="fw-semibold">Total: <span id="cart-total">@Model.Sum(item => item.Price * item.Quantity).ToString("C")</span></h3>
         </div>
 
         <div>
@@ -63,12 +68,44 @@
     }
 </div>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll(".update-quantity").forEach(button => {
+            button.addEventListener("click", function() {
+                let bookId = this.getAttribute("data-id");
+                let action = this.getAttribute("data-action");
+
+                fetch(`/Books/${action}Quantity?id=${bookId}`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" }
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            document.querySelector(`.quantity-text[data-id='${bookId}']`).textContent = data.quantity;
+
+                            let itemTotalElement = document.querySelector(`.item-total[data-id='${bookId}']`);
+                            if (itemTotalElement) {
+                                itemTotalElement.textContent = data.totalPrice;
+                            }
+
+                            document.getElementById("cart-total").textContent = data.cartTotal;
+                        }
+                    })
+                    .catch(error => console.error("Error:", error));
+            });
+        });
+    });
+</script>
+
+
+
 <style>
 
     #whiteContainer {
         background-color: white;
         padding: 20px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow for visual effect */
+        box-shadow: 0 0 10px rgba(0,0,0,0.1); 
         min-height: 38rem;
     }
     .cart-image {

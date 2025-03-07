@@ -18,20 +18,18 @@ public class PayPalService
     {
         var apiContext = GetAPIContext();
 
-        // Chuyển đổi CartItem thành PayPal Item
         var itemList = new ItemList()
         {
             items = cartItems.Select(cartItem => new PayPal.Api.Item()
             {
                 name = cartItem.Title,
                 currency = "USD",
-                price = cartItem.Price.ToString("F2"), // PayPal yêu cầu chuỗi có 2 chữ số thập phân
+                price = cartItem.Price.ToString("F2"), 
                 quantity = cartItem.Quantity.ToString(),
-                sku = cartItem.BookId.ToString() // SKU có thể là BookId
+                sku = cartItem.BookId.ToString() 
             }).ToList()
         };
 
-        // Tính tổng tiền
         var totalAmount = cartItems.Sum(cartItem => cartItem.TotalPrice).ToString("F2");
 
         var amount = new Amount()
@@ -74,7 +72,7 @@ public class PayPalService
 
         var config = new Dictionary<string, string>()
         {
-            { "mode", _config["PayPal:Mode"] }
+            { "mode", _config["PayPal:Mode"] ?? throw new InvalidOperationException("Paypal mode error") }
         };
 
         var accessToken = new OAuthTokenCredential(clientId, clientSecret, config).GetAccessToken();

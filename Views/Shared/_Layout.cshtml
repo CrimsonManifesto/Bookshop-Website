@@ -9,11 +9,11 @@
             <header>
                 <partial name="~/Views/Shared/Layout/Header.cshtml" />
             </header>
-            @if (ViewData["ShowBanner"] != null && (bool)ViewData["ShowBanner"])
-            {
-                <partial name="~/Views/Shared/Components/BannerPartial.cshtml" />
-            }
             <main role="main" class="pb-3 ">
+                @if ((ViewData["ShowBanner"] as bool?) == true)
+                {
+                    <partial name="~/Views/Shared/Components/BannerPartial.cshtml" />
+                }
                 <partial name="~/Views/Shared/Components/Overlay.cshtml" />
                 @RenderBody()
             </main>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "F7qyglJUleo5MzkYj2IroMnwaPpIu6fu1dIASg+Cctk=",
+  "Hash": "i4C2LPRdG8h2KDRJTIO5xu8qYoaPfYOQbPU3j6tqkSg=",
   "Source": "Bookshop-Website",
   "BasePath": "_content/Bookshop-Website",
   "Mode": "Default",
@@ -1193,25 +1193,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Bookshop-Website\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\Bookshop-Website.bundle.scp.css"
-    },
-    {
-      "Identity": "D:\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide.png",
-      "SourceId": "Bookshop-Website",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Bookshop-Website\\wwwroot\\",
-      "BasePath": "_content/Bookshop-Website",
-      "RelativePath": "assets/img/slide/slide.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\slide\\slide.png"
     },
     {
       "Identity": "D:\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide1.png",

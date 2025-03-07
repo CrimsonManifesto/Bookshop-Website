@@ -5,10 +5,6 @@
       "PackagePath": "staticwebassets\\Bookshop-Website.bundle.scp.css"
     },
     {
-      "Id": "D:\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide.png",
-      "PackagePath": "staticwebassets\\assets\\img\\slide\\slide.png"
-    },
-    {
       "Id": "D:\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide1.png",
       "PackagePath": "staticwebassets\\assets\\img\\slide\\slide1.png"
     },

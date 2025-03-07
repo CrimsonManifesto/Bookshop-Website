@@ -12,9 +12,9 @@ namespace Bookshop_Website.Models
         public int BookId { get; set; }
 
         [Display(Name = "Image URL")]
-        public string ImageUrl { get; set; }
-        public string Title { get; set; }
-        public string Author { get; set; }
+        public required string ImageUrl { get; set; }
+        public required string Title { get; set; }
+        public required string Author { get; set; }
         [DisplayFormat(DataFormatString = "{0:C}")]
 
         [Precision(18, 3)]
@@ -26,14 +26,10 @@ namespace Bookshop_Website.Models
         public decimal DiscountPercentage { get; set; }
 
         public decimal Price => OriginalPrice * (1 - DiscountPercentage / 100);
-
-        public string Publisher { get; set; }
-
-        public string Genre { get; set; }
-
-        public string Language { get; set; }
-
-        public string? Description { get; set; }
+        public required string Publisher { get; set; }
+        public required string Genre { get; set; }
+        public required string Language { get; set; }
+        public required string Description { get; set; }
 
         [DataType(DataType.Date)]
         [Display(Name = "Publication Date")]

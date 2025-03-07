@@ -54,7 +54,7 @@
             @* Book title and price *@
             <div class="col infoCol bg-white">
                 <h1 style="font-weight:bold">@Html.DisplayFor(Model => Model.Title)</h1>
-                <h1 style="color:red;font-weight:bold">@Model.Price.ToString("C")</h1>
+                <h1 style="color:red;font-weight:bold">@Model?.Price.ToString("C")</h1>
                 <h3>@Html.DisplayFor(Model => Model.Author)</h3>
                 <div id="rating-container">
                     <span class="star">&#9733;</span>

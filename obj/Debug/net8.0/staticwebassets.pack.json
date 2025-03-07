@@ -5,10 +5,6 @@
       "PackagePath": "staticwebassets\\Bookshop-Website.bundle.scp.css"
     },
     {
-      "Id": "D:\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide.png",
-      "PackagePath": "staticwebassets\\assets\\img\\slide\\slide.png"
-    },
-    {
       "Id": "D:\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide1.png",
       "PackagePath": "staticwebassets\\assets\\img\\slide\\slide1.png"
     },
@@ -53,8 +49,8 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\Bookshop-Website\\wwwroot\\images\\profiles\\53a04d92-be8e-4847-beaa-e2b403c9c480.png",
-      "PackagePath": "staticwebassets\\images\\profiles\\53a04d92-be8e-4847-beaa-e2b403c9c480.png"
+      "Id": "D:\\Bookshop-Website\\wwwroot\\images\\profiles\\52630121-c8b7-4182-94e7-1a5eea7b2003.png",
+      "PackagePath": "staticwebassets\\images\\profiles\\52630121-c8b7-4182-94e7-1a5eea7b2003.png"
     },
     {
       "Id": "D:\\Bookshop-Website\\wwwroot\\images\\profiles\\d36279ab-c523-45a6-85a7-7b3a87c59718.png",
@@ -111,6 +107,10 @@
     {
       "Id": "D:\\Bookshop-Website\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Bookshop-Website\\wwwroot\\lib\\jquery-validation\\dist\\newFile.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\newFile.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Bookshop-Website.Microsoft.AspNetCore.StaticWebAssets.props",

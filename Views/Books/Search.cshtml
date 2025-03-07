@@ -2,7 +2,7 @@
 
 
 <div class="container" style="background-color:white">
-    @Html.Partial("~/Views/Shared/Components/AdvancedSearch.cshtml", new Bookshop_Website.Models.AdvancedSearchModel { Languages = new List<string> { "English", "Japanese", "French" } })
+    @await Html.PartialAsync("~/Views/Shared/Components/AdvancedSearch.cshtml", new Bookshop_Website.Models.AdvancedSearchModel { Languages = new List<string> { "English", "Japanese", "French" } })
 
     @if (Model.Any())
     {

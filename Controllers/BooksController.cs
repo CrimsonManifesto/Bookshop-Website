@@ -75,7 +75,7 @@ namespace Bookshop_Website.Controllers
             return View(books);
         }
         // GET: Books/Search
-        public async Task<IActionResult> Search()
+        public IActionResult Search()
         {
             return View();
         }
@@ -345,6 +345,48 @@ namespace Bookshop_Website.Controllers
             }
 
             return View("Search", booksList);
+        }
+
+        [HttpPost]
+        public IActionResult IncreaseQuantity(int id)
+        {
+            var cart = HttpContext.Session.GetObjectFromJson<List<CartItem>>("Cart") ?? new List<CartItem>();
+
+            var cartItem = cart.FirstOrDefault(c => c.BookId == id);
+            if (cartItem != null)
+            {
+                cartItem.Quantity++;
+                HttpContext.Session.SetObjectAsJson("Cart", cart);
+            }
+
+            return Json(new
+            {
+                success = true,
+                quantity = cartItem?.Quantity ?? 0,
+                totalPrice = cartItem != null ? (cartItem.Price * cartItem.Quantity).ToString("C") : "$0.00",
+                cartTotal = cart.Sum(item => item.Price * item.Quantity).ToString("C")
+            });
+        }
+
+        [HttpPost]
+        public IActionResult DecreaseQuantity(int id)
+        {
+            var cart = HttpContext.Session.GetObjectFromJson<List<CartItem>>("Cart") ?? new List<CartItem>();
+
+            var cartItem = cart.FirstOrDefault(c => c.BookId == id);
+            if (cartItem != null && cartItem.Quantity > 1)
+            {
+                cartItem.Quantity--;
+                HttpContext.Session.SetObjectAsJson("Cart", cart);
+            }
+
+            return Json(new
+            {
+                success = true,
+                quantity = cartItem?.Quantity ?? 1,
+                totalPrice = cartItem != null ? (cartItem.Price * cartItem.Quantity).ToString("C") : "$0.00",
+                cartTotal = cart.Sum(item => item.Price * item.Quantity).ToString("C")
+            });
         }
 
 
