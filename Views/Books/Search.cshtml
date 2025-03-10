@@ -1,73 +1,101 @@
 ﻿@model IEnumerable<Bookshop_Website.Models.Books>
 
-
-<div class="container" style="background-color:white">
-    @await Html.PartialAsync("~/Views/Shared/Components/AdvancedSearch.cshtml", new Bookshop_Website.Models.AdvancedSearchModel { Languages = new List<string> { "English", "Japanese", "French" } })
-
-    @if (Model.Any())
-    {
-        <h2 class="pt-3 px-2"><i class="fa-solid fa-magnifying-glass"></i> @Model.Count() Result</h2>
-        <div class="container d-flex bg-white flex-row justify-content-start" id="cardContainer">
-            @foreach (var item in Model)
+<div class="container">
+    <div class="row">
+        <!-- LEFT COLUMN: FILTER -->
+        <div class="col-md-3">
+            <!-- Here, you display AdvancedSearch (filter for language, price, etc.) -->
+            @await Html.PartialAsync("~/Views/Shared/Components/AdvancedSearch.cshtml",
+                     new Bookshop_Website.Models.AdvancedSearchModel
             {
-                <div class="card border-0 pt-3" id="bookCard">
-                    <a asp-action="Details" asp-route-id="@item.BookId">
-                        <img class="rounded float-start" src="@item.ImageUrl" alt="Image for @item.Title" style="width: 150px; height: 220px;" />
-                    </a>
-                    <div class="card-body w-100 pb-0">
-                        @Html.ActionLink(item.Title, "Details", new { id = item.BookId }, new { @class = "custom-card-title px-3 text-decoration-none text-black", title = item.Title })
-                    </div>
-                    <div class="row w-100 px-3 d-flex justify-content-center align-items-center m-0">
-                        <h5 class="col price m-0 fw-bold">@item.Price.ToString("C")</h5>
-                        @if (item.DiscountPercentage > 0)
-                        {
-                            <div class="col align-items-center percentage-container text-center">
-                                <h5 class="col discount-percentage m-0 text-white">@item.DiscountPercentage.ToString("0")%</h5>
+                Languages = new List<string> { "English", "Japanese", "French" }
+            }
+                     )
+        </div>
+
+        <!-- RIGHT COLUMN: SORT BAR + PRODUCT LIST -->
+        <div class="col-md-9">
+            <!-- Sort bar (Popular, Latest, Bestsellers, Price) -->
+            <div class="d-flex align-items-center mb-3" style="gap: 1rem;">
+                <!-- You can use links or buttons with sorting logic. For example: -->
+                <a class="btn btn-light" href="@Url.Action("AdvancedSearchResults", "Books", new { SortBy = "popular", SortOrder = "desc" })">Popular</a>
+                <a class="btn btn-light" href="@Url.Action("AdvancedSearchResults", "Books", new { SortBy = "date", SortOrder = "desc" })">Latest</a>
+                <a class="btn btn-light" href="@Url.Action("AdvancedSearchResults", "Books", new { SortBy = "bestseller", SortOrder = "desc" })">Bestsellers</a>
+                <a class="btn btn-light" href="@Url.Action("AdvancedSearchResults", "Books", new { SortBy = "price", SortOrder = "asc" })">Price</a>
+            </div>
+
+            <!-- SEARCH RESULTS -->
+            @if (Model.Any())
+            {
+                <h2 class="pt-3 px-2">
+                    <i class="fa-solid fa-magnifying-glass"></i> @Model.Count() Result
+                </h2>
+
+                <!-- GRID PRODUCT LIST -->
+                <div class="row" id="cardContainer">
+                    @foreach (var item in Model)
+                    {
+                        <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                            <div class="card border-0 pt-3" id="bookCard">
+                                <a asp-action="Details" asp-route-id="@item.BookId">
+                                    <img class="rounded float-start"
+                                         src="@item.ImageUrl"
+                                         alt="Image for @item.Title"
+                                         style="width: 150px; height: 220px;" />
+                                </a>
+                                <div class="card-body w-100 pb-0">
+                                    @Html.ActionLink(item.Title, "Details",
+                                             new { id = item.BookId },
+                                             new { @class = "custom-card-title px-3 text-decoration-none text-black", title = item.Title })
+                                </div>
+                                <div class="row w-100 px-3 d-flex justify-content-center align-items-center m-0">
+                                    <h5 class="col price m-0 fw-bold">@item.Price.ToString("C")</h5>
+                                    @if (item.DiscountPercentage > 0)
+                                    {
+                                        <div class="col align-items-center percentage-container text-center">
+                                            <h5 class="col discount-percentage m-0 text-white">
+                                                @item.DiscountPercentage.ToString("0")%
+                                            </h5>
+                                        </div>
+                                    }
+                                </div>
+                                <div class="row w-100 px-3">
+                                    @if (item.DiscountPercentage > 0)
+                                    {
+                                        <h5 class="col original-price m-0">
+                                            @item.OriginalPrice.ToString("C")
+                                        </h5>
+                                    }
+                                </div>
                             </div>
-                        }
-                    </div>
-                    <div class="row w-100 px-3">
-                        @if (item.DiscountPercentage > 0)
-                        {
-                            <h5 class="col original-price m-0">@item.OriginalPrice.ToString("C")</h5>
-                        }
-                    </div>
+                        </div>
+                    }
                 </div>
             }
+            else
+            {
+                <h4 class="pt-3 px-2">No Result</h4>
+            }
         </div>
-    }
-    else
-    {
-        <h4 class="pt-3 px-2">No Result</h4>
-    }
+    </div>
 </div>
 
-
 <style>
+
     #cardContainer {
         padding-inline: 10px;
-        flex-wrap: wrap;
-        min-height:31rem;
     }
 
-
-
     #bookCard {
-        width: 14rem;
-        height: 21rem;
+        width: 100%; 
         margin-top: 1rem;
-        margin-inline: 0.94rem;
         align-items: center;
+        transition: box-shadow 0.2s;
     }
 
         #bookCard:hover {
             box-shadow: 0 0 10px rgba(0,0,0,0.3);
         }
-
-
-    #textAuthor {
-        font-size: 0.8rem
-    }
 
     .custom-card-title {
         display: -webkit-box;
@@ -80,15 +108,13 @@
         color: black;
     }
 
-
         .custom-card-title:hover {
             color: cornflowerblue;
             text-decoration: none;
         }
 
-
     .price {
-        color: red;
+        color: var(--main-color);
         font-size: 19px;
     }
 
@@ -99,14 +125,9 @@
     }
 
     .discount-percentage {
-        background-color: red;
+        background-color: var(--main-color);
         font-size: 14px;
         border-radius: 7px;
         width: 35px;
     }
-
-    .card-body {
-        height: 500px;
-    }
-
 </style>

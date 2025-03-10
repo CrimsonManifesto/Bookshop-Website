@@ -72,7 +72,7 @@ public class PayPalService
 
         var config = new Dictionary<string, string>()
         {
-            { "mode", _config["PayPal:Mode"] ?? throw new InvalidOperationException("Paypal mode error") }
+            { "mode", _config["PayPal:Mode"] ?? throw new InvalidOperationException("Paypal mode setting error") }
         };
 
         var accessToken = new OAuthTokenCredential(clientId, clientSecret, config).GetAccessToken();

@@ -321,31 +321,92 @@ namespace Bookshop_Website.Controllers
             return View(languages);
         }
 
-        // GET: Books/AdvancedSearch
+
+        [HttpGet]
         public async Task<IActionResult> AdvancedSearchResults(AdvancedSearchModel searchModel)
         {
             var booksQuery = _context.Books.AsQueryable();
 
+            // 1) Filter by Title
             if (!string.IsNullOrEmpty(searchModel.Title))
             {
                 booksQuery = booksQuery.Where(b => b.Title.Contains(searchModel.Title));
             }
 
+            // Filter by Language
             if (!string.IsNullOrEmpty(searchModel.Language))
             {
                 booksQuery = booksQuery.Where(b => b.Language == searchModel.Language);
             }
 
-
-            var booksList = await booksQuery.ToListAsync();
-
+            // Filter by Price
+            if (searchModel.MinPrice.HasValue)
+            {
+                booksQuery = booksQuery.Where(b =>
+                    (b.OriginalPrice * (1 - ((decimal)b.DiscountPercentage / 100))) >= searchModel.MinPrice.Value);
+            }
             if (searchModel.MaxPrice.HasValue)
             {
-                booksList = booksList.Where(b => b.Price <= searchModel.MaxPrice.Value).ToList();
+                booksQuery = booksQuery.Where(b =>
+                    (b.OriginalPrice * (1 - ((decimal)b.DiscountPercentage / 100))) <= searchModel.MaxPrice.Value);
             }
 
+            // Sort by Discount
+            if (!string.IsNullOrEmpty(searchModel.Discount))
+            {
+                if (searchModel.Discount.Equals("asc", StringComparison.OrdinalIgnoreCase))
+                {
+                    booksQuery = booksQuery.OrderBy(b => b.DiscountPercentage);
+                }
+                else
+                {
+                    booksQuery = booksQuery.OrderByDescending(b => b.DiscountPercentage);
+                }
+            }
+
+            // SortBy + SortOrder
+            if (!string.IsNullOrEmpty(searchModel.SortBy))
+            {
+                switch (searchModel.SortBy.ToLower())
+                {
+                    case "title":
+                        booksQuery = (searchModel.SortOrder == "asc")
+                            ? booksQuery.OrderBy(b => b.Title)
+                            : booksQuery.OrderByDescending(b => b.Title);
+                        break;
+                    case "price":
+                        booksQuery = (searchModel.SortOrder == "asc")
+                            ? booksQuery.OrderBy(b => b.OriginalPrice * (1 - ((decimal)b.DiscountPercentage / 100)))
+                            : booksQuery.OrderByDescending(b => b.OriginalPrice * (1 - ((decimal)b.DiscountPercentage / 100)));
+                        break;
+                    case "discount":
+                        booksQuery = (searchModel.SortOrder == "asc")
+                            ? booksQuery.OrderBy(b => b.DiscountPercentage)
+                            : booksQuery.OrderByDescending(b => b.DiscountPercentage);
+                        break;
+                    case "date":
+                        booksQuery = (searchModel.SortOrder == "asc")
+                            ? booksQuery.OrderBy(b => b.PublicationDate)
+                            : booksQuery.OrderByDescending(b => b.PublicationDate);
+                        break;
+                    case "popular":
+                        booksQuery = (searchModel.SortOrder == "asc")
+                            ? booksQuery.OrderBy(b => b.AverageRating)
+                            : booksQuery.OrderByDescending(b => b.AverageRating);
+                        break;
+                    case "bestseller":
+                        booksQuery = (searchModel.SortOrder == "asc")
+                            ? booksQuery.OrderBy(b => b.NumberSold)
+                            : booksQuery.OrderByDescending(b => b.NumberSold);
+                        break;
+                }
+            }
+
+            var booksList = await booksQuery.ToListAsync();
             return View("Search", booksList);
         }
+
+
 
         [HttpPost]
         public IActionResult IncreaseQuantity(int id)

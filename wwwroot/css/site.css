@@ -10,6 +10,11 @@ html {
 }
 }
 
+:root {
+    --main-color: red;
+    --secondary-color: white;
+}
+
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
     box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
@@ -50,18 +55,18 @@ body {
     }
 
     .footer {
-        background-color: red;
+        background-color: var(--main-color);
         color: white;
         padding: 20px;
         text-align: center;
         margin: 0
     }
 
-    #brandText {
-        color: red;
-        font-weight: 800;
-        font-size: 25px
-    }
+#brandText {
+    color: var(--main-color);
+    font-weight: 800;
+    font-size: 25px
+}
 
 
     #navButton {
