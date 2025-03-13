@@ -57,23 +57,7 @@ namespace Bookshop_Website.Controllers
 
         }
 
-        // GET: Books/Details/
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var books = await _context.Books
-                .FirstOrDefaultAsync(m => m.BookId == id);
-            if (books == null)
-            {
-                return NotFound();
-            }
-
-            return View(books);
-        }
+      
         // GET: Books/Search
         public IActionResult Search()
         {
@@ -94,8 +78,6 @@ namespace Bookshop_Website.Controllers
         }
 
         // POST: Books/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
@@ -450,6 +432,93 @@ namespace Bookshop_Website.Controllers
             });
         }
 
+        // GET: Books/Details/5
+        public async Task<IActionResult> Details(int id)
+        {
+            var book = await _context.Books
+                .Include(b => b.Comments)
+                .FirstOrDefaultAsync(b => b.BookId == id);
+
+            if (book == null)
+            {
+                return NotFound();
+            }
+            return View(book);
+        }
+
+
+        // POST: Books/AddComment
+        [HttpPost]
+        public async Task<IActionResult> AddComment(Comment comment)
+        {
+            // Log ModelState errors
+            if (!ModelState.IsValid)
+            {
+                var errors = ModelState.Values.SelectMany(v => v.Errors)
+                                              .Select(e => e.ErrorMessage);
+                System.Diagnostics.Debug.WriteLine("ModelState errors: " + string.Join(", ", errors));
+
+                return RedirectToAction("Details", new { id = comment.BookId });
+            }
+
+            // Log the incoming comment data
+            System.Diagnostics.Debug.WriteLine($"Received Comment - BookId: {comment.BookId}, Text: {comment.Text}");
+
+            // Set required fields
+            comment.CreatedAt = DateTime.Now;
+            if (User.Identity.IsAuthenticated)
+            {
+                // Retrieve the current ApplicationUser
+                var currentUser = await _userManager.GetUserAsync(User);
+                if (currentUser != null)
+                {
+                    comment.UserName = currentUser.UserName;
+                    comment.ProfilePictureUrl = currentUser.ProfilePictureUrl;
+                }
+            }
+            else
+            {
+                comment.UserName = "Anonymous";
+                comment.ProfilePictureUrl = "/images/profiles/default-profile.png";
+            }
+
+            // Attempt to add comment
+            _context.Comments.Add(comment);
+            int rowsAffected = await _context.SaveChangesAsync();
+
+            // Log if the comment was saved
+            System.Diagnostics.Debug.WriteLine($"Rows affected: {rowsAffected}");
+
+            return RedirectToAction("Details", new { id = comment.BookId });
+        }
+
+        [HttpPost]
+        [Authorize]
+        public async Task<IActionResult> DeleteComment(int id)
+        {
+            // Find comment by id
+            var comment = await _context.Comments.FindAsync(id);
+            if (comment == null)
+            {
+                return NotFound();
+            }
+
+            // Get current user
+            var currentUser = await _userManager.GetUserAsync(User);
+            bool isAdmin = User.IsInRole("Admin");
+
+            // Check authorization
+            if (!isAdmin && comment.UserName != currentUser.UserName)
+            {
+                return Forbid();
+            }
+
+            // Delete and save
+            _context.Comments.Remove(comment);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Details", new { id = comment.BookId });
+        }
 
 
     }

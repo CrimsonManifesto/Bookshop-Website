@@ -51,5 +51,6 @@ namespace Bookshop_Website.Models
         [Display(Name = "Stock Quantity")]
         public int StockQuantity { get; set; }
 
+        public List<Comment> Comments { get; set; } = new List<Comment>();
     }
 }

@@ -13,5 +13,6 @@ namespace Bookshop_Website.Data
         }
         public DbSet<Bookshop_Website.Models.Books> Books { get; set; } = default!;
         public DbSet<Feedback> Feedbacks { get; set; }
+        public DbSet<Comment> Comments { get; set; }
     }
 }
