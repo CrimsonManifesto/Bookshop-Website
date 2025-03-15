@@ -9,19 +9,19 @@
         @* Book image and actions *@
         <div class="col-4" style="background-color:white">
             <div class="row justify-content-center">
-                <img src="@Model.ImageUrl" alt="@Model.Title" id="image" />
+                <img src="@Url.Action("GetImage", "Books", new { id = Model.BookId })" alt="@Model.Title" id="image" />
             </div>
             <div class="row">
                 <div class="col">
-                    <form asp-action="AddtoCart" asp-route-id="@Model?.BookId" method="post" style="display:inline;">
+                    <form asp-action="AddToCart" asp-route-id="@Model.BookId" method="post" style="display:inline;">
                         <button type="submit" class="btn interactBtn w-100 fw-bold" style="color:white; background-color:var(--main-color)">
                             Buy
                         </button>
                     </form>
                 </div>
                 <div class="col">
-                    <form asp-action="AddtoCart" asp-route-id="@Model?.BookId" method="post" style="display:inline;">
-                        <button type="submit" onclick="addToCart(@Model?.BookId)" class="btn interactBtn w-100 fw-bold" style="color:var(--main-color);border-width:2px;border-color:var(--main-color)">
+                    <form asp-action="AddToCart" asp-route-id="@Model.BookId" method="post" style="display:inline;">
+                        <button type="submit" onclick="addToCart(@Model.BookId)" class="btn interactBtn w-100 fw-bold" style="color:var(--main-color);border-width:2px;border-color:var(--main-color)">
                             <i class="fa-solid fa-cart-shopping"></i> Add to Cart
                         </button>
                     </form>
@@ -32,14 +32,14 @@
                 <div class="row">
                     <div class="col w-100">
                         <form style="display:inline;">
-                            <button class="btn btn-outline-info interactBtn w-100 fw-bold" asp-action="Edit" asp-route-id="@Model?.BookId" type="submit">
+                            <button class="btn btn-outline-info interactBtn w-100 fw-bold" asp-action="Edit" asp-route-id="@Model.BookId" type="submit">
                                 Edit
                             </button>
                         </form>
                     </div>
                     <div class="col">
                         <form method="post" style="display:inline;">
-                            <button class="btn btn-outline-warning interactBtn w-100 fw-bold" asp-action="Delete" asp-route-id="@Model?.BookId" type="submit">
+                            <button class="btn btn-outline-warning interactBtn w-100 fw-bold" asp-action="Delete" asp-route-id="@Model.BookId" type="submit">
                                 <i class="fa-solid fa-trash"></i> Delete
                             </button>
                         </form>
@@ -53,7 +53,7 @@
             @* Book title, price and basic info *@
             <div class="col infoCol bg-white">
                 <h1 style="font-weight:bold">@Html.DisplayFor(Model => Model.Title)</h1>
-                <h1 style="color:var(--main-color);font-weight:bold">@Model?.Price.ToString("C")</h1>
+                <h1 style="color:var(--main-color);font-weight:bold">@Model.Price.ToString("C")</h1>
                 <h3>@Html.DisplayFor(Model => Model.Author)</h3>
                 <div id="rating-container">
                     <span class="star">&#9733;</span>
@@ -181,7 +181,6 @@
             }
         </div>
 
-
         <div id="add-comment" class="mt-3">
             <form asp-action="AddComment" method="post">
                 <div class="form-group">
@@ -190,7 +189,6 @@
                 <input type="hidden" name="BookId" value="@Model.BookId" />
                 <button type="submit" class="btn btn-primary mt-2">Submit Comment</button>
             </form>
-
         </div>
     </div>
 </div>
@@ -208,9 +206,8 @@
         });
     }
 
-    // Example average rating
-    const averageRating = 3.5;
-    displayRating(averageRating);
+    // Use the model's average rating
+    displayRating(@Model.AverageRating);
 
     // Add-to-cart function
     function addToCart(bookId) {

@@ -15,7 +15,7 @@
                 <div class="owl-item">
                     <div class="card border-0 pt-3 mt-3 mb-3 align-items-center" id="bookCard">
                         <a asp-action="Details" asp-route-id="@book.BookId">
-                            <img class="rounded float-start" src="@book.ImageUrl" alt="Image for @book.Title" style="width: 150px; height: 220px;" loading="lazy" />
+                            <img class="rounded float-start" src="@Url.Action("GetImage", "Books", new { id = book.BookId })" alt="Image for @book.Title" style="width: 150px; height: 220px;" loading="lazy" />
                         </a>
                         <div class="card-body w-100" id="cardTitle">
                             @Html.ActionLink(book.Title, "Details", new { id = book.BookId }, new { @class = "custom-card-title px-3 text-decoration-none text-black", title = book.Title })
@@ -71,10 +71,7 @@
     });
 </script>
 
-
 <style>
-
-
     div {
         display: block;
         position: relative;

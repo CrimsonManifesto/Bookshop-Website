@@ -5,7 +5,6 @@
 }
 
 <div class="container" id="whiteContainer" style="background-color:white">
-
     <h2 class="fw-semibold">Your Cart</h2>
 
     @if (Model == null || !Model.Any())
@@ -29,9 +28,9 @@
                 @foreach (var item in Model)
                 {
                     <tr>
-                        <td> 
+                        <td>
                             <a class="text-decoration-none" href="@Url.Action("Details", "Books", new { id = item.BookId })">
-                                <img class="cart-image" src="@item.ImageUrl" alt="@item.Title" id="image" />
+                                <img class="cart-image" src="@Url.Action("GetImage", "Books", new { id = item.BookId })" alt="@item.Title" />
                             </a>
                         </td>
                         <td>
@@ -45,7 +44,6 @@
                             <span class="mx-2 quantity-text" data-id="@item.BookId">@item.Quantity</span>
                             <button class="btn btn-light update-quantity" data-id="@item.BookId" data-action="increase">+</button>
                         </td>
-
                         <td>@((item.Price * item.Quantity).ToString("C"))</td>
                         <td>
                             <form asp-action="RemoveFromCart" asp-route-id="@item.BookId" method="post">
@@ -83,12 +81,10 @@
                     .then(data => {
                         if (data.success) {
                             document.querySelector(`.quantity-text[data-id='${bookId}']`).textContent = data.quantity;
-
                             let itemTotalElement = document.querySelector(`.item-total[data-id='${bookId}']`);
                             if (itemTotalElement) {
                                 itemTotalElement.textContent = data.totalPrice;
                             }
-
                             document.getElementById("cart-total").textContent = data.cartTotal;
                         }
                     })
@@ -98,34 +94,31 @@
     });
 </script>
 
-
-
 <style>
-
     #whiteContainer {
         background-color: white;
         padding: 20px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
         min-height: 38rem;
     }
+
     .cart-image {
         height: 100px;
         width: auto;
     }
 
     td {
-        vertical-align: middle; 
-        padding: 10px; 
+        vertical-align: middle;
+        padding: 10px;
         font-size: 20px;
         color: black !important;
     }
 
-    td a{
-        color: black !important;
-    }
+        td a {
+            color: black !important;
+        }
 
-    td a:hover {
-        color: dimgrey !important;
-    }
-
+            td a:hover {
+                color: dimgrey !important;
+            }
 </style>

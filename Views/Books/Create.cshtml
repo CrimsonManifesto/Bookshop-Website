@@ -4,166 +4,114 @@
     ViewData["Title"] = "Create";
 }
 
-
-
 <div class="container d-flex justify-content-center align-items-center">
-    <div class="bg-white p-10 my-3 border rounded shadow align-items-center create-container">
-        <div class="d-flex justify-content-center py-4">
-            <div class="col px-5">
-                <div class="row pb-4">
-                    <h1 class="fw-semibold">Create a new book</h1>
-                </div>
-                <form asp-action="Create">
-                    <div class="row">
-                        <div class="col-6 form-group">
-                            <label asp-for="Title" class="control-label"></label>
-                            <input asp-for="Title" class="form-control" />
-                            <div class="validationContainer">
-                                <span asp-validation-for="Title" class="text-danger"></span>
-                            </div>
-                        </div>
-                        <div class="col-6 form-group">
-                            <label asp-for="Genre" class="control-label"></label>
-                            <select class="form-select" asp-for="Genre">
-                                @* Add more gerne options here *@
-                                <option selected>Education</option>
-                                <option value="1">Politics</option>
-                                <option value="2">Romance</option>
-                                <option value="3">Sci-fi</option>
-                                <option value="4">History</option>
-                                <option value="5">Fantasy</option>
-                                <option value="6">Self-Help</option>
-                                <option value="7">Horror</option>
-                            </select>
-                            <div class="validationContainer">
-                                <span asp-validation-for="Genre" class="text-danger"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6 form-group">
-                            <label asp-for="Publisher" class="control-label"></label>
-                            <input asp-for="Publisher" class="form-control" />
-                            <div class="validationContainer">
-                                <span asp-validation-for="Publisher" class="text-danger"></span>
-                            </div>
-                        </div>
-                        <div class="col-6 form-group">
-                            <label asp-for="Language" class="control-label"></label>
-                            <select class="form-select" asp-for="Language">
-                                @* Add more language options here *@
-                                <option selected>English</option>
-                                <option value="1">French</option>
-                                <option value="2">Spanish</option>
-                                <option value="3">Chinese</option>
-                                <option value="4">Russian</option>
-
-                            </select>
-                            <div class="validationContainer">
-                                <span asp-validation-for="Language" class="text-danger"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6 form-group">
-                            <label asp-for="Author" class="control-label"></label>
-                            <input asp-for="Author" class="form-control" />
-                            <div class="validationContainer">
-                                <span asp-validation-for="Author" class="text-danger"></span>
-                            </div>
-                        </div>
-                        <div class="col-6 form-group">
-                            <label asp-for="OriginalPrice" class="control-label"></label>
-                            <input asp-for="OriginalPrice" class="form-control" />
-                            <div class="validationContainer">
-                                <span asp-validation-for="OriginalPrice" class="text-danger"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6 form-group">
-                            <label asp-for="DiscountPercentage" class="control-label"></label>
-                            <input asp-for="DiscountPercentage" class="form-control" value="0" />
-                            <div class="validationContainer">
-                                <span asp-validation-for="DiscountPercentage" class="text-danger"></span>
-                            </div>
-                        </div>
-                        <div class="col-6 form-group">
-                            <label asp-for="ImageUrl" class="control-label"></label>
-                            <input asp-for="ImageUrl" class="form-control" />
-                            <div class="validationContainer">
-                                <span asp-validation-for="ImageUrl" class="text-danger"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6 form-group">
-                            <label asp-for="PublicationDate" class="control-label"></label>
-                            <input asp-for="PublicationDate" class="form-control" value="0" />
-                            <div class="validationContainer">
-                                <span asp-validation-for="PublicationDate" class="text-danger"></span>
-                            </div>
-                        </div>
-                        @*
-                        -- For Future Modification --
-                        <div class="col-6 form-group">
-                        <label asp-for="ImageUrl" class="control-label"></label>
-                        <input asp-for="ImageUrl" class="form-control" />
-                        <div class="validationContainer">
-                        <span asp-validation-for="ImageUrl" class="text-danger"></span>
-                        </div>
-                        </div> *@
-                    </div>
-                    <div class="row">
-                        <div class="col-6 form-group">
-                            <label asp-for="NumberOfPages" class="control-label"></label>
-                            <input asp-for="NumberOfPages" class="form-control" value="0" />
-                            <div class="validationContainer">
-                                <span asp-validation-for="NumberOfPages" class="text-danger"></span>
-                            </div>
-                        </div>
-                        <div class="col-6 form-group">
-                            <label asp-for="StockQuantity" class="control-label"></label>
-                            <input asp-for="StockQuantity" class="form-control" />
-                            <div class="validationContainer">
-                                <span asp-validation-for="StockQuantity" class="text-danger"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group">
-                            <label asp-for="Description" class="control-label"></label>
-                            <textarea asp-for="Description" class="form-control description"></textarea>
-                            <div class="validationContainer">
-                                <span asp-validation-for="Description" class="text-danger"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row form-group justify-content-center pt-3">
-                        <input type="submit" value="Create" class="btn btn-primary w-50" />
-                    </div>
-                </form>
-            </div>
+    <div class="bg-white p-4 my-3 border rounded shadow create-container">
+        <div class="text-center py-3">
+            <h1 class="fw-semibold">Create a New Book</h1>
         </div>
+        <!-- Note: Include enctype for file uploads -->
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <label asp-for="Title" class="control-label"></label>
+                    <input asp-for="Title" class="form-control" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 form-group">
+                    <label asp-for="Genre" class="control-label"></label>
+                    <select asp-for="Genre" class="form-select">
+                        <option selected>Education</option>
+                        <option>Politics</option>
+                        <option>Romance</option>
+                        <option>Sci-fi</option>
+                        <option>History</option>
+                        <option>Fantasy</option>
+                        <option>Self-Help</option>
+                        <option>Horror</option>
+                    </select>
+                    <span asp-validation-for="Genre" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <label asp-for="Publisher" class="control-label"></label>
+                    <input asp-for="Publisher" class="form-control" />
+                    <span asp-validation-for="Publisher" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 form-group">
+                    <label asp-for="Language" class="control-label"></label>
+                    <select asp-for="Language" class="form-select">
+                        <option selected>English</option>
+                        <option>French</option>
+                        <option>Spanish</option>
+                        <option>Chinese</option>
+                        <option>Russian</option>
+                    </select>
+                    <span asp-validation-for="Language" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <label asp-for="Author" class="control-label"></label>
+                    <input asp-for="Author" class="form-control" />
+                    <span asp-validation-for="Author" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 form-group">
+                    <label asp-for="OriginalPrice" class="control-label"></label>
+                    <input asp-for="OriginalPrice" type="number" step="0.01" class="form-control" />
+                    <span asp-validation-for="OriginalPrice" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <label asp-for="DiscountPercentage" class="control-label"></label>
+                    <input asp-for="DiscountPercentage" type="number" step="0.01" class="form-control" value="0" />
+                    <span asp-validation-for="DiscountPercentage" class="text-danger"></span>
+                </div>
+                <!-- New Image File Upload Field -->
+                <div class="col-md-6 form-group">
+                    <label for="imageFile" class="control-label">Upload Book Image</label>
+                    <input type="file" name="imageFile" class="form-control" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <label asp-for="PublicationDate" class="control-label"></label>
+                    <input asp-for="PublicationDate" type="date" class="form-control" />
+                    <span asp-validation-for="PublicationDate" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 form-group">
+                    <label asp-for="NumberOfPages" class="control-label"></label>
+                    <input asp-for="NumberOfPages" type="number" class="form-control" />
+                    <span asp-validation-for="NumberOfPages" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <label asp-for="StockQuantity" class="control-label"></label>
+                    <input asp-for="StockQuantity" type="number" class="form-control" />
+                    <span asp-validation-for="StockQuantity" class="text-danger"></span>
+                </div>
+                <div class="col-md-6 form-group">
+                    <label asp-for="Description" class="control-label"></label>
+                    <textarea asp-for="Description" class="form-control description"></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="text-center pt-3">
+                <button type="submit" class="btn btn-primary w-50">Create</button>
+            </div>
+        </form>
     </div>
 </div>
 
-
-
 <style>
     .create-container {
-        width: 50rem;
-        height: 60rem;
-    }
-
-    .validationContainer {
-        height: 2rem
+        max-width: 50rem;
     }
 
     .description {
         height: 8rem;
-        resize: none
+        resize: none;
     }
-
 </style>
-

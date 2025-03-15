@@ -10,9 +10,8 @@ namespace Bookshop_Website.Models
 
         [Key]
         public int BookId { get; set; }
-
-        [Display(Name = "Image URL")]
-        public required string ImageUrl { get; set; }
+        public byte[]? ImageData { get; set; }
+        public string? ImageMimeType { get; set; }
         public required string Title { get; set; }
         public required string Author { get; set; }
         [DisplayFormat(DataFormatString = "{0:C}")]

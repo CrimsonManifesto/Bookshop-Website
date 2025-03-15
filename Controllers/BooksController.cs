@@ -11,7 +11,8 @@ using Bookshop_Website.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
-
+using System.IO;
+using Microsoft.AspNetCore.Http;
 
 namespace Bookshop_Website.Controllers
 {
@@ -52,26 +53,24 @@ namespace Bookshop_Website.Controllers
             ViewBag.FlashSaleBooks = flashSaleBooks;
             ViewBag.AllBooks = await _context.Books.ToListAsync();
 
-
             return View(await _context.Books.ToListAsync());
-
         }
 
-      
         // GET: Books/Search
         public IActionResult Search()
         {
             return View();
         }
-        // Post: Books/SearchResults
-        public async Task<IActionResult> SearchResults(String SearchPhrase)
+
+        // POST: Books/SearchResults
+        public async Task<IActionResult> SearchResults(string SearchPhrase)
         {
             ViewData["SearchPhrase"] = SearchPhrase;
             return View("Search", await _context.Books.Where(j => j.Title.Contains(SearchPhrase)).ToListAsync());
         }
+
         // GET: Books/Create
         [Authorize(Roles = "Admin")]
-
         public IActionResult Create()
         {
             return View();
@@ -81,11 +80,22 @@ namespace Bookshop_Website.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult>
-            Create([Bind("BookId,Title,Author,Genre,Publisher,Language,DiscountPercentage,OriginalPrice,ImageUrl,Description, PublicationDate, NumberOfPages, InStock, AverageRating,NumberSold, StockQuantity")] Books books)
+        public async Task<IActionResult> Create(
+            [Bind("BookId,Title,Author,Genre,Publisher,Language,DiscountPercentage,OriginalPrice,Description,PublicationDate,NumberOfPages,InStock,AverageRating,NumberSold,StockQuantity")] Books books,
+            IFormFile? imageFile)
         {
             if (ModelState.IsValid)
             {
+                if (imageFile != null && imageFile.Length > 0)
+                {
+                    using (var ms = new MemoryStream())
+                    {
+                        await imageFile.CopyToAsync(ms);
+                        books.ImageData = ms.ToArray();
+                        books.ImageMimeType = imageFile.ContentType;
+                    }
+                }
+
                 _context.Add(books);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -111,13 +121,13 @@ namespace Bookshop_Website.Controllers
         }
 
         // POST: Books/Edit
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-
-        public async Task<IActionResult> Edit(int id, [Bind("BookId,Title,Author,Genre,Publisher,Language,DiscountPercentage,OriginalPrice,ImageUrl,Description, PublicationDate, NumberOfPages, InStock, AverageRating,NumberSold, StockQuantity")] Books books)
+        public async Task<IActionResult> Edit(
+            int id,
+            [Bind("BookId,Title,Author,Genre,Publisher,Language,DiscountPercentage,OriginalPrice,Description,PublicationDate,NumberOfPages,InStock,AverageRating,NumberSold,StockQuantity")] Books books,
+            IFormFile? imageFile)
         {
             if (id != books.BookId)
             {
@@ -128,6 +138,27 @@ namespace Bookshop_Website.Controllers
             {
                 try
                 {
+                    // If a new image file is provided, update the image data.
+                    if (imageFile != null && imageFile.Length > 0)
+                    {
+                        using (var ms = new MemoryStream())
+                        {
+                            await imageFile.CopyToAsync(ms);
+                            books.ImageData = ms.ToArray();
+                            books.ImageMimeType = imageFile.ContentType;
+                        }
+                    }
+                    else
+                    {
+                        // Retrieve the existing image data if no new file is provided.
+                        var existingBook = await _context.Books.AsNoTracking().FirstOrDefaultAsync(b => b.BookId == id);
+                        if (existingBook != null)
+                        {
+                            books.ImageData = existingBook.ImageData;
+                            books.ImageMimeType = existingBook.ImageMimeType;
+                        }
+                    }
+
                     _context.Update(books);
                     await _context.SaveChangesAsync();
                 }
@@ -197,6 +228,7 @@ namespace Bookshop_Website.Controllers
 
             return PartialView("~/Views/Shared/TopNavigation/GenresPartial.cshtml");
         }
+
         // GET: Books/GenresShow
         public async Task<IActionResult> GenresShow(string SearchPhrase)
         {
@@ -235,7 +267,6 @@ namespace Bookshop_Website.Controllers
                 cart.Add(new CartItem
                 {
                     BookId = book.BookId,
-                    ImageUrl = book.ImageUrl,
                     Title = book.Title,
                     Price = book.Price,
                     Quantity = 1
@@ -303,13 +334,12 @@ namespace Bookshop_Website.Controllers
             return View(languages);
         }
 
-
         [HttpGet]
         public async Task<IActionResult> AdvancedSearchResults(AdvancedSearchModel searchModel)
         {
             var booksQuery = _context.Books.AsQueryable();
 
-            // 1) Filter by Title
+            // Filter by Title
             if (!string.IsNullOrEmpty(searchModel.Title))
             {
                 booksQuery = booksQuery.Where(b => b.Title.Contains(searchModel.Title));
@@ -336,14 +366,9 @@ namespace Bookshop_Website.Controllers
             // Sort by Discount
             if (!string.IsNullOrEmpty(searchModel.Discount))
             {
-                if (searchModel.Discount.Equals("asc", StringComparison.OrdinalIgnoreCase))
-                {
-                    booksQuery = booksQuery.OrderBy(b => b.DiscountPercentage);
-                }
-                else
-                {
-                    booksQuery = booksQuery.OrderByDescending(b => b.DiscountPercentage);
-                }
+                booksQuery = searchModel.Discount.Equals("asc", StringComparison.OrdinalIgnoreCase)
+                    ? booksQuery.OrderBy(b => b.DiscountPercentage)
+                    : booksQuery.OrderByDescending(b => b.DiscountPercentage);
             }
 
             // SortBy + SortOrder
@@ -387,8 +412,6 @@ namespace Bookshop_Website.Controllers
             var booksList = await booksQuery.ToListAsync();
             return View("Search", booksList);
         }
-
-
 
         [HttpPost]
         public IActionResult IncreaseQuantity(int id)
@@ -446,12 +469,10 @@ namespace Bookshop_Website.Controllers
             return View(book);
         }
 
-
         // POST: Books/AddComment
         [HttpPost]
         public async Task<IActionResult> AddComment(Comment comment)
         {
-            // Log ModelState errors
             if (!ModelState.IsValid)
             {
                 var errors = ModelState.Values.SelectMany(v => v.Errors)
@@ -461,14 +482,11 @@ namespace Bookshop_Website.Controllers
                 return RedirectToAction("Details", new { id = comment.BookId });
             }
 
-            // Log the incoming comment data
             System.Diagnostics.Debug.WriteLine($"Received Comment - BookId: {comment.BookId}, Text: {comment.Text}");
 
-            // Set required fields
             comment.CreatedAt = DateTime.Now;
             if (User.Identity.IsAuthenticated)
             {
-                // Retrieve the current ApplicationUser
                 var currentUser = await _userManager.GetUserAsync(User);
                 if (currentUser != null)
                 {
@@ -482,11 +500,9 @@ namespace Bookshop_Website.Controllers
                 comment.ProfilePictureUrl = "/images/profiles/default-profile.png";
             }
 
-            // Attempt to add comment
             _context.Comments.Add(comment);
             int rowsAffected = await _context.SaveChangesAsync();
 
-            // Log if the comment was saved
             System.Diagnostics.Debug.WriteLine($"Rows affected: {rowsAffected}");
 
             return RedirectToAction("Details", new { id = comment.BookId });
@@ -496,30 +512,38 @@ namespace Bookshop_Website.Controllers
         [Authorize]
         public async Task<IActionResult> DeleteComment(int id)
         {
-            // Find comment by id
             var comment = await _context.Comments.FindAsync(id);
             if (comment == null)
             {
                 return NotFound();
             }
 
-            // Get current user
             var currentUser = await _userManager.GetUserAsync(User);
             bool isAdmin = User.IsInRole("Admin");
 
-            // Check authorization
             if (!isAdmin && comment.UserName != currentUser.UserName)
             {
                 return Forbid();
             }
 
-            // Delete and save
             _context.Comments.Remove(comment);
             await _context.SaveChangesAsync();
 
             return RedirectToAction("Details", new { id = comment.BookId });
         }
 
-
+        // GET: Books/GetImage/5
+        public IActionResult GetImage(int id)
+        {
+            var book = _context.Books.Find(id);
+            if (book != null && book.ImageData != null && book.ImageMimeType != null)
+            {
+                return File(book.ImageData, book.ImageMimeType);
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
     }
 }

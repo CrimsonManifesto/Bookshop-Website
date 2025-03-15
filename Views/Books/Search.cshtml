@@ -39,9 +39,9 @@
                             <div class="card border-0 pt-3" id="bookCard">
                                 <a asp-action="Details" asp-route-id="@item.BookId">
                                     <img class="rounded float-start"
-                                         src="@item.ImageUrl"
+                                         src="@Url.Action("GetImage", "Books", new { id = item.BookId })"
                                          alt="Image for @item.Title"
-                                         style="width: 150px; height: 220px;" />
+                                         style="width: 150px; height: 220px;" loading="lazy" />
                                 </a>
                                 <div class="card-body w-100 pb-0">
                                     @Html.ActionLink(item.Title, "Details",
@@ -81,13 +81,12 @@
 </div>
 
 <style>
-
     #cardContainer {
         padding-inline: 10px;
     }
 
     #bookCard {
-        width: 100%; 
+        width: 100%;
         margin-top: 1rem;
         align-items: center;
         transition: box-shadow 0.2s;
