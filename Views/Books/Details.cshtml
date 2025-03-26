@@ -20,7 +20,7 @@
                     </form>
                 </div>
                 <div class="col">
-                    <form asp-action="AddToCart" asp-route-id="@Model.BookId" method="post" style="display:inline;">
+                    <form asp-action="AddToCart" asp-controller="Cart" asp-route-id="@Model.BookId" method="post" style="display:inline;">
                         <button type="submit" onclick="addToCart(@Model.BookId)" class="btn interactBtn w-100 fw-bold" style="color:var(--main-color);border-width:2px;border-color:var(--main-color)">
                             <i class="fa-solid fa-cart-shopping"></i> Add to Cart
                         </button>

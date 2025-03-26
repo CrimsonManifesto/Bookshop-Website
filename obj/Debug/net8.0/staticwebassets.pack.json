@@ -5,16 +5,16 @@
       "PackagePath": "staticwebassets\\Bookshop-Website.bundle.scp.css"
     },
     {
-      "Id": "D:\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide1.png",
-      "PackagePath": "staticwebassets\\assets\\img\\slide\\slide1.png"
+      "Id": "D:\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide1.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\slide\\slide1.webp"
     },
     {
-      "Id": "D:\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide2.png",
-      "PackagePath": "staticwebassets\\assets\\img\\slide\\slide2.png"
+      "Id": "D:\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide2.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\slide\\slide2.webp"
     },
     {
-      "Id": "D:\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide3.png",
-      "PackagePath": "staticwebassets\\assets\\img\\slide\\slide3.png"
+      "Id": "D:\\Bookshop-Website\\wwwroot\\assets\\img\\slide\\slide3.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\slide\\slide3.webp"
     },
     {
       "Id": "D:\\Bookshop-Website\\wwwroot\\assets\\screenshot\\create.png",
@@ -49,16 +49,8 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\Bookshop-Website\\wwwroot\\images\\profiles\\52630121-c8b7-4182-94e7-1a5eea7b2003.png",
-      "PackagePath": "staticwebassets\\images\\profiles\\52630121-c8b7-4182-94e7-1a5eea7b2003.png"
-    },
-    {
-      "Id": "D:\\Bookshop-Website\\wwwroot\\images\\profiles\\d36279ab-c523-45a6-85a7-7b3a87c59718.png",
-      "PackagePath": "staticwebassets\\images\\profiles\\d36279ab-c523-45a6-85a7-7b3a87c59718.png"
-    },
-    {
-      "Id": "D:\\Bookshop-Website\\wwwroot\\images\\profiles\\da66ee84-ad58-4765-b57d-8cdd04da57d1.png",
-      "PackagePath": "staticwebassets\\images\\profiles\\da66ee84-ad58-4765-b57d-8cdd04da57d1.png"
+      "Id": "D:\\Bookshop-Website\\wwwroot\\images\\profiles\\be0b038d-b909-4ebf-acb1-1bb9af2e6915.webp",
+      "PackagePath": "staticwebassets\\images\\profiles\\be0b038d-b909-4ebf-acb1-1bb9af2e6915.webp"
     },
     {
       "Id": "D:\\Bookshop-Website\\wwwroot\\images\\profiles\\default-profile.png",
@@ -67,6 +59,38 @@
     {
       "Id": "D:\\Bookshop-Website\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "D:\\Bookshop-Website\\wwwroot\\is-cache\\2\\7\\7\\1\\a\\7\\8\\d\\c853.meta",
+      "PackagePath": "staticwebassets\\is-cache\\2\\7\\7\\1\\a\\7\\8\\d\\c853.meta"
+    },
+    {
+      "Id": "D:\\Bookshop-Website\\wwwroot\\is-cache\\2\\7\\7\\1\\a\\7\\8\\d\\c853.webp",
+      "PackagePath": "staticwebassets\\is-cache\\2\\7\\7\\1\\a\\7\\8\\d\\c853.webp"
+    },
+    {
+      "Id": "D:\\Bookshop-Website\\wwwroot\\is-cache\\6\\9\\2\\5\\f\\7\\6\\c\\90ea.meta",
+      "PackagePath": "staticwebassets\\is-cache\\6\\9\\2\\5\\f\\7\\6\\c\\90ea.meta"
+    },
+    {
+      "Id": "D:\\Bookshop-Website\\wwwroot\\is-cache\\6\\9\\2\\5\\f\\7\\6\\c\\90ea.webp",
+      "PackagePath": "staticwebassets\\is-cache\\6\\9\\2\\5\\f\\7\\6\\c\\90ea.webp"
+    },
+    {
+      "Id": "D:\\Bookshop-Website\\wwwroot\\is-cache\\9\\d\\2\\8\\0\\b\\5\\1\\3d6d.meta",
+      "PackagePath": "staticwebassets\\is-cache\\9\\d\\2\\8\\0\\b\\5\\1\\3d6d.meta"
+    },
+    {
+      "Id": "D:\\Bookshop-Website\\wwwroot\\is-cache\\9\\d\\2\\8\\0\\b\\5\\1\\3d6d.webp",
+      "PackagePath": "staticwebassets\\is-cache\\9\\d\\2\\8\\0\\b\\5\\1\\3d6d.webp"
+    },
+    {
+      "Id": "D:\\Bookshop-Website\\wwwroot\\is-cache\\b\\7\\4\\d\\e\\b\\8\\d\\9dc8.meta",
+      "PackagePath": "staticwebassets\\is-cache\\b\\7\\4\\d\\e\\b\\8\\d\\9dc8.meta"
+    },
+    {
+      "Id": "D:\\Bookshop-Website\\wwwroot\\is-cache\\b\\7\\4\\d\\e\\b\\8\\d\\9dc8.webp",
+      "PackagePath": "staticwebassets\\is-cache\\b\\7\\4\\d\\e\\b\\8\\d\\9dc8.webp"
     },
     {
       "Id": "D:\\Bookshop-Website\\wwwroot\\js\\owl.lazyload.js",

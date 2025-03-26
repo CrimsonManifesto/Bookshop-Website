@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using System.IO;
 using Microsoft.AspNetCore.Http;
+using SixLabors.ImageSharp.Formats.Webp;
 
 namespace Bookshop_Website.Controllers
 {
@@ -251,78 +252,6 @@ namespace Bookshop_Website.Controllers
             return View("Search", books);
         }
 
-        public IActionResult AddToCart(int id)
-        {
-            var book = _context.Books.Find(id);
-            if (book == null)
-            {
-                return NotFound();
-            }
-
-            List<CartItem> cart = HttpContext.Session.GetObjectFromJson<List<CartItem>>("Cart") ?? new List<CartItem>();
-
-            var cartItem = cart.FirstOrDefault(c => c.BookId == id);
-            if (cartItem == null)
-            {
-                cart.Add(new CartItem
-                {
-                    BookId = book.BookId,
-                    Title = book.Title,
-                    Price = book.Price,
-                    Quantity = 1
-                });
-            }
-            else
-            {
-                cartItem.Quantity++;
-            }
-
-            HttpContext.Session.SetObjectAsJson("Cart", cart);
-
-            return RedirectToAction(nameof(Index));
-        }
-
-        public IActionResult ViewCart()
-        {
-            var cart = HttpContext.Session.GetObjectFromJson<List<CartItem>>("Cart") ?? new List<CartItem>();
-            return View(cart);
-        }
-
-        public IActionResult RemoveFromCart(int id)
-        {
-            var cart = HttpContext.Session.GetObjectFromJson<List<CartItem>>("Cart");
-            if (cart != null)
-            {
-                var cartItem = cart.FirstOrDefault(c => c.BookId == id);
-                if (cartItem != null)
-                {
-                    cart.Remove(cartItem);
-                    HttpContext.Session.SetObjectAsJson("Cart", cart);
-                }
-            }
-
-            return RedirectToAction(nameof(ViewCart));
-        }
-
-        [HttpGet]
-        public IActionResult GetCartCount()
-        {
-            var cart = HttpContext.Session.GetObjectFromJson<List<CartItem>>("Cart") ?? new List<CartItem>();
-            int cartCount = cart.Sum(item => item.Quantity);
-            return Json(new { count = cartCount });
-        }
-
-        // GET: Books/AllGenres
-        public async Task<IActionResult> AllGenres()
-        {
-            var genres = await _context.Books
-                .Select(b => b.Genre)
-                .Distinct()
-                .ToListAsync();
-
-            return View(genres);
-        }
-
         // GET: Books/AllLanguages
         public async Task<IActionResult> AllLanguages()
         {
@@ -434,27 +363,6 @@ namespace Bookshop_Website.Controllers
             });
         }
 
-        [HttpPost]
-        public IActionResult DecreaseQuantity(int id)
-        {
-            var cart = HttpContext.Session.GetObjectFromJson<List<CartItem>>("Cart") ?? new List<CartItem>();
-
-            var cartItem = cart.FirstOrDefault(c => c.BookId == id);
-            if (cartItem != null && cartItem.Quantity > 1)
-            {
-                cartItem.Quantity--;
-                HttpContext.Session.SetObjectAsJson("Cart", cart);
-            }
-
-            return Json(new
-            {
-                success = true,
-                quantity = cartItem?.Quantity ?? 1,
-                totalPrice = cartItem != null ? (cartItem.Price * cartItem.Quantity).ToString("C") : "$0.00",
-                cartTotal = cart.Sum(item => item.Price * item.Quantity).ToString("C")
-            });
-        }
-
         // GET: Books/Details/5
         public async Task<IActionResult> Details(int id)
         {
@@ -471,78 +379,51 @@ namespace Bookshop_Website.Controllers
 
         // POST: Books/AddComment
         [HttpPost]
-        public async Task<IActionResult> AddComment(Comment comment)
-        {
-            if (!ModelState.IsValid)
-            {
-                var errors = ModelState.Values.SelectMany(v => v.Errors)
-                                              .Select(e => e.ErrorMessage);
-                System.Diagnostics.Debug.WriteLine("ModelState errors: " + string.Join(", ", errors));
-
-                return RedirectToAction("Details", new { id = comment.BookId });
-            }
-
-            System.Diagnostics.Debug.WriteLine($"Received Comment - BookId: {comment.BookId}, Text: {comment.Text}");
-
-            comment.CreatedAt = DateTime.Now;
-            if (User.Identity.IsAuthenticated)
-            {
-                var currentUser = await _userManager.GetUserAsync(User);
-                if (currentUser != null)
-                {
-                    comment.UserName = currentUser.UserName;
-                    comment.ProfilePictureUrl = currentUser.ProfilePictureUrl;
-                }
-            }
-            else
-            {
-                comment.UserName = "Anonymous";
-                comment.ProfilePictureUrl = "/images/profiles/default-profile.png";
-            }
-
-            _context.Comments.Add(comment);
-            int rowsAffected = await _context.SaveChangesAsync();
-
-            System.Diagnostics.Debug.WriteLine($"Rows affected: {rowsAffected}");
-
-            return RedirectToAction("Details", new { id = comment.BookId });
-        }
-
-        [HttpPost]
-        [Authorize]
-        public async Task<IActionResult> DeleteComment(int id)
-        {
-            var comment = await _context.Comments.FindAsync(id);
-            if (comment == null)
-            {
-                return NotFound();
-            }
-
-            var currentUser = await _userManager.GetUserAsync(User);
-            bool isAdmin = User.IsInRole("Admin");
-
-            if (!isAdmin && comment.UserName != currentUser.UserName)
-            {
-                return Forbid();
-            }
-
-            _context.Comments.Remove(comment);
-            await _context.SaveChangesAsync();
-
-            return RedirectToAction("Details", new { id = comment.BookId });
-        }
 
         // GET: Books/GetImage/5
-        public IActionResult GetImage(int id)
+        [HttpGet]
+        public async Task<IActionResult> GetImage(int id, int? width, int? height, string mode = "crop", string format = null)
         {
-            var book = _context.Books.Find(id);
-            if (book != null && book.ImageData != null && book.ImageMimeType != null)
+            var book = await _context.Books.FindAsync(id);
+            if (book == null || book.ImageData == null || book.ImageMimeType == null)
             {
-                return File(book.ImageData, book.ImageMimeType);
+                return NotFound();
+            }
+
+            using var msInput = new MemoryStream(book.ImageData);
+            using var image = await Image.LoadAsync(msInput);
+
+            if (width.HasValue || height.HasValue)
+            {
+                var resizeOptions = new ResizeOptions
+                {
+                    Size = new Size(width ?? image.Width, height ?? image.Height),
+                    Mode = mode.Equals("crop", StringComparison.OrdinalIgnoreCase)
+                        ? ResizeMode.Crop
+                        : ResizeMode.Max
+                };
+                image.Mutate(x => x.Resize(resizeOptions));
+            }
+
+            var msOutput = new MemoryStream();
+
+            if (!string.IsNullOrEmpty(format) && format.Equals("webp", StringComparison.OrdinalIgnoreCase))
+            {
+                await image.SaveAsWebpAsync(msOutput, new WebpEncoder());
+                msOutput.Position = 0;
+                return File(msOutput.ToArray(), "image/webp");
+            }
+            else if (book.ImageMimeType.ToLower().Contains("png"))
+            {
+                await image.SaveAsPngAsync(msOutput);
+                msOutput.Position = 0;
+                return File(msOutput.ToArray(), "image/png");
             }
             else
             {
-                return NotFound();
+                await image.SaveAsJpegAsync(msOutput);
+                msOutput.Position = 0;
+                return File(msOutput.ToArray(), "image/jpeg");
             }
         }
     }

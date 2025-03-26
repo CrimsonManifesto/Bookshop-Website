@@ -10,7 +10,7 @@
             <!--Category button-->
             <div class="btn-group">
 
-                <button type="button" class="btn dropdown-toggle shadow-none" data-bs-toggle="dropdown" id="catButton">
+                <button type="button" class="btn dropdown-toggle shadow-none" data-bs-toggle="dropdown" aria-label="Category" id="catButton">
                     <i class="fa-solid fa-bars"></i>
                 </button>
 
@@ -25,8 +25,7 @@
                 <div class="input-group w-100" id="searchContainer">
                     <input name="SearchPhrase" class="form-control shadow-none search-input" type="search" placeholder="Search">
                     <div class="input-group-append" style="background-color:var(--main-color);display:flex">
-
-                        <button class="btn shadow-none" type="submit"><i class="fas fa-search" style="color:white;align-items:center "></i></button>
+                        <button class="btn shadow-none" aria-label="Search" type="submit"><i class="fas fa-search" style="color:white;align-items:center "></i></button>
                     </div>
                 </div>
 
@@ -34,7 +33,7 @@
             </form>
 
             <!-- Cart button -->
-            <a class="nav-link" asp-area="" asp-controller="Books" asp-action="ViewCart" id="navButton">
+            <a class="nav-link" asp-area="" asp-controller="Cart" asp-action="ViewCart" id="navButton">
                 <div id="navContainer position-relative">
                     <i class="fa-solid fa-cart-shopping" id="navSymbol"></i>
                     @await Component.InvokeAsync("Cart")

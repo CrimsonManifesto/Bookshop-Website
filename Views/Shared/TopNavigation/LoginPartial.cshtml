@@ -2,20 +2,21 @@
 @inject SignInManager<ApplicationUser> SignInManager
 @inject UserManager<ApplicationUser> UserManager
 @{
-    var profilePictureUrl = @Context.Items["ProfilePictureUrl"] as string;
+    var profilePictureUrl = Context.Items["ProfilePictureUrl"] as string;
 }
 
 @if (SignInManager.IsSignedIn(User))
 {
-
     <a class="nav-link" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage" id="navButton">
         <div>
-            <img src="@profilePictureUrl" alt="Profile Picture" class="profile-image" width="30" height="30" />
+            <picture>
+                <source srcset="@($"{profilePictureUrl}?width=30&height=30&mode=crop&format=webp")" type="image/webp">
+                <img src="@($"{profilePictureUrl}?width=30&height=30&mode=crop")" alt="Profile Picture" class="profile-image" width="30" height="30" />
+            </picture>
         </div>
         <div>
             Me
         </div>
-
     </a>
     <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", new { area = "" })">
         <button type="submit" class="nav-link btn btn-link" id="navButton">
@@ -49,9 +50,7 @@ else
 }
 
 <style>
-
     .profile-image {
-        border-radius: 15px
+        border-radius: 15px;
     }
-
 </style>

@@ -15,7 +15,14 @@
                 <div class="owl-item">
                     <div class="card border-0 pt-3 mt-3 mb-3 align-items-center" id="bookCard">
                         <a asp-action="Details" asp-route-id="@book.BookId">
-                            <img class="rounded float-start" src="@Url.Action("GetImage", "Books", new { id = book.BookId })" alt="Image for @book.Title" style="width: 150px; height: 220px;" loading="lazy" />
+                            <picture>
+                                <source srcset="@Url.Action("GetImage", "Books", new { id = book.BookId, width = 150, height = 220, mode = "crop", format = "webp" })" type="image/webp" />
+                                <img class="rounded float-start"
+                                     src="@Url.Action("GetImage", "Books", new { id = book.BookId, width = 150, height = 220, mode = "crop" })"
+                                     alt="Image for @book.Title"
+                                     style="width: 150px; height: 220px;"
+                                     loading="lazy" />
+                            </picture>
                         </a>
                         <div class="card-body w-100" id="cardTitle">
                             @Html.ActionLink(book.Title, "Details", new { id = book.BookId }, new { @class = "custom-card-title px-3 text-decoration-none text-black", title = book.Title })
@@ -32,7 +39,7 @@
                         <div class="row w-100 px-3">
                             @if (book.DiscountPercentage > 0)
                             {
-                                <h5 class="col original-price m-0">@book.OriginalPrice.ToString("C")</h5>
+                                <h5 class="col original-price m-0" aria-hidden="true">@book.OriginalPrice.ToString("C")</h5>
                             }
                         </div>
                     </div>

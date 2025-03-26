@@ -56,6 +56,7 @@ D:\Bookshop-Website\obj\Release\net8.0\PubTmp\Out\Microsoft.IdentityModel.Loggin
 D:\Bookshop-Website\obj\Release\net8.0\PubTmp\Out\Microsoft.IdentityModel.Protocols.dll
 D:\Bookshop-Website\obj\Release\net8.0\PubTmp\Out\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\Bookshop-Website\obj\Release\net8.0\PubTmp\Out\Microsoft.IdentityModel.Tokens.dll
+D:\Bookshop-Website\obj\Release\net8.0\PubTmp\Out\Microsoft.IO.RecyclableMemoryStream.dll
 D:\Bookshop-Website\obj\Release\net8.0\PubTmp\Out\Microsoft.Json.Pointer.dll
 D:\Bookshop-Website\obj\Release\net8.0\PubTmp\Out\Microsoft.NET.StringTools.dll
 D:\Bookshop-Website\obj\Release\net8.0\PubTmp\Out\Microsoft.SqlServer.Server.dll
@@ -81,6 +82,8 @@ D:\Bookshop-Website\obj\Release\net8.0\PubTmp\Out\NuGet.Versioning.dll
 D:\Bookshop-Website\obj\Release\net8.0\PubTmp\Out\PayPal.dll
 D:\Bookshop-Website\obj\Release\net8.0\PubTmp\Out\PayPalServerSDK.dll
 D:\Bookshop-Website\obj\Release\net8.0\PubTmp\Out\Polly.dll
+D:\Bookshop-Website\obj\Release\net8.0\PubTmp\Out\SixLabors.ImageSharp.dll
+D:\Bookshop-Website\obj\Release\net8.0\PubTmp\Out\SixLabors.ImageSharp.Web.dll
 D:\Bookshop-Website\obj\Release\net8.0\PubTmp\Out\SQLitePCLRaw.batteries_v2.dll
 D:\Bookshop-Website\obj\Release\net8.0\PubTmp\Out\SQLitePCLRaw.core.dll
 D:\Bookshop-Website\obj\Release\net8.0\PubTmp\Out\SQLitePCLRaw.provider.e_sqlite3.dll

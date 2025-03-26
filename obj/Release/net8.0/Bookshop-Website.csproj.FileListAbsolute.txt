@@ -296,3 +296,6 @@ D:\Bookshop-Website\obj\Release\net8.0\Bookshop-Website.pdb
 D:\Bookshop-Website\obj\Release\net8.0\Bookshop-Website.genruntimeconfig.cache
 D:\Bookshop-Website\obj\Release\net8.0\ref\Bookshop-Website.dll
 D:\Bookshop-Website\bin\Release\net8.0\PayPal.dll
+D:\Bookshop-Website\bin\Release\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
+D:\Bookshop-Website\bin\Release\net8.0\SixLabors.ImageSharp.dll
+D:\Bookshop-Website\bin\Release\net8.0\SixLabors.ImageSharp.Web.dll

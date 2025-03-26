@@ -939,6 +939,7 @@ D:\Bookshop-Website\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
 D:\Bookshop-Website\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
 D:\Bookshop-Website\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\Bookshop-Website\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Bookshop-Website\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
 D:\Bookshop-Website\bin\Debug\net8.0\Microsoft.Json.Pointer.dll
 D:\Bookshop-Website\bin\Debug\net8.0\Microsoft.NET.StringTools.dll
 D:\Bookshop-Website\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
@@ -964,6 +965,8 @@ D:\Bookshop-Website\bin\Debug\net8.0\NuGet.Versioning.dll
 D:\Bookshop-Website\bin\Debug\net8.0\PayPal.dll
 D:\Bookshop-Website\bin\Debug\net8.0\PayPalServerSDK.dll
 D:\Bookshop-Website\bin\Debug\net8.0\Polly.dll
+D:\Bookshop-Website\bin\Debug\net8.0\SixLabors.ImageSharp.dll
+D:\Bookshop-Website\bin\Debug\net8.0\SixLabors.ImageSharp.Web.dll
 D:\Bookshop-Website\bin\Debug\net8.0\SQLitePCLRaw.batteries_v2.dll
 D:\Bookshop-Website\bin\Debug\net8.0\SQLitePCLRaw.core.dll
 D:\Bookshop-Website\bin\Debug\net8.0\SQLitePCLRaw.provider.e_sqlite3.dll

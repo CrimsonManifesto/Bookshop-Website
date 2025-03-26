@@ -8,6 +8,8 @@ using System.Drawing;
 using System.Globalization;
 using System.Net.NetworkInformation;
 using System.Text.RegularExpressions;
+using SixLabors.ImageSharp.Web;
+using SixLabors.ImageSharp.Web.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -39,6 +41,7 @@ builder.Services.AddControllersWithViews()
     });
 
 builder.Services.AddSingleton<PayPalService>();
+builder.Services.AddImageSharp();
 
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
@@ -107,6 +110,7 @@ using (var scope = app.Services.CreateScope())
 
 app.UseMiddleware<ProfilePictureMiddleware>();
 app.UseHttpsRedirection();
+app.UseImageSharp();
 app.UseStaticFiles();
 app.UseSession();
 app.UseRouting();

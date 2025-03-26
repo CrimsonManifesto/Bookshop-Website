@@ -62,7 +62,7 @@ namespace Bookshop_Website.Controllers
                     Directory.CreateDirectory(uploadsFolder);
                 }
 
-                var fileName = Guid.NewGuid().ToString() + ".png";
+                var fileName = Guid.NewGuid().ToString() + ".webp";
                 var filePath = Path.Combine(uploadsFolder, fileName);
 
                 // Save the cropped image to the file system

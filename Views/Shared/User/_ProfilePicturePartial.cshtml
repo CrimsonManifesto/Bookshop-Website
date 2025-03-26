@@ -4,6 +4,6 @@
 @if (User.Identity?.IsAuthenticated == true)
 {
     <div>
-        <img src="@(string.IsNullOrEmpty(Model.ProfilePictureUrl) ? "/images/default-profile.jpg" : Model.ProfilePictureUrl)" alt="Profile Picture" class="img-thumbnail" width="150" />
+        <img src="@(string.IsNullOrEmpty(Model.ProfilePictureUrl) ? "/images/default-profile.jpg" : Model.ProfilePictureUrl)" alt="Profile Picture" class="img-thumbnail" width="30" />
     </div>
 }

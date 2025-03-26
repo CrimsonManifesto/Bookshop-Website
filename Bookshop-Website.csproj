@@ -83,6 +83,7 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="PayPal" Version="1.9.1" />
     <PackageReference Include="PayPalServerSDK" Version="0.6.1" />
+    <PackageReference Include="SixLabors.ImageSharp.Web" Version="3.1.3" />
   </ItemGroup>
 
   <ItemGroup>

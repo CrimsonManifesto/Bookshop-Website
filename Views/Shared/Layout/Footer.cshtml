@@ -1,62 +1,112 @@
-﻿  <!-- Site footer -->
+﻿<!-- Site footer -->
 <footer class="site-footer">
     <div class="container">
         <div class="row">
+            <!-- About Section -->
             <div class="col-sm-12 col-md-6">
                 <h6 class="footer-header">About</h6>
                 <p class="text-justify">
-                    This a simple online bookstore made with ASP.NET Core MVC and Bootstrap. This website is used to learn framework and demonstrate.
+                    This is a simple online bookstore made with ASP.NET Core MVC and Bootstrap.
+                    This website is used to learn the framework and demonstrate its capabilities.
                 </p>
             </div>
 
+            <!-- Quick Links Section -->
             <div class="col-xs-6 col-md-2">
                 <h6 class="footer-header">Quick Links</h6>
                 <ul class="footer-links">
-                    <li><a href="http://scanfcode.com/about/">About Us</a></li>
-                    <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-                    <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-                    <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-                    <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Contribute</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Sitemap</a></li>
                 </ul>
             </div>
+
+            <!-- Optional Third Column (e.g., Contact or Newsletter) -->
             <div class="col-xs-6 col-md-4">
-
+                <h6 class="footer-header">Stay Connected</h6>
+                <p>Sign up for our newsletter to receive the latest book updates.</p>
+                <form>
+                    <div class="form-group">
+                        <label class="sr-only" for="newsletterEmail">Email address</label>
+                        <input type="email"
+                               class="form-control"
+                               id="newsletterEmail"
+                               placeholder="Enter your email" />
+                    </div>
+                    <button type="submit" class="btn btn-secondary btn-sm mt-3">Subscribe</button>
+                </form>
             </div>
-
         </div>
-        <hr>
+        <hr />
     </div>
+
     <div class="container">
         <div class="row">
+            <!-- Copyright -->
             <div class="col-md-8 col-sm-6 col-xs-12">
                 <p class="copyright-text">
-                    Copyright &copy; 2025 All Rights Reserved by
-                    <a href="#">Kabasa</a>.
+                    Copyright &copy; 2025
+                    <a href="#">Kabasa</a>. All Rights Reserved.
                 </p>
             </div>
 
+            <!-- Social Icons -->
             <div class="col-md-4 col-sm-6 col-xs-12">
                 <ul class="social-icons">
-                    <li><a class="facebook" href="https://www.facebook.com/profile.php?id=100069387273006" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a class="x" href="https://x.com/Kuonlin_" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
-                    <li><a class="github" href="https://github.com/CrimsonManifesto" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li><a class="linkedin" href="https://www.linkedin.com/in/crimson-manifesto/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li>
+                        <a class="facebook"
+                           href="https://www.facebook.com/profile.php?id=100069387273006"
+                           target="_blank"
+                           rel="noopener"
+                           aria-label="Facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="x"
+                           href="https://x.com/Kuonlin_"
+                           target="_blank"
+                           rel="noopener"
+                           aria-label="X">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="github"
+                           href="https://github.com/CrimsonManifesto"
+                           target="_blank"
+                           rel="noopener"
+                           aria-label="Github">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="linkedin"
+                           href="https://www.linkedin.com/in/crimson-manifesto/"
+                           target="_blank"
+                           rel="noopener"
+                           aria-label="Linkedin">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
 </footer>
-@* Google map embed *@
-
 
 <style>
     .site-footer {
-        background-color: var(--main-color);
+        background-color: white;
         padding: 45px 0 20px;
         font-size: 15px;
         line-height: 24px;
-        color: #fff;
+        color: black;
         border-block-color: black;
+        elevation: higher;
+        box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
     }
 
         .site-footer hr {
@@ -69,7 +119,7 @@
             }
 
         .site-footer h6 {
-            color: #fff;
+            color: black;
             font-size: 16px;
             text-transform: uppercase;
             margin-top: 5px;
@@ -86,7 +136,8 @@
             }
 
     .footer-header {
-        color: #fff !important;
+        color: var(--main-color) !important;
+        font-weight: bold;
     }
 
     .footer-links {
@@ -99,11 +150,11 @@
         }
 
         .footer-links a {
-            color: #fff;
+            color: black;
         }
 
             .footer-links a:active, .footer-links a:focus, .footer-links a:hover {
-                color: #3366cc;
+                color: var(--main-color);
                 text-decoration: none;
             }
 
@@ -165,8 +216,8 @@
             }
 
         .social-icons a {
-            background-color: #eceeef;
-            color: #818a91;
+            background-color: #565656;
+            color: white;
             font-size: 16px;
             display: inline-block;
             line-height: 44px;
