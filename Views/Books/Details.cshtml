@@ -13,7 +13,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <form asp-action="AddToCart" asp-route-id="@Model.BookId" method="post" style="display:inline;">
+                    <form asp-action="BuyWithPaypal" asp-controller="PayPal" asp-route-bookId="@Model.BookId" method="post" style="display:inline;">
                         <button type="submit" class="btn interactBtn w-100 fw-bold" style="color:white; background-color:var(--main-color)">
                             Buy
                         </button>
@@ -211,7 +211,7 @@
 
     // Add-to-cart function
     function addToCart(bookId) {
-        fetch('/Books/AddToCart?id=' + bookId, { method: 'POST' })
+        fetch('/Cart/AddToCart?id=' + bookId, { method: 'POST' })
             .then(() => updateCartCount());
     }
 </script>

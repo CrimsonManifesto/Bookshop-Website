@@ -41,7 +41,7 @@
         });
 
         function updateCartCount() {
-            fetch('/Books/GetCartCount')
+            fetch('/Cart/GetCartCount')
                 .then(response => response.json())
                 .then(data => {
                     let cartBadge = document.getElementById('cartBadge');

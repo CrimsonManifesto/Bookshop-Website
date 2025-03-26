@@ -4,14 +4,24 @@ using System.Collections.Generic;
 using PayPal.Api;
 using Newtonsoft.Json;
 using Bookshop_Website.Extensions;
+using Bookshop_Website.Data;
+using Microsoft.AspNetCore.Identity;
+using Polly;
+using Microsoft.EntityFrameworkCore;
+
 
 public class PayPalController : Controller
 {
     private readonly PayPalService _payPalService;
+    private readonly BooksDbContext _context;
+    private readonly ILogger<PayPalController> _logger;
 
-    public PayPalController(PayPalService payPalService)
+
+    public PayPalController(BooksDbContext context, PayPalService payPalService)
     {
         _payPalService = payPalService;
+        _context = context;
+
     }
 
     public IActionResult PaymentWithPaypal()
@@ -20,18 +30,15 @@ public class PayPalController : Controller
         string cancelUrl = $"{baseUrl}/PayPal/PaymentCancelled";
         string returnUrl = $"{baseUrl}/PayPal/PaymentSuccess";
 
-        // 🔹 Lấy giỏ hàng từ Session hoặc Database
         var cartItems = GetCartItems();
 
         if (cartItems.Count == 0)
         {
-            return RedirectToAction("Index", "Cart"); // Nếu giỏ hàng rỗng, quay về trang giỏ hàng
+            return RedirectToAction("Index", "Cart"); 
         }
 
-        // 🔹 Tạo thanh toán với PayPal
         var payment = _payPalService.CreatePayment(baseUrl, cancelUrl, returnUrl, cartItems);
 
-        // 🔹 Điều hướng người dùng đến PayPal để thanh toán
         foreach (var link in payment.links)
         {
             if (link.rel.ToLower() == "approval_url")
@@ -42,6 +49,46 @@ public class PayPalController : Controller
 
         return RedirectToAction("Index", "Home");
     }
+
+    public async Task<IActionResult> BuyWithPaypal(int bookId, int quantity = 1)
+    {
+        string baseUrl = $"{Request.Scheme}://{Request.Host}";
+        string cancelUrl = $"{baseUrl}/PayPal/PaymentCancelled";
+        string returnUrl = $"{baseUrl}/PayPal/PaymentSuccess";
+
+        var books = await GetBookByIdAsync(bookId);
+
+        if (books == null)
+        {
+            return RedirectToAction("Index", "Books");
+        }
+
+        var cartItems = new List<CartItem>
+    {
+        new CartItem
+        {
+            BookId = books.BookId,
+            Title = books.Title,
+            Price = books.Price,
+            Quantity = quantity,
+            ImageData = books.ImageData,
+            ImageMimeType = books.ImageMimeType
+        }
+    };
+
+        var payment = _payPalService.CreatePayment(baseUrl, cancelUrl, returnUrl, cartItems);
+
+        foreach (var link in payment.links)
+        {
+            if (link.rel.ToLower() == "approval_url")
+            {
+                return Redirect(link.href);
+            }
+        }
+
+        return RedirectToAction("Index", "Home");
+    }
+
 
     public IActionResult PaymentSuccess(string paymentId, string token, string PayerID)
     {
@@ -54,7 +101,6 @@ public class PayPalController : Controller
 
         if (executedPayment.state.ToLower() == "approved")
         {
-            // 🔹 Xử lý đơn hàng thành công: cập nhật trạng thái, xóa giỏ hàng
             ClearCart();
             return View("PaymentSuccess");
         }
@@ -72,6 +118,12 @@ public class PayPalController : Controller
         return HttpContext.Session.GetObjectFromJson<List<CartItem>>("Cart") ?? new List<CartItem>();
     }
 
+    private async Task<Books?> GetBookByIdAsync(int bookId)
+    {
+
+        var book = await _context.Books.FirstOrDefaultAsync(b => b.BookId == bookId);
+        return book;
+    }
 
     private void ClearCart()
     {
